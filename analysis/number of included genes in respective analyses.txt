@@ -1,0 +1,10 @@
+PRAD progression: 13700
+BRCA progression: 13923
+KIRC progression: 13677
+LUSC progression: 14088
+
+PRAD TvsAN: 13661
+BRCA TvsAN: 14007
+KIRC TvsAN: 13855
+LUSC TvsAN: 14131
+                           genes
