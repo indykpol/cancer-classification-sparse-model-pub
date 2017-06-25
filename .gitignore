@@ -1,0 +1,40 @@
+# Ignore data and input
+# Provide a script for obtaining raw data
+# Derived data should be reproducible
+# create an output subfolder for smaller analysis
+data
+output
+figures
+
+# GWF
+gwf_log
+
+# Ignore hidden files except .gitignore
+.*
+!/.gitignore
+
+# HTML files
+# You might want to version control html files written in hand
+# Usually don't version control output from knitr, doxygen, ...
+# to avoid redundancy
+*.html
+
+# PowerPoints (Please avoid)
+*.ppt
+
+# TeX auxilary files
+*.aux
+*.lof
+*.log
+*.lot
+*.fls
+*.out
+*.toc
+*.bbl
+*.blg
+*.out
+*.eps
+
+# Rstudio project files
+.Rproj.user
+*.Rproj
