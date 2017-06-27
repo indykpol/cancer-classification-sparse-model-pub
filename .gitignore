@@ -5,6 +5,7 @@
 data
 output
 figures
+*.pdf
 
 # GWF
 gwf_log
