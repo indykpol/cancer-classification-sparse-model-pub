@@ -107,19 +107,20 @@ library(pROC)
 library(dplyr)
 
 clinical_data_BRCA <- datasets[["BRCA"]]@Clinical[c(progressed_BRCA, nonProgressed_BRCA),]
+clinical_data_BRCA[, c("years_to_birth", "days_to_death", "days_to_last_followup", "number_of_lymph_nodes")] <- apply(clinical_data_BRCA[, c("years_to_birth", "days_to_death", "days_to_last_followup", "number_of_lymph_nodes")], 2, as.numeric)
 clinical_data_BRCA$progressed <- rownames(clinical_data_BRCA) %in% progressed_BRCA
 factors <- c("pathologic_stage", "pathology_T_stage", "pathology_N_stage", "pathology_M_stage", "histological_type", "race", "ethnicity")
 for (i in 1:length(factors)) {
   clinical_data_BRCA[,factors[i]] <- factor(clinical_data_BRCA[,factors[i]])
 }
 
-nfolds <- 10
+nfolds <- 5
 # Use split to generate CV-sets
 set.seed(1) # Use the same sets accross genes
 G1_cv_sets <- 1:length(progressed_BRCA) %>% sample %>% split(1:nfolds)
 G2_cv_sets <- 1:length(nonProgressed_BRCA) %>% sample %>% split(1:nfolds)
 
-predictions <- NULL
+predictions_glmNet <- predictions <- NULL
 for (fold in 1:nfolds) {
   # subset the groups for current fold
 	G1_train <- progressed_BRCA[-G1_cv_sets[[fold]]]
@@ -127,13 +128,20 @@ for (fold in 1:nfolds) {
   G1_eval <- progressed_BRCA[G1_cv_sets[[fold]]]
 	G2_eval <- nonProgressed_BRCA[G2_cv_sets[[fold]]]
 	
-	model <- glm(progressed ~ as.numeric(years_to_birth) + pathologic_stage + pathology_T_stage + pathology_N_stage + pathology_M_stage + histological_type + as.numeric(number_of_lymph_nodes) + race + ethnicity, data = clinical_data_BRCA[c(G1_train, G2_train),], family = "binomial", maxit=100,  na.action = "na.exclude")
+	model <- glm(progressed ~ years_to_birth + pathologic_stage + pathology_T_stage + pathology_N_stage + pathology_M_stage + histological_type + number_of_lymph_nodes + race + ethnicity, data = clinical_data_BRCA[c(G1_train, G2_train),], family = "binomial", maxit=100,  na.action = "na.exclude")
 	
 	predictions[c(G1_eval, G2_eval)] <- predict_whileCheckingMissingFactors(model, newdata = clinical_data_BRCA[c(G1_eval, G2_eval),], type="response")
   #model <- fixNAcoefficients(model)
   #predictions[c(G1_eval, G2_eval)] <- predict(model, newdata = clinical_data_BRCA[c(G1_eval, G2_eval),], type="response")
+	
+	model.matrix <- model.matrix(progressed ~ as.numeric(years_to_birth) + pathologic_stage + pathology_T_stage + pathology_N_stage + pathology_M_stage + histological_type + as.numeric(number_of_lymph_nodes) + race + ethnicity, data = clinical_data_BRCA[c(G1_train, G2_train),])
+	model.matrix.eval <- model.matrix(progressed ~ as.numeric(years_to_birth) + pathologic_stage + pathology_T_stage + pathology_N_stage + pathology_M_stage + histological_type + as.numeric(number_of_lymph_nodes) + race + ethnicity, data = clinical_data_BRCA[c(G1_eval, G2_eval),])
+	y <- clinical_data_BRCA[which(rownames(model.matrix) %in% c(G1_train, G2_train)),"progressed"]
+	modelNet.cv <- cv.glmnet(model.matrix, y = y, family = "binomial", alpha=0)
+  modelNet <- glmnet(model.matrix, y = y, family = "binomial", alpha=0, lambda=modelNet.cv$lambda.1se)
+  predictions_glmNet[c(G1_eval, G2_eval)] <- predict.glmnet(modelNet, newx = model.matrix.eval, type="response")[,1]
 }
-auc(response=clinical_data_BRCA$progressed, predictor=predictions)
+c(pROC::auc(response=clinical_data_BRCA$progressed, predictor=predictions), pROC::auc(response=clinical_data_BRCA$progressed, predictor=predictions_glmNet))
 ```
 
 PRAD data
@@ -142,19 +150,20 @@ require(pROC)
 require(dplyr)
 
 clinical_data_PRAD <- datasets[["PRAD"]]@Clinical[c(progressed_PRAD, nonProgressed_PRAD),]
+clinical_data_PRAD[, c("years_to_birth", "days_to_death", "days_to_last_followup", "number_of_lymph_nodes")] <- apply(clinical_data_PRAD[, c("years_to_birth", "days_to_death", "days_to_last_followup", "number_of_lymph_nodes")], 2, as.numeric)
 clinical_data_PRAD$progressed <- rownames(clinical_data_PRAD) %in% progressed_PRAD
 factors <- c("pathology_T_stage", "pathology_N_stage", "radiation_therapy", "histological_type", "residual_tumor", "race", "ethnicity") # no differential race or ethnicity was observed in the cohort
 for (i in 1:length(factors)) {
   clinical_data_PRAD[,factors[i]] <- factor(clinical_data_PRAD[,factors[i]])
 }
 
-nfolds <- 10
+nfolds <- 5
 # Use split to generate CV-sets
 set.seed(1) # Use the same sets accross genes
 G1_cv_sets <- 1:length(progressed_PRAD) %>% sample %>% split(1:nfolds)
 G2_cv_sets <- 1:length(nonProgressed_PRAD) %>% sample %>% split(1:nfolds)
 
-predictions <- NULL
+predictions_glmNet <- predictions <- NULL
 for (fold in 1:nfolds) {
   # subset the groups for current fold
 	G1_train <- progressed_PRAD[-G1_cv_sets[[fold]]]
@@ -162,13 +171,20 @@ for (fold in 1:nfolds) {
   G1_eval <- progressed_PRAD[G1_cv_sets[[fold]]]
 	G2_eval <- nonProgressed_PRAD[G2_cv_sets[[fold]]]
 	
-	model <- glm(progressed ~ as.numeric(years_to_birth) + pathology_T_stage + pathology_N_stage + radiation_therapy + histological_type + residual_tumor + as.numeric(number_of_lymph_nodes), data = clinical_data_PRAD[c(G1_train, G2_train),], family = "binomial", maxit=100,  na.action = "na.exclude") # no differential race or ethnicity was observed in the cohort
+	model <- glm(progressed ~ years_to_birth + pathology_T_stage + pathology_N_stage + radiation_therapy + histological_type + residual_tumor + number_of_lymph_nodes, data = clinical_data_PRAD[c(G1_train, G2_train),], family = "binomial", maxit=100,  na.action = "na.exclude") # no differential race or ethnicity was observed in the cohort
 	
 	predictions[c(G1_eval, G2_eval)] <- predict_whileCheckingMissingFactors(model, newdata = clinical_data_PRAD[c(G1_eval, G2_eval),], type="response")
   #model <- fixNAcoefficients(model)
   #predictions[c(G1_eval, G2_eval)] <- predict(model, newdata = clinical_data_PRAD[c(G1_eval, G2_eval),], type="response")
+
+	model.matrix <- model.matrix(progressed ~ years_to_birth + pathology_T_stage + pathology_N_stage + radiation_therapy + histological_type + residual_tumor + number_of_lymph_nodes, data = clinical_data_PRAD[c(G1_train, G2_train),])
+	model.matrix.eval <- model.matrix(progressed ~ as.numeric(years_to_birth) + pathology_T_stage + pathology_N_stage + radiation_therapy + histological_type + residual_tumor + as.numeric(number_of_lymph_nodes), data = clinical_data_PRAD[c(G1_eval, G2_eval),])
+	y <- clinical_data_PRAD[which(rownames(model.matrix) %in% c(G1_train, G2_train)),"progressed"]
+	modelNet.cv <- cv.glmnet(model.matrix, y = y, family = "binomial", alpha=1)
+  modelNet <- glmnet(model.matrix, y = y, family = "binomial", alpha=1, lambda=modelNet.cv$lambda.1se)
+  predictions_glmNet[c(G1_eval, G2_eval)] <- predict.glmnet(modelNet, newx = model.matrix.eval, type="response")[,1]
 }
-auc(response=clinical_data_PRAD$progressed, predictor=predictions)
+c(pROC::auc(response=clinical_data_PRAD$progressed, predictor=predictions), pROC::auc(response=clinical_data_PRAD$progressed, predictor=predictions_glmNet))
 ```
 
 KIRC data
@@ -180,16 +196,17 @@ clinical_data_KIRC <- datasets[["KIRC"]]@Clinical[c(progressed_KIRC, nonProgress
 clinical_data_KIRC$progressed <- rownames(clinical_data_KIRC) %in% progressed_KIRC
 factors <- c("pathologic_stage", "pathology_T_stage", "pathology_N_stage", "pathology_M_stage", "gender", "radiation_therapy", "karnofsky_performance_score", "histological_type", "race", "ethnicity")
 for (i in 1:length(factors)) {
+  clinical_data_KIRC[is.na(clinical_data_KIRC[,factors[i]]),factors[i]] <- "unknown"
   clinical_data_KIRC[,factors[i]] <- factor(clinical_data_KIRC[,factors[i]])
 }
 
-nfolds <- 10
+nfolds <- 5
 # Use split to generate CV-sets
 set.seed(1) # Use the same sets accross genes
 G1_cv_sets <- 1:length(progressed_KIRC) %>% sample %>% split(1:nfolds)
 G2_cv_sets <- 1:length(nonProgressed_KIRC) %>% sample %>% split(1:nfolds)
 
-predictions <- NULL
+predictions_glmNet <- predictions <- NULL
 for (fold in 1:nfolds) {
   # subset the groups for current fold
 	G1_train <- progressed_KIRC[-G1_cv_sets[[fold]]]
@@ -202,19 +219,28 @@ for (fold in 1:nfolds) {
 	predictions[c(G1_eval, G2_eval)] <- predict_whileCheckingMissingFactors(model, newdata = clinical_data_KIRC[c(G1_eval, G2_eval),], type="response")
   #model <- fixNAcoefficients(model)
   #predictions[c(G1_eval, G2_eval)] <- predict(model, newdata = clinical_data_KIRC[c(G1_eval, G2_eval),], type="response")
+
+	model.matrix <- model.matrix(progressed ~ as.numeric(years_to_birth) + pathologic_stage + pathology_T_stage + pathology_N_stage + pathology_M_stage + gender + radiation_therapy + race + ethnicity, data = clinical_data_KIRC[c(G1_train, G2_train),])
+	model.matrix.eval <- model.matrix(progressed ~ as.numeric(years_to_birth) + pathologic_stage + pathology_T_stage + pathology_N_stage + pathology_M_stage + gender + radiation_therapy + race + ethnicity, data = clinical_data_KIRC[c(G1_eval, G2_eval),])
+	y <- clinical_data_KIRC[which(rownames(model.matrix) %in% c(G1_train, G2_train)),"progressed"]
+	modelNet.cv <- cv.glmnet(model.matrix, y = y, family = "binomial", alpha=0)
+  modelNet <- glmnet(model.matrix, y = y, family = "binomial", alpha=0, lambda=modelNet.cv$lambda.1se)
+  predictions_glmNet[c(G1_eval, G2_eval)] <- predict.glmnet(modelNet, newx = model.matrix.eval, type="response")[,1]
 }
-auc(response=clinical_data_KIRC$progressed, predictor=predictions)
+c(pROC::auc(response=clinical_data_KIRC$progressed, predictor=predictions), pROC::auc(response=clinical_data_KIRC$progressed, predictor=predictions_glmNet))
 ```
 
 LUSC data
 ```{r}
 require(pROC)
 require(dplyr)
+require(glmnet)
 
 clinical_data_LUSC <- datasets[["LUSC"]]@Clinical[c(progressed_LUSC, nonProgressed_LUSC),]
 clinical_data_LUSC$progressed <- rownames(clinical_data_LUSC) %in% progressed_LUSC
 factors <- c("pathologic_stage", "pathology_T_stage", "pathology_N_stage", "pathology_M_stage", "gender", "radiation_therapy", "karnofsky_performance_score", "histological_type", "residual_tumor", "race", "ethnicity")
 for (i in 1:length(factors)) {
+  clinical_data_LUSC[is.na(clinical_data_LUSC[,factors[i]]),factors[i]] <- "unknown"
   clinical_data_LUSC[,factors[i]] <- factor(clinical_data_LUSC[,factors[i]])
 }
 
@@ -224,7 +250,7 @@ set.seed(1) # Use the same sets accross genes
 G1_cv_sets <- 1:length(progressed_LUSC) %>% sample %>% split(1:nfolds)
 G2_cv_sets <- 1:length(nonProgressed_LUSC) %>% sample %>% split(1:nfolds)
 
-predictions <- NULL
+predictions_glmNet <- predictions <- NULL
 for (fold in 1:nfolds) {
   # subset the groups for current fold
 	G1_train <- progressed_LUSC[-G1_cv_sets[[fold]]]
@@ -237,8 +263,15 @@ for (fold in 1:nfolds) {
 	predictions[c(G1_eval, G2_eval)] <- predict_whileCheckingMissingFactors(model, newdata = clinical_data_LUSC[c(G1_eval, G2_eval),], type="response")
   #model <- fixNAcoefficients(model)
   #predictions[c(G1_eval, G2_eval)] <- predict(model, newdata = clinical_data_LUSC[c(G1_eval, G2_eval),], type="response")
+
+	model.matrix <- model.matrix(progressed ~ years_to_birth + pathologic_stage + pathology_T_stage + pathology_N_stage + pathology_M_stage + radiation_therapy + number_pack_years_smoked + residual_tumor + gender + race + ethnicity, data = clinical_data_LUSC[c(G1_train, G2_train),])
+	model.matrix.eval <- model.matrix(progressed ~ years_to_birth + pathologic_stage + pathology_T_stage + pathology_N_stage + pathology_M_stage + radiation_therapy + number_pack_years_smoked + residual_tumor + gender + race + ethnicity, data = clinical_data_LUSC[c(G1_eval, G2_eval),])
+	y <- clinical_data_LUSC[which(rownames(model.matrix) %in% c(G1_train, G2_train)),"progressed"]
+	modelNet.cv <- cv.glmnet(model.matrix, y = y, family = "binomial", alpha=0.5)
+  modelNet <- glmnet(model.matrix, y = y, family = "binomial", alpha=0.5, lambda=modelNet.cv$lambda.1se)
+  predictions_glmNet[c(G1_eval, G2_eval)] <- predict.glmnet(modelNet, newx = model.matrix.eval, type="response")[,1]
 }
-auc(response=clinical_data_LUSC$progressed, predictor=predictions)
+c(pROC::auc(response=clinical_data_LUSC$progressed, predictor=predictions), pROC::auc(response=clinical_data_LUSC$progressed, predictor=predictions_glmNet))
 ```
 
 Additional sensitivity analysis of BRCA data:
@@ -386,6 +419,10 @@ for (nfold in 1:length(nfolds)) {
     }
     
   	model <- glm(progressed ~ as.numeric(years_to_birth) + pathologic_stage + pathology_T_stage + pathology_N_stage + pathology_M_stage + radiation_therapy + as.numeric(number_pack_years_smoked) + residual_tumor + gender + race, data = clinical_data_LUSC[c(G1_train, G2_train),], family = "binomial", maxit=100, na.action="na.exclude") # ethnicity and karnofsky variables were unreliable in estimation
+  	
+  	y <- clinical_data_LUSC[which(rownames(model.matrix) %in% c(G1_train, G2_train)),"progressed"]
+  	model.matrix <- model.matrix(progressed ~ as.numeric(years_to_birth) + pathologic_stage + pathology_T_stage + pathology_N_stage + pathology_M_stage + radiation_therapy + as.numeric(number_pack_years_smoked) + residual_tumor + gender + race, data = clinical_data_LUSC[c(G1_train, G2_train),])
+  	modelNet <- glmnet(model.matrix, y = y, family = "binomial")
   	
   	predictions[c(G1_eval, G2_eval)] <- predict_whileCheckingMissingFactors(model, newdata = clinical_data_LUSC[c(G1_eval, G2_eval),], type="response")
   	#model <- fixNAcoefficients(model)

@@ -1,0 +1,71 @@
+---
+title: "Partitioning the clinical data"
+output: html_notebook
+---
+
+
+```{r}
+tmp <- clinical_data_LUSC[,c("years_to_birth", "pathologic_stage", "pathology_T_stage", "pathology_N_stage", "pathology_M_stage", "radiation_therapy", "number_pack_years_smoked", "residual_tumor", "gender", "race", "ethnicity")]
+tmp[, c("years_to_birth", "number_pack_years_smoked")] <- cbind(as.numeric(tmp[, "years_to_birth"]), as.numeric(tmp[, "number_pack_years_smoked"]))
+require(caret)
+partition <- createFolds(tmp, k=3)
+summary(tmp)
+```
+
+```{r}
+require(caret)
+# try several partitionings:
+for (x in 2:10) {print(createFolds(tmp, k=x)); cat("\n\n")}
+```
+Combine several levels to allow for a 10-fold X-val
+```{r}
+tmp <- clinical_data_LUSC[,c("years_to_birth", "pathologic_stage", "pathology_T_stage", "pathology_N_stage", "pathology_M_stage", "radiation_therapy", "number_pack_years_smoked", "residual_tumor", "gender", "race", "ethnicity", "progressed")]
+tmp[, c("years_to_birth", "number_pack_years_smoked")] <- cbind(as.numeric(tmp[, "years_to_birth"]), as.numeric(tmp[, "number_pack_years_smoked"]))
+
+# 1st try with the pathologic stages:
+tmp$pathologic_stage_reduced <- tmp$pathologic_stage
+levels(tmp$pathologic_stage_reduced) <- c("stage i ia", "stage i ia", "stage ib", "stage iia", "stage iib", "stage iiia iiib iv", "stage iiia iiib iv", "stage iiia iiib iv")
+tmp$pathology_M_stage_reduced <- tmp$pathology_M_stage
+levels(tmp$pathology_M_stage_reduced) <- c("m0", "m1", "m1", "mx")
+tmp$number_pack_years_smoked[is.na(tmp$number_pack_years_smoked)] <- mean(tmp$number_pack_years_smoked, na.rm=TRUE)
+tmp$pathologic_stage <- NULL
+tmp$pathology_M_stage <- NULL
+partition <- createFolds(tmp, k=2)
+```
+
+LUSC data
+```{r}
+require(pROC)
+require(dplyr)
+require(glmnet)
+
+nfolds <- 10
+# Use split to generate CV-sets
+set.seed(1) # Use the same sets accross genes
+G1_cv_sets <- 1:length(progressed_LUSC) %>% sample %>% split(1:nfolds)
+G2_cv_sets <- 1:length(nonProgressed_LUSC) %>% sample %>% split(1:nfolds)
+
+predictions_glmNet <- predictions <- NULL
+for (fold in 1:nfolds) {
+  # subset the groups for current fold
+	G1_train <- progressed_LUSC[-G1_cv_sets[[fold]]]
+	G2_train <- nonProgressed_LUSC[-G2_cv_sets[[fold]]]	
+  G1_eval <- progressed_LUSC[G1_cv_sets[[fold]]]
+	G2_eval <- nonProgressed_LUSC[G2_cv_sets[[fold]]]
+	
+	model <- glm(progressed ~ as.numeric(years_to_birth) + pathologic_stage_reduced + pathology_T_stage + pathology_N_stage + pathology_M_stage_reduced + radiation_therapy + as.numeric(number_pack_years_smoked) + residual_tumor + gender + race, data = tmp[c(G1_train, G2_train),], family = "binomial", maxit=100, na.action = "na.exclude") # ethnicity and karnofsky variables were unreliable in estimation
+	
+	predictions[c(G1_eval, G2_eval)] <- predict_whileCheckingMissingFactors(model, newdata = tmp[c(G1_eval, G2_eval),], type="response")
+  #model <- fixNAcoefficients(model)
+  #predictions[c(G1_eval, G2_eval)] <- predict(model, newdata = tmp[c(G1_eval, G2_eval),], type="response")
+
+	model.matrix <- model.matrix(progressed ~ years_to_birth + pathologic_stage_reduced + pathology_T_stage + pathology_N_stage + pathology_M_stage_reduced + radiation_therapy + number_pack_years_smoked + residual_tumor + gender + race + ethnicity, data = tmp[c(G1_train, G2_train),])
+	model.matrix.eval <- model.matrix(progressed ~ years_to_birth + pathologic_stage_reduced + pathology_T_stage + pathology_N_stage + pathology_M_stage_reduced + radiation_therapy + number_pack_years_smoked + residual_tumor + gender + race + ethnicity, data = tmp[c(G1_eval, G2_eval),])
+	y <- tmp[which(rownames(model.matrix) %in% c(G1_train, G2_train)),"progressed"]
+	modelNet.cv <- cv.glmnet(model.matrix, y = y, family = "binomial", alpha=0.5)
+  modelNet <- glmnet(model.matrix, y = y, family = "binomial", alpha=0.5, lambda=modelNet.cv$lambda.1se)
+  predictions_glmNet[c(G1_eval, G2_eval)] <- predict.glmnet(modelNet, newx = model.matrix.eval, type="response")[,1]
+}
+c(pROC::auc(response=tmp$progressed, predictor=predictions), 
+  pROC::auc(response=tmp$progressed, predictor=predictions_glmNet))
+```
