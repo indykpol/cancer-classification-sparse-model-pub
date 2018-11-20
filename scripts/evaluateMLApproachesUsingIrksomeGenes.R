@@ -10,7 +10,7 @@ option_list <- list(
   make_option(c("-p","--parallel"), type='integer', help = 'if desired, provide a number of cores to parallelize the execution of the analysis', default = 1)
 )
 opts <- opt <- parse_args(OptionParser(option_list = option_list))
-#opt <- list(data = "data/RData/data_LUSC_all_lazyReady.R_CACHE", results="data/latestResults/LUSC_Ts_vs_ANs_4foldCV_withFixedPrior.RData",  name = "MLs_Irksome_LUSC_TvsAN_4foldCV", folds = 4, n_top = 100, parallel=16)
+#opts <- opt <- list(data = "data/RData/data_LUSC_all_lazyReady.R_CACHE", results="data/latestResults/LUSC_Ts_vs_ANs_4foldCV_withFixedPrior.RData",  name = "MLs_Irksome_LUSC_TvsAN_4foldCV", folds = 4, n_top = 100, parallel=16)
 
 library(caret)
 library(pROC)

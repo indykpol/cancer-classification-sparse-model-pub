@@ -62,10 +62,11 @@ for (fold in 1:nfolds) {
 	model.matrix <- model.matrix(progressed ~ years_to_birth + pathologic_stage_reduced + pathology_T_stage + pathology_N_stage + pathology_M_stage_reduced + radiation_therapy + number_pack_years_smoked + residual_tumor + gender + race + ethnicity, data = tmp[c(G1_train, G2_train),])
 	model.matrix.eval <- model.matrix(progressed ~ years_to_birth + pathologic_stage_reduced + pathology_T_stage + pathology_N_stage + pathology_M_stage_reduced + radiation_therapy + number_pack_years_smoked + residual_tumor + gender + race + ethnicity, data = tmp[c(G1_eval, G2_eval),])
 	y <- tmp[which(rownames(model.matrix) %in% c(G1_train, G2_train)),"progressed"]
-	modelNet.cv <- cv.glmnet(model.matrix, y = y, family = "binomial", alpha=0.5)
-  modelNet <- glmnet(model.matrix, y = y, family = "binomial", alpha=0.5, lambda=modelNet.cv$lambda.1se)
-  predictions_glmNet[c(G1_eval, G2_eval)] <- predict.glmnet(modelNet, newx = model.matrix.eval, type="response")[,1]
+	modelNet.cv <- cv.glmnet(model.matrix, y = y, family = "binomial", alpha=1)
+  modelNet <- glmnet(model.matrix, y = y, family = "binomial", alpha=1, lambda=modelNet.cv$lambda.1se)
+  predictions_glmNet[c(G1_eval, G2_eval)] <- predict.glmnet(modelNet, newx = model.matrix.eval, type="link")[,1]
 }
-c(pROC::auc(response=tmp$progressed, predictor=predictions), 
-  pROC::auc(response=tmp$progressed, predictor=predictions_glmNet))
+LUSC_clinicalData_glmNet_classProbs <- predictions_glmNet
+c(pROC::auc(response=tmp$progressed, predictor=predictions[c(progressed_LUSC, nonProgressed_LUSC)]), 
+  pROC::auc(response=tmp$progressed, predictor=predictions_glmNet[c(progressed_LUSC, nonProgressed_LUSC)]))
 ```

@@ -39,3 +39,4 @@ gwf_log
 # Rstudio project files
 .Rproj.user
 *.Rproj
+*.RData

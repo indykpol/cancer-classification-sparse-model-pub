@@ -1,0 +1,189 @@
+---
+title: "Combine PINCAGE class probs with clinical data class probs"
+output: html_notebook
+---
+A function required to calculate the denominator in class posterior probabilities computation 
+```{r}
+sum_asLogs <- function (x) {
+    if (x[1] >= x[2]) x[1] + log(1+ exp(x[2]-x[1])) else x[2] + log(1+ exp(x[1]-x[2]))
+}
+```
+
+
+```{r}
+require(dplyr)
+
+load("D:/Git/cancer-classification-sparse-model-pub/data/PINCAGE_out_LUSC_progressing.RData")
+load("D:/Git/cancer-classification-sparse-model-pub/data/progressionIDs052017_LUSC_withData.RData")
+
+# Make Z scores matrix
+Zs <- matrix(nrow=length(out), ncol=length(out[[1]][[1]]))
+for (i in 1:length(out)) Zs[i,] <- unlist(out[[i]][[1]])
+if (is.na(opt$ranks)) ranks <- apply(-Zs, 2, rank) else load(opt$ranks)
+# Use split to recreate the CV-sets
+set.seed(1) # Use the same sets accross genes
+G1_cv_sets <- 1:opt$g1_length %>% sample %>% split(1:ncol(Zs))
+G2_cv_sets <- (opt$g1_length+1):(opt$g1_length+opt$g2_length) %>% sample %>% split(1:ncol(Zs))
+
+# setup out table and likelihood combination table
+auc_top <- NULL
+auc_top_combined <- NULL
+Likelihoods_combined <- matrix(nrow=opt$g1_length+opt$g2_length, ncol=2, data=0)
+for (i in 1:10) {
+	Likelihoods_single <- matrix(nrow=opt$g1_length+opt$g2_length, ncol=2, data=0)
+	for (j in 1:ncol(Zs)) {
+		Likelihoods_single[c(unlist(G1_cv_sets[[j]]), unlist(G2_cv_sets[[j]])),] <- as.matrix(out[[which(ranks[,j]==i)]][[2]][c(unlist(G1_cv_sets[[j]]), unlist(G2_cv_sets[[j]])), 2:3])
+	}
+	Likelihoods_combined <- Likelihoods_combined+Likelihoods_single
+	
+	response <-  c(rep(1, opt$g1_length), rep(0, opt$g2_length))
+	auc_top[[i]] <- tryCatch(auc(response = response, predictor = Likelihoods_single[,1]/apply(Likelihoods_single, 1, sum_asLogs))[1], error = function(e) return(NA))
+  auc_top_combined[[i]] <- tryCatch(auc(response = response, predictor = Likelihoods_combined[,1]/apply(Likelihoods_combined, 1, sum_asLogs))[1], error = function(e) return(NA))
+}
+
+scores_tmp <- Likelihoods_combined[,1] - Likelihoods_combined[,2]
+names(scores_tmp) <- c(progressed, nonProgressed)
+tmp <- cbind(scores_tmp, LUSC_clinicalData_glmNet_classProbs[names(scores_tmp)])
+tmp <- cbind(tmp, apply(tmp, 1, sum))
+LUSC_PINCAGE_top10_table <- tmp
+
+LUSC_PINCAGE_top10ANDclinical <- roc(response = response, predictor = LUSC_PINCAGE_top10_table[,3])
+LUSC_PINCAGE_top10 <- roc(response = response, predictor = LUSC_PINCAGE_top10_table[,1])
+
+roc.test(LUSC_PINCAGE_top10, LUSC_PINCAGE_top10ANDclinical, method = "delong")
+```
+
+```{r}
+require(dplyr)
+
+load("D:/Git/cancer-classification-sparse-model-pub/data/PINCAGE_out_KIRC_progressing.RData")
+load("D:/Git/cancer-classification-sparse-model-pub/data/progressionIDs052017_KIRC_withData.RData")
+
+# Make Z scores matrix
+Zs <- matrix(nrow=length(out), ncol=length(out[[1]][[1]]))
+for (i in 1:length(out)) Zs[i,] <- unlist(out[[i]][[1]])
+if (is.na(opt$ranks)) ranks <- apply(-Zs, 2, rank) else load(opt$ranks)
+# Use split to recreate the CV-sets
+set.seed(1) # Use the same sets accross genes
+G1_cv_sets <- 1:opt$g1_length %>% sample %>% split(1:ncol(Zs))
+G2_cv_sets <- (opt$g1_length+1):(opt$g1_length+opt$g2_length) %>% sample %>% split(1:ncol(Zs))
+
+# setup out table and likelihood combination table
+auc_top <- NULL
+auc_top_combined <- NULL
+Likelihoods_combined <- matrix(nrow=opt$g1_length+opt$g2_length, ncol=2, data=0)
+for (i in 1:7) {
+	Likelihoods_single <- matrix(nrow=opt$g1_length+opt$g2_length, ncol=2, data=0)
+	for (j in 1:ncol(Zs)) {
+		Likelihoods_single[c(unlist(G1_cv_sets[[j]]), unlist(G2_cv_sets[[j]])),] <- as.matrix(out[[which(ranks[,j]==i)]][[2]][c(unlist(G1_cv_sets[[j]]), unlist(G2_cv_sets[[j]])), 2:3])
+	}
+	Likelihoods_combined <- Likelihoods_combined+Likelihoods_single
+	
+	response <-  c(rep(1, opt$g1_length), rep(0, opt$g2_length))
+	auc_top[[i]] <- tryCatch(auc(response = response, predictor = Likelihoods_single[,1]/apply(Likelihoods_single, 1, sum_asLogs))[1], error = function(e) return(NA))
+  auc_top_combined[[i]] <- tryCatch(auc(response = response, predictor = Likelihoods_combined[,1]/apply(Likelihoods_combined, 1, sum_asLogs))[1], error = function(e) return(NA))
+}
+
+scores_tmp <- Likelihoods_combined[,1] - Likelihoods_combined[,2]
+names(scores_tmp) <- c(progressed, nonProgressed)
+tmp <- cbind(scores_tmp, KIRC_clinicalData_glmNet_classProbs[names(scores_tmp)])
+tmp <- cbind(tmp, apply(tmp, 1, sum))
+KIRC_PINCAGE_top7_table <- tmp
+
+KIRC_PINCAGE_top7ANDclinical <- roc(response = response, predictor = KIRC_PINCAGE_top7_table[,3])
+KIRC_PINCAGE_top7 <- roc(response = response, predictor = KIRC_PINCAGE_top7_table[,1])
+
+roc.test(KIRC_PINCAGE_top7, KIRC_PINCAGE_top7ANDclinical, method = "delong")
+```
+
+```{r}
+require(dplyr)
+
+load("D:/Git/cancer-classification-sparse-model-pub/data/PINCAGE_out_BRCA_progressing.RData")
+load("D:/Git/cancer-classification-sparse-model-pub/data/progressionIDs052017_BRCA_withData.RData")
+
+# Make Z scores matrix
+Zs <- matrix(nrow=length(out), ncol=length(out[[1]][[1]]))
+for (i in 1:length(out)) Zs[i,] <- unlist(out[[i]][[1]])
+if (is.na(opt$ranks)) ranks <- apply(-Zs, 2, rank) else load(opt$ranks)
+# Use split to recreate the CV-sets
+set.seed(1) # Use the same sets accross genes
+G1_cv_sets <- 1:opt$g1_length %>% sample %>% split(1:ncol(Zs))
+G2_cv_sets <- (opt$g1_length+1):(opt$g1_length+opt$g2_length) %>% sample %>% split(1:ncol(Zs))
+
+# setup out table and likelihood combination table
+auc_top <- NULL
+auc_top_combined <- NULL
+Likelihoods_combined <- matrix(nrow=opt$g1_length+opt$g2_length, ncol=2, data=0)
+for (i in 1:5) {
+	Likelihoods_single <- matrix(nrow=opt$g1_length+opt$g2_length, ncol=2, data=0)
+	for (j in 1:ncol(Zs)) {
+		Likelihoods_single[c(unlist(G1_cv_sets[[j]]), unlist(G2_cv_sets[[j]])),] <- as.matrix(out[[which(ranks[,j]==i)]][[2]][c(unlist(G1_cv_sets[[j]]), unlist(G2_cv_sets[[j]])), 2:3])
+	}
+	Likelihoods_combined <- Likelihoods_combined+Likelihoods_single
+	
+	response <-  c(rep(1, opt$g1_length), rep(0, opt$g2_length))
+	auc_top[[i]] <- tryCatch(auc(response = response, predictor = Likelihoods_single[,1]/apply(Likelihoods_single, 1, sum_asLogs))[1], error = function(e) return(NA))
+  auc_top_combined[[i]] <- tryCatch(auc(response = response, predictor = Likelihoods_combined[,1]/apply(Likelihoods_combined, 1, sum_asLogs))[1], error = function(e) return(NA))
+}
+
+scores_tmp <- Likelihoods_combined[,1] - Likelihoods_combined[,2]
+names(scores_tmp) <- c(progressed, nonProgressed)
+tmp <- cbind(scores_tmp, BRCA_clinicalData_glmNet_classProbs[names(scores_tmp)])
+tmp <- cbind(tmp, apply(tmp, 1, sum))
+BRCA_PINCAGE_top5_table <- tmp
+
+BRCA_PINCAGE_top5ANDclinical <- roc(response = response, predictor = BRCA_PINCAGE_top5_table[,3])
+BRCA_PINCAGE_top5 <- roc(response = response, predictor = BRCA_PINCAGE_top5_table[,1])
+
+roc.test(BRCA_PINCAGE_top5, BRCA_PINCAGE_top5ANDclinical, method = "delong")
+```
+
+```{r}
+require(dplyr)
+
+load("D:/Git/cancer-classification-sparse-model-pub/data/PINCAGE_out_PRAD_progressing.RData")
+load("D:/Git/cancer-classification-sparse-model-pub/data/progressionIDs052017_PRAD_withData.RData")
+
+# Make Z scores matrix
+Zs <- matrix(nrow=length(out), ncol=length(out[[1]][[1]]))
+for (i in 1:length(out)) Zs[i,] <- unlist(out[[i]][[1]])
+if (is.na(opt$ranks)) ranks <- apply(-Zs, 2, rank) else load(opt$ranks)
+# Use split to recreate the CV-sets
+set.seed(1) # Use the same sets accross genes
+G1_cv_sets <- 1:opt$g1_length %>% sample %>% split(1:ncol(Zs))
+G2_cv_sets <- (opt$g1_length+1):(opt$g1_length+opt$g2_length) %>% sample %>% split(1:ncol(Zs))
+
+# setup out table and likelihood combination table
+auc_top <- NULL
+auc_top_combined <- NULL
+Likelihoods_combined <- matrix(nrow=opt$g1_length+opt$g2_length, ncol=2, data=0)
+for (i in 1:10) {
+	Likelihoods_single <- matrix(nrow=opt$g1_length+opt$g2_length, ncol=2, data=0)
+	for (j in 1:ncol(Zs)) {
+		Likelihoods_single[c(unlist(G1_cv_sets[[j]]), unlist(G2_cv_sets[[j]])),] <- as.matrix(out[[which(ranks[,j]==i)]][[2]][c(unlist(G1_cv_sets[[j]]), unlist(G2_cv_sets[[j]])), 2:3])
+	}
+	Likelihoods_combined <- Likelihoods_combined+Likelihoods_single
+	
+	response <-  c(rep(1, opt$g1_length), rep(0, opt$g2_length))
+	auc_top[[i]] <- tryCatch(auc(response = response, predictor = Likelihoods_single[,1]/apply(Likelihoods_single, 1, sum_asLogs))[1], error = function(e) return(NA))
+  auc_top_combined[[i]] <- tryCatch(auc(response = response, predictor = Likelihoods_combined[,1]/apply(Likelihoods_combined, 1, sum_asLogs))[1], error = function(e) return(NA))
+}
+
+scores_tmp <- Likelihoods_combined[,1] - Likelihoods_combined[,2]
+names(scores_tmp) <- c(progressed, nonProgressed)
+tmp <- cbind(scores_tmp, PRAD_clinicalData_glmNet_classProbs[names(scores_tmp)])
+tmp <- cbind(tmp, apply(tmp, 1, sum))
+PRAD_PINCAGE_top10_table <- tmp
+
+PRAD_PINCAGE_top10ANDclinical <- roc(response = response, predictor = PRAD_PINCAGE_top10_table[,3])
+PRAD_PINCAGE_top10 <- roc(response = response, predictor = PRAD_PINCAGE_top10_table[,1])
+
+roc.test(PRAD_PINCAGE_top10, PRAD_PINCAGE_top10ANDclinical, method = "delong")
+```
+
+
+Save the results of combinations:
+```{r}
+save(BRCA_PINCAGE_top5, BRCA_PINCAGE_top5ANDclinical, KIRC_PINCAGE_top7, KIRC_PINCAGE_top7ANDclinical, LUSC_PINCAGE_top10, LUSC_PINCAGE_top10ANDclinical, LUSC_PINCAGE_top11, LUSC_PINCAGE_top11ANDclinical, PRAD_PINCAGE_top10, PRAD_PINCAGE_top10ANDclinical, PRAD_PINCAGE_top25, PRAD_PINCAGE_top25ANDclinical, file="AROCs_PINCAGE_withANDwithout_clinicalData.RData")
+```

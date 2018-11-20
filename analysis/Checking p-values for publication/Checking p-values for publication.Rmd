@@ -1,0 +1,33 @@
+---
+title: "Checking p-values for publication"
+output: html_notebook
+---
+
+
+
+```{r}
+library(IrksomeModels)
+load("D:/Git/cancer-classification-sparse-model-pub/data/LUSC_progressing_10foldCV_varianceLogic.RData")
+```
+
+```{r}
+require(IrksomeModels)
+log_pvals_expr <- apply(expr_logUQ[,samplenames], 1, function (x) testDE(x, samplenames %in% grouping[[1]], k_win = 2.5))
+```
+Variance logic p-value
+```{r}
+gene <- "PES1"
+gene_i <- which(names(log_pvals_expr) %in% gene)
+if (log_pvals_expr[[gene_i]][1] <= log(0.05)) {print("Unequal variance used"); format(exp(log_pvals_expr[[gene_i]][[2]]), scientific=TRUE, digits=3)} else format(exp(log_pvals_expr[[gene_i]][[3]]), scientific=TRUE, digits=3)
+```
+Test the differential methylation | expression
+```{r}
+require(IrksomeModels)
+data <- "../../../../../data/data_LUSC_progressing_lazyReady.R_CACHE/"
+#data <- "D:/data/data_LUSC_progressing_lazyReady.R_CACHE/"
+gene <- "PES1"
+meth <- read_methylation_matrix_gene(cache = data, genename = gene)
+result <- testDM(meth = meth[samplenames,], expr = expr_logUQ[gene, samplenames], grouping = samplenames %in% grouping[[1]], prior = prior_meth)
+format(lapply(result[1:2], exp), scientific=TRUE, digits=3)
+```
+

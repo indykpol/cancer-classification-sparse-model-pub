@@ -1,0 +1,170 @@
+---
+title: "Combine Irksome class probs with clinical data class probs"
+output: html_notebook
+---
+
+```{r}
+load("D:/Git/cancer-classification-sparse-model-pub/data/KIRC_progressing_10foldCV_varianceLogic.RData")
+predictor_top_combined <- rep(0, length(g1)+length(g2))
+for (i in 1:4) {
+	min_ranks <- apply(ranks, 2, min)
+	if (sum(min_ranks) > opt$folds) {
+		cur_rank <- NULL
+		for (j in 1:opt$folds) {
+			if (i < min_ranks[j]*2) which <- which(ranks[,j]==min_ranks[j]) else which <- which(ranks[,j]==i)
+			if (length(which) > 1) which <- which[which(rank(pvals_folds[[j]][which,"log_pvals_expr"]) == i)]
+			cur_rank[[j]] <- which
+		}
+		predictor <- unlist(lapply(1:opt$folds, FUN=function(x) joint_logliks_test_list[[x]][[cur_rank[x]]]))
+	} else predictor <- unlist(lapply(1:opt$folds, FUN=function(x) joint_logliks_test_list[[x]][[which(ranks[,x]==i)]]))
+  predictor_top_combined <- predictor_top_combined + predictor
+}
+
+Ts <- names(predictor)
+tmp <- cbind(predictor_top_combined, KIRC_clinicalData_glmNet_classProbs[Ts])
+KIRC_irksome_top4_table <- cbind(tmp, apply(tmp, 1, sum))
+KIRC_response <- unlist(lapply(1:opt$folds, FUN=function(x) c(rep(1, length(g1_cv_sets[[x]])), rep(0, length(g2_cv_sets[[x]])))))
+
+KIRC_irksome_top4ANDclinical <- roc(response = KIRC_response, predictor = KIRC_irksome_top4_table[,3])
+KIRC_irksome_top4 <- roc(response = KIRC_response, predictor = KIRC_irksome_top4_table[,1])
+KIRC_clinical <- roc(response = KIRC_response, predictor = KIRC_irksome_top4_table[,2])
+
+roc.test(KIRC_irksome_top4, KIRC_irksome_top4ANDclinical, method = "delong")
+```
+```{r}
+load("D:/Git/cancer-classification-sparse-model-pub/data/LUSC_progressing_10foldCV_varianceLogic.RData")
+predictor_top_combined <- rep(0, length(g1)+length(g2))
+for (i in 1:10) {
+	min_ranks <- apply(ranks, 2, min)
+	if (sum(min_ranks) > opt$folds) {
+		cur_rank <- NULL
+		for (j in 1:opt$folds) {
+			if (i < min_ranks[j]*2) which <- which(ranks[,j]==min_ranks[j]) else which <- which(ranks[,j]==i)
+			if (length(which) > 1) which <- which[which(rank(pvals_folds[[j]][which,"log_pvals_expr"]) == i)]
+			cur_rank[[j]] <- which
+		}
+		predictor <- unlist(lapply(1:opt$folds, FUN=function(x) joint_logliks_test_list[[x]][[cur_rank[x]]]))
+	} else predictor <- unlist(lapply(1:opt$folds, FUN=function(x) joint_logliks_test_list[[x]][[which(ranks[,x]==i)]]))
+  predictor_top_combined <- predictor_top_combined + predictor
+}
+
+Ts <- names(predictor)
+tmp <- cbind(predictor_top_combined, LUSC_clinicalData_glmNet_classProbs[Ts])
+LUSC_irksome_top10_table <- cbind(tmp, apply(tmp, 1, sum))
+LUSC_response <- unlist(lapply(1:opt$folds, FUN=function(x) c(rep(1, length(g1_cv_sets[[x]])), rep(0, length(g2_cv_sets[[x]])))))
+
+LUSC_irksome_top10ANDclinical <- roc(response = LUSC_response, predictor = LUSC_irksome_top10_table[,3])
+LUSC_irksome_top10 <- roc(response = LUSC_response, predictor = LUSC_irksome_top10_table[,1])
+LUSC_clinical <- roc(response = LUSC_response, predictor = LUSC_irksome_top10_table[,2])
+
+roc.test(LUSC_irksome_top10, LUSC_irksome_top10ANDclinical, method = "delong")
+```
+```{r}
+load("D:/Git/cancer-classification-sparse-model-pub/data/PRAD_progressing_10foldCV_varianceLogic.RData")
+predictor_top_combined <- rep(0, length(g1)+length(g2))
+for (i in 1:1) {
+	min_ranks <- apply(ranks, 2, min)
+	if (sum(min_ranks) > opt$folds) {
+		cur_rank <- NULL
+		for (j in 1:opt$folds) {
+			if (i < min_ranks[j]*2) which <- which(ranks[,j]==min_ranks[j]) else which <- which(ranks[,j]==i)
+			if (length(which) > 1) which <- which[which(rank(pvals_folds[[j]][which,"log_pvals_expr"]) == i)]
+			cur_rank[[j]] <- which
+		}
+		predictor <- unlist(lapply(1:opt$folds, FUN=function(x) joint_logliks_test_list[[x]][[cur_rank[x]]]))
+	} else predictor <- unlist(lapply(1:opt$folds, FUN=function(x) joint_logliks_test_list[[x]][[which(ranks[,x]==i)]]))
+  predictor_top_combined <- predictor_top_combined + predictor
+}
+
+Ts <- names(predictor)
+tmp <- cbind(predictor_top_combined, PRAD_clinicalData_glmNet_classProbs[Ts])
+PRAD_irksome_top1_table <- cbind(tmp, apply(tmp, 1, sum))
+PRAD_response <- unlist(lapply(1:opt$folds, FUN=function(x) c(rep(1, length(g1_cv_sets[[x]])), rep(0, length(g2_cv_sets[[x]])))))
+
+PRAD_irksome_top1ANDclinical <- roc(response = PRAD_response, predictor = PRAD_irksome_top1_table[,3])
+PRAD_irksome_top1 <- roc(response = PRAD_response, predictor = PRAD_irksome_top1_table[,1])
+PRAD_clinical <- roc(response = PRAD_response, predictor = PRAD_irksome_top1_table[,2])
+
+roc.test(PRAD_irksome_top1, PRAD_irksome_top1ANDclinical, method = "delong")
+```
+```{r}
+load("D:/Git/cancer-classification-sparse-model-pub/data/BRCA_progressing_10foldCV_varianceLogic.RData")
+predictor_top_combined <- rep(0, length(g1)+length(g2))
+for (i in 1:10) {
+	min_ranks <- apply(ranks, 2, min)
+	if (sum(min_ranks) > opt$folds) {
+		cur_rank <- NULL
+		for (j in 1:opt$folds) {
+			if (i < min_ranks[j]*2) which <- which(ranks[,j]==min_ranks[j]) else which <- which(ranks[,j]==i)
+			if (length(which) > 1) which <- which[which(rank(pvals_folds[[j]][which,"log_pvals_expr"]) == i)]
+			cur_rank[[j]] <- which
+		}
+		predictor <- unlist(lapply(1:opt$folds, FUN=function(x) joint_logliks_test_list[[x]][[cur_rank[x]]]))
+	} else predictor <- unlist(lapply(1:opt$folds, FUN=function(x) joint_logliks_test_list[[x]][[which(ranks[,x]==i)]]))
+  predictor_top_combined <- predictor_top_combined + predictor
+}
+
+Ts <- names(predictor)
+tmp <- cbind(predictor_top_combined, BRCA_clinicalData_glmNet_classProbs[Ts])
+BRCA_irksome_top1_table <- cbind(tmp, apply(tmp, 1, sum))
+BRCA_response <- unlist(lapply(1:opt$folds, FUN=function(x) c(rep(1, length(g1_cv_sets[[x]])), rep(0, length(g2_cv_sets[[x]])))))
+
+BRCA_irksome_top10ANDclinical <- roc(response = BRCA_response, predictor = BRCA_irksome_top1_table[,3])
+BRCA_irksome_top10 <- roc(response = BRCA_response, predictor = BRCA_irksome_top1_table[,1])
+BRCA_clinical <- roc(response = BRCA_response, predictor = BRCA_irksome_top1_table[,2])
+
+roc.test(BRCA_irksome_top10, BRCA_irksome_top10ANDclinical, method = "delong")
+```
+
+Plot combination of RLR clinical data class probs with Irksome prbos
+```{r}
+require(dplyr)
+require(reshape2)
+require(ggplot2)
+require(pROC)
+colour_palette <- c("#56B4E9","#D55E00")
+
+tmp <- LUSC_irksome_top10_table
+colnames(tmp) <- c("Irksome_combined_classifier", "RLR_clinical_data_only_classifier", "Irksome_plus_Clinical_data")
+tmp <- as.data.frame(apply(tmp, c(1,2), FUN=function(x) exp(x)/(1+exp(x))))
+response <- factor(LUSC_response)
+levels(response) <- c("nonProgressed", "progressed")
+tmp$group <- response
+tmp_tall <- tmp %>% melt(measure.vars = c("Irksome_combined_classifier", "RLR_clinical_data_only_classifier", "Irksome_plus_Clinical_data"))
+tmp_tall$variable <- factor(tmp_tall$variable, levels=c("RLR_clinical_data_only_classifier", "Irksome_combined_classifier", "Irksome_plus_Clinical_data"))
+plot <- ggplot(tmp_tall, aes(x=value, colour=group)) + geom_density() + geom_rug(alpha=0.25) + xlab("Posterior probability of membership in the progressed group") + theme_bw() + theme(panel.grid.major = element_blank(), panel.grid.minor = element_blank(), legend.position="bottom") + scale_colour_manual(values=colour_palette) + xlim(c(0,1)) + ggtitle("KIRC - benefit of combining molecular evidence with clinical data") + facet_wrap(~variable, scales="free_y", labeller = function(variable, value) {
+	return(list("RLR_clinical_data_only_classifier" = "RLR using clinical data, AUC=0.538", "Irksome_combined_classifier" = "Irksome top4 ranks combined, AUC=0.575", "Irksome_combined_classifier" = "Irksome + clinical data, AUC=0.626")[value])
+})
+plot2 <- ggroc(list("Clinical data only"=KIRC_clinical, "Top 4 ranks combined by Irksome"=KIRC_irksome_top4, "Clinical data and top 4 ranks combined by Irksome"=KIRC_irksome_top4ANDclinical)) + theme_bw() + geom_abline(slope = 1, intercept = 1) + ggtitle("KIRC - benefit of combining molecular evidence with clinical data") + theme(panel.grid.major = element_blank(), panel.grid.minor = element_blank(), legend.position="bottom")
+pdf(file="KIRC_Irksome_andClinical_illustration.pdf", width = 10, height = 5); plot; plot2; dev.off()
+plot
+plot2
+```
+Second example using LUSC data
+```{r}
+require(dplyr)
+require(reshape2)
+require(ggplot2)
+colour_palette <- c("#56B4E9","#D55E00")
+
+tmp <- KIRC_irksome_top4_table
+colnames(tmp) <- c("Irksome_combined_classifier", "RLR_clinical_data_only_classifier", "Irksome_plus_Clinical_data")
+tmp <- as.data.frame(apply(tmp, c(1,2), FUN=function(x) exp(x)/(1+exp(x))))
+response <- factor(KIRC_response)
+levels(response) <- c("nonProgressed", "progressed")
+tmp$group <- response
+tmp_tall <- tmp %>% melt(measure.vars = c("Irksome_combined_classifier", "RLR_clinical_data_only_classifier", "Irksome_plus_Clinical_data"))
+tmp_tall$variable <- factor(tmp_tall$variable, levels=c("RLR_clinical_data_only_classifier", "Irksome_combined_classifier", "Irksome_plus_Clinical_data"))
+plot <- ggplot(tmp_tall, aes(x=value, colour=group)) + geom_density() + geom_rug(alpha=0.25) + xlab("Posterior probability of membership in the progressed group") + theme_bw() + theme(panel.grid.major = element_blank(), panel.grid.minor = element_blank(), legend.position="bottom") + scale_colour_manual(values=colour_palette) + xlim(c(0,1)) + ggtitle("LUSC - benefit of combining molecular evidence with clinical data") + facet_grid(. ~ variable, scales="free_x", labeller = function(variable, value) {
+	return(list("RLR_clinical_data_only_classifier" = "RLR using clinical data, AUC=0.582", "Irksome_combined_classifier" = "Irksome top4 ranks combined, AUC=0.656", "Irksome_combined_classifier" = "Irksome + clinical data, AUC=0.673")[value])
+})
+plot2 <- ggroc(list("Clinical data only"=LUSC_clinical, "Top 4 ranks combined by Irksome"=LUSC_irksome_top10, "Clinical data and top 4 ranks combined by Irksome"=LUSC_irksome_top10ANDclinical)) + theme_bw() + geom_abline(slope = 1, intercept = 1) + ggtitle("LUSC - benefit of combining molecular evidence with clinical data") + theme(panel.grid.major = element_blank(), panel.grid.minor = element_blank(), legend.position="bottom")
+pdf(file="LUSC_Irksome_andClinical_illustration.pdf", width = 10, height = 5); plot; plot2; dev.off()
+plot
+plot2
+```
+
+Save the results of combinations:
+```{r}
+save(BRCA_irksome_top10running, BRCA_irksome_top10runningANDclinical, BRCA_irksome_top34running, BRCA_irksome_top34runningANDclinical, PRAD_irksome_top1, PRAD_irksome_top1ANDclinical, KIRC_irksome_top4running, KIRC_irksome_top4runningANDclinical, KIRC_irksome_top96running, KIRC_irksome_top96runningANDclinical, LUSC_irksome_top10running, LUSC_irksome_top10runningANDclinical, LUSC_irksome_top32running, LUSC_irksome_top32runningANDclinical, file="ROCs_Irksome_withANDwithout_clinicalData.RData")
+```

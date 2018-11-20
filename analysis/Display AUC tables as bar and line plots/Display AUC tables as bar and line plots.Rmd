@@ -1,0 +1,122 @@
+---
+title: "Display AUC tables as bar and line plots"
+output: html_notebook
+---
+
+
+
+```{r}
+library(readr)
+library(ggplot2)
+library(reshape2)
+library(dplyr)
+
+AUCtable_PRAD_progression_10foldCV_varianceLogic <- read_delim("D:/Git/cancer-classification-sparse-model-pub/data/PRAD_progression_10foldCV_varianceLogic.txt", "\t", escape_double = FALSE, trim_ws = TRUE)
+
+plotter_PRAD_progression <- AUCtable_PRAD_progression_10foldCV_varianceLogic[c(1:20,21:100),] %>% melt(id.vars="Top_rank", measure.vars=c("EBADIMEX_combined", "PINCAGE_combined", "LR_combined", "BLR_combined", "RF_combined", "SVMlin_combined", "SVMpoly_combined"))
+plotter_PRAD_progression <- mutate(plotter_PRAD_progression, section=ifelse(Top_rank>21, "Top 21-100 running ranks combined", "Top 1-20 running ranks combined"))
+colnames(plotter_PRAD_progression)[2] <- "Method"
+
+plot <- ggplot(plotter_PRAD_progression, aes(x=Top_rank, y=value, colour=Method, lwd=Method, alpha=Method)) + geom_line() + facet_grid(. ~section, scales="free_x") + theme_bw() + ylab("AUC") + xlab("Top ranks combined") + ggtitle("PRAD progression 10-fold CV analysis") + scale_y_continuous(limits = c(0.42, 0.78)) + theme(panel.grid.major = element_blank(), panel.grid.minor = element_blank(), strip.background =element_rect(fill="white")) + scale_size_manual(values=c(2,2,1,1,1,1,1)) + scale_alpha_manual(values=c(0.75,0.75,0.5,0.5,0.5,0.5,0.5))
+plot
+
+# save the plot
+pdf(file="PRAD_rankCombinantions_acrossMethods.pdf", width = 10, height = 5); plot; dev.off()
+```
+
+```{r}
+AUCtable_BRCA_progression_10foldCV_varianceLogic <- read_delim("D:/Git/cancer-classification-sparse-model-pub/data/BRCA_progression_10foldCV_varianceLogic.txt", "\t", escape_double = FALSE, trim_ws = TRUE)
+
+plotter_BRCA_progression <- AUCtable_BRCA_progression_10foldCV_varianceLogic[c(1:20,21:100),] %>% melt(id.vars="Top_rank", measure.vars=c("EBADIMEX_combined", "PINCAGE_combined", "LR_combined", "BLR_combined", "RF_combined", "SVMlin_combined", "SVMpoly_combined"))
+plotter_BRCA_progression <- mutate(plotter_BRCA_progression, section=ifelse(Top_rank>21, "Top 21-100 running ranks combined", "Top 1-20 running ranks combined"))
+colnames(plotter_BRCA_progression)[2] <- "Method"
+
+plot <- ggplot(plotter_BRCA_progression, aes(x=Top_rank, y=value, colour=Method, lwd=Method, alpha=Method)) + geom_line() + facet_grid(. ~section, scales="free_x") + theme_bw() + ylab("AUC") + xlab("Top ranks combined") + ggtitle("BRCA progression 10-fold CV analysis") + scale_y_continuous(limits = c(0.42, 0.78)) + theme(panel.grid.major = element_blank(), panel.grid.minor = element_blank(), strip.background =element_rect(fill="white")) + scale_size_manual(values=c(2,2,1,1,1,1,1)) + scale_alpha_manual(values=c(0.75,0.75,0.5,0.5,0.5,0.5,0.5))
+plot
+
+# save the plot
+pdf(file="BRCA_rankCombinantions_acrossMethods.pdf", width = 10, height = 5); plot; dev.off()
+```
+```{r}
+AUCtable_LUSC_progression_10foldCV_varianceLogic <- read_delim("D:/Git/cancer-classification-sparse-model-pub/data/LUSC_progression_10foldCV_varianceLogic.txt", "\t", escape_double = FALSE, trim_ws = TRUE)
+
+plotter_LUSC_progression <- AUCtable_LUSC_progression_10foldCV_varianceLogic[c(1:20,21:100),] %>% melt(id.vars="Top_rank", measure.vars=c("EBADIMEX_combined", "PINCAGE_combined", "LR_combined", "BLR_combined", "RF_combined", "SVMlin_combined", "SVMpoly_combined"))
+plotter_LUSC_progression <- mutate(plotter_LUSC_progression, section=ifelse(Top_rank>21, "Top 21-100 running ranks combined", "Top 1-20 running ranks combined"))
+colnames(plotter_LUSC_progression)[2] <- "Method"
+
+plot <- ggplot(plotter_LUSC_progression, aes(x=Top_rank, y=value, colour=Method, lwd=Method, alpha=Method)) + geom_line() + facet_grid(. ~section, scales="free_x") + theme_bw() + ylab("AUC") + xlab("Top ranks combined") + ggtitle("LUSC progression 10-fold CV analysis") + scale_y_continuous(limits = c(0.42, 0.78)) + theme(panel.grid.major = element_blank(), panel.grid.minor = element_blank(), strip.background =element_rect(fill="white")) + scale_size_manual(values=c(2,2,1,1,1,1,1)) + scale_alpha_manual(values=c(0.75,0.75,0.5,0.5,0.5,0.5,0.5))
+plot
+
+# save the plot
+pdf(file="LUSC_rankCombinantions_acrossMethods.pdf", width = 10, height = 5); plot; dev.off()
+```
+
+```{r}
+AUCtable_KIRC_progression_10foldCV_varianceLogic <- read_delim("D:/Git/cancer-classification-sparse-model-pub/data/KIRC_progression_10foldCV_varianceLogic.txt", "\t", escape_double = FALSE, trim_ws = TRUE)
+
+plotter_KIRC_progression <- AUCtable_KIRC_progression_10foldCV_varianceLogic[c(1:20,21:100),] %>% melt(id.vars="Top_rank", measure.vars=c("EBADIMEX_combined", "PINCAGE_combined", "LR_combined", "BLR_combined", "RF_combined", "SVMlin_combined", "SVMpoly_combined"))
+plotter_KIRC_progression <- mutate(plotter_KIRC_progression, section=ifelse(Top_rank>21, "Top 21-100 running ranks combined", "Top 1-20 running ranks combined"))
+colnames(plotter_KIRC_progression)[2] <- "Method"
+
+plot <- ggplot(plotter_KIRC_progression, aes(x=Top_rank, y=value, colour=Method, lwd=Method, alpha=Method)) + geom_line() + facet_grid(. ~section, scales="free_x") + theme_bw() + ylab("AUC") + xlab("Top ranks combined") + ggtitle("KIRC progression 10-fold CV analysis") + scale_y_continuous(limits = c(0.42, 0.78)) + theme(panel.grid.major = element_blank(), panel.grid.minor = element_blank(), strip.background =element_rect(fill="white")) + scale_size_manual(values=c(2,2,1,1,1,1,1)) + scale_alpha_manual(values=c(0.75,0.75,0.5,0.5,0.5,0.5,0.5))
+plot
+
+# save the plot
+pdf(file="KIRC_rankCombinantions_acrossMethods.pdf", width = 10, height = 5); plot; dev.off()
+```
+
+```{r}
+AUCtable_PRAD_TvsAN_7foldCV_varianceLogic <- read_delim("D:/Git/cancer-classification-sparse-model-pub/data/PRAD_TvsAN_7foldCV_varianceLogic.txt", "\t", escape_double = FALSE, trim_ws = TRUE)
+
+plotter_PRAD_TvsAN <- AUCtable_PRAD_TvsAN_7foldCV_varianceLogic[c(1:20,21:100),] %>% melt(id.vars="Top_rank", measure.vars=c("EBADIMEX_combined", "PINCAGE_combined", "LR_combined", "BLR_combined", "RF_combined", "SVMlin_combined", "SVMpoly_combined"))
+plotter_PRAD_TvsAN <- mutate(plotter_PRAD_TvsAN, section=ifelse(Top_rank>21, "Top 21-100 running ranks combined", "Top 1-20 running ranks combined"))
+colnames(plotter_PRAD_TvsAN)[2] <- "Method"
+
+plot <- ggplot(plotter_PRAD_TvsAN, aes(x=Top_rank, y=value, colour=Method, lwd=Method, alpha=Method)) + geom_line() + facet_grid(. ~section, scales="free_x") + theme_bw() + ylab("AUC") + xlab("Top ranks combined") + ggtitle("PRAD Ts vs ANs 7-fold CV analysis") + scale_y_continuous(limits = c(0.856,1)) + theme(panel.grid.major = element_blank(), panel.grid.minor = element_blank(), strip.background =element_rect(fill="white")) + scale_size_manual(values=c(2,2,1,1,1,1,1)) + scale_alpha_manual(values=c(0.75,0.75,0.5,0.5,0.5,0.5,0.5))
+plot
+
+# save the plot
+pdf(file="PRAD_TvsAN_rankCombinantions_acrossMethods.pdf", width = 10, height = 5); plot; dev.off()
+```
+```{r}
+AUCtable_KIRC_TvsAN_6foldCV_varianceLogic <- read_delim("D:/Git/cancer-classification-sparse-model-pub/data/KIRC_TvsAN_6foldCV_varianceLogic.txt", "\t", escape_double = FALSE, trim_ws = TRUE)
+
+plotter_KIRC_TvsAN <- AUCtable_KIRC_TvsAN_6foldCV_varianceLogic[c(1:20,21:100),] %>% melt(id.vars="Top_rank", measure.vars=c("EBADIMEX_combined", "PINCAGE_combined", "LR_combined", "BLR_combined", "RF_combined", "SVMlin_combined", "SVMpoly_combined"))
+plotter_KIRC_TvsAN <- mutate(plotter_KIRC_TvsAN, section=ifelse(Top_rank>21, "Top 21-100 running ranks combined", "Top 1-20 running ranks combined"))
+colnames(plotter_KIRC_TvsAN)[2] <- "Method"
+
+plot <- ggplot(plotter_KIRC_TvsAN, aes(x=Top_rank, y=value, colour=Method, lwd=Method, alpha=Method)) + geom_line() + facet_grid(. ~section, scales="free_x") + theme_bw() + ylab("AUC") + xlab("Top ranks combined") + ggtitle("KIRC Ts vs ANs 6-fold CV analysis") + scale_y_continuous(limits = c(0.856,1)) + theme(panel.grid.major = element_blank(), panel.grid.minor = element_blank(), strip.background =element_rect(fill="white")) + scale_size_manual(values=c(2,2,1,1,1,1,1)) + scale_alpha_manual(values=c(0.75,0.75,0.5,0.5,0.5,0.5,0.5))
+plot
+
+# save the plot
+pdf(file="KIRC_TvsAN_rankCombinantions_acrossMethods.pdf", width = 10, height = 5); plot; dev.off()
+```
+
+```{r}
+AUCtable_LUSC_TvsAN_4foldCV_varianceLogic <- read_delim("D:/Git/cancer-classification-sparse-model-pub/data/LUSC_TvsAN_4foldCV_varianceLogic.txt", "\t", escape_double = FALSE, trim_ws = TRUE)
+
+plotter_LUSC_TvsAN <- AUCtable_LUSC_TvsAN_4foldCV_varianceLogic[c(1:20,21:100),] %>% melt(id.vars="Top_rank", measure.vars=c("EBADIMEX_combined", "PINCAGE_combined", "LR_combined", "BLR_combined", "RF_combined", "SVMlin_combined", "SVMpoly_combined"))
+plotter_LUSC_TvsAN <- mutate(plotter_LUSC_TvsAN, section=ifelse(Top_rank>21, "Top 21-100 running ranks combined", "Top 1-20 running ranks combined"))
+colnames(plotter_LUSC_TvsAN)[2] <- "Method"
+
+plot <- ggplot(plotter_LUSC_TvsAN, aes(x=Top_rank, y=value, colour=Method, lwd=Method, alpha=Method)) + geom_line() + facet_grid(. ~section, scales="free_x") + theme_bw() + ylab("AUC") + xlab("Top ranks combined") + ggtitle("LUSC Ts vs ANs 4-fold CV analysis") + scale_y_continuous(limits = c(0.856,1)) + theme(panel.grid.major = element_blank(), panel.grid.minor = element_blank(), strip.background =element_rect(fill="white")) + scale_size_manual(values=c(2,2,1,1,1,1,1)) + scale_alpha_manual(values=c(0.75,0.75,0.5,0.5,0.5,0.5,0.5))
+plot
+
+# save the plot
+pdf(file="LUSC_TvsAN_rankCombinantions_acrossMethods.pdf", width = 10, height = 5); plot; dev.off()
+```
+
+```{r}
+AUCtable_BRCA_TvsAN_10foldCV_varianceLogic <- read_delim("D:/Git/cancer-classification-sparse-model-pub/data/BRCA_TvsAN_10foldCV_varianceLogic.txt", "\t", escape_double = FALSE, trim_ws = TRUE)
+
+plotter_BRCA_TvsAN <- AUCtable_BRCA_TvsAN_10foldCV_varianceLogic[c(1:20,21:100),] %>% melt(id.vars="Top_rank", measure.vars=c("EBADIMEX_combined", "PINCAGE_combined", "LR_combined", "BLR_combined", "RF_combined", "SVMlin_combined", "SVMpoly_combined"))
+plotter_BRCA_TvsAN <- mutate(plotter_BRCA_TvsAN, section=ifelse(Top_rank>21, "Top 21-100 running ranks combined", "Top 1-20 running ranks combined"))
+colnames(plotter_BRCA_TvsAN)[2] <- "Method"
+
+plot <- ggplot(plotter_BRCA_TvsAN, aes(x=Top_rank, y=value, colour=Method, lwd=Method, alpha=Method)) + geom_line() + facet_grid(. ~section, scales="free_x") + theme_bw() + ylab("AUC") + xlab("Top ranks combined") + ggtitle("BRCA Ts vs ANs 10-fold CV analysis") + scale_y_continuous(limits = c(0.856,1)) + theme(panel.grid.major = element_blank(), panel.grid.minor = element_blank(), strip.background =element_rect(fill="white")) + scale_size_manual(values=c(2,2,1,1,1,1,1)) + scale_alpha_manual(values=c(0.75,0.75,0.5,0.5,0.5,0.5,0.5))
+plot
+
+# save the plot
+pdf(file="BRCA_TvsAN_rankCombinantions_acrossMethods.pdf", width = 10, height = 5); plot; dev.off()
+```
+

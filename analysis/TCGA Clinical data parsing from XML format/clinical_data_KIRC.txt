@@ -1,0 +1,319 @@
+years_to_birth	vital_status	days_to_death	days_to_last_followup	tumor_tissue_site	pathologic_stage	pathology_T_stage	pathology_N_stage	pathology_M_stage	gender	date_of_initial_pathologic_diagnosis	days_to_last_known_alive	radiation_therapy	karnofsky_performance_score	histological_type	number_pack_years_smoked	year_of_tobacco_smoking_onset	race	ethnicity	new_tumor_event_after_initial_treatment	days_to_new_tumor_event_after_initial_treatment	progression_status
+TCGA-B0-4821-01	68	Dead	1230	NA	kidney	stage iii	t3b	n0	m0	female	2002	NA	NA	NA	kidney clear cell renal carcinoma	NA	NA	asian	not hispanic or latino	NA	NA	NA
+TCGA-CJ-5681-01	44	Dead	552	NA	kidney	stage iv	t3a	nx	m1	female	2003	NA	NA	NA	kidney clear cell renal carcinoma	NA	NA	white	not hispanic or latino	NA	17	progressed
+TCGA-BP-4770-01	73	Dead	329	NA	kidney	stage iv	t4	n0	m0	female	2005	NA	NA	NA	kidney clear cell renal carcinoma	NA	NA	white	NA	NA	208	progressed
+TCGA-B0-4712-01	76	Dead	1337	NA	kidney	stage iv	t3a	nx	m1	male	2006	NA	NA	NA	kidney clear cell renal carcinoma	NA	NA	white	not hispanic or latino	NA	NA	NA
+TCGA-A3-3370-01	48	Alive	NA	776	kidney	stage i	t1b	n0	m0	female	2006	NA	no	NA	kidney clear cell renal carcinoma	NA	NA	white	not hispanic or latino	NO	NA	censored
+TCGA-CZ-5982-01	59	Alive	NA	2042	kidney	stage i	t1a	nx	m0	female	2005	NA	NA	100	kidney clear cell renal carcinoma	NA	NA	white	NA	NA	NA	non-progressed
+TCGA-EU-5907-01	81	Alive	NA	127	kidney	stage iii	t3a	nx	m0	male	2010	NA	NA	100	kidney clear cell renal carcinoma	NA	NA	white	not hispanic or latino	NA	NA	censored
+TCGA-CW-5590-01	51	Dead	1075	NA	kidney	stage iv	t3a	nx	m1	male	2004	NA	NA	NA	kidney clear cell renal carcinoma	NA	NA	white	not hispanic or latino	NA	672	progressed
+TCGA-CJ-4918-01	64	Dead	93	NA	kidney	stage iv	t3a	n0	m1	male	2005	NA	NA	NA	kidney clear cell renal carcinoma	NA	NA	white	not hispanic or latino	NA	33	progressed
+TCGA-BP-5173-01	75	Dead	62	NA	kidney	stage i	t1a	nx	m0	male	2004	NA	NA	NA	kidney clear cell renal carcinoma	NA	NA	white	NA	NA	NA	NA
+TCGA-B8-4153-01	74	Alive	NA	405	kidney	stage iii	t3a	nx	m0	male	2010	NA	NA	NA	kidney clear cell renal carcinoma	NA	NA	white	not hispanic or latino	NA	223	progressed
+TCGA-CZ-5468-01	84	Dead	59	59	kidney	stage iv	t3b	nx	m1	male	2007	45	NA	NA	kidney clear cell renal carcinoma	NA	NA	white	not hispanic or latino	NA	NA	censored
+TCGA-B0-5094-01	62	Dead	333	NA	kidney	stage iv	t3b	n0	m1	male	2008	NA	NA	NA	kidney clear cell renal carcinoma	NA	NA	white	not hispanic or latino	NA	75	progressed
+TCGA-B2-3924-01	73	Alive	NA	195	kidney	stage i	t1b	nx	m0	male	2010	NA	no	NA	kidney clear cell renal carcinoma	NA	NA	white	not hispanic or latino	NA	NA	censored
+TCGA-CJ-5678-01	62	Dead	574	NA	kidney	stage iv	t2b	n0	m1	male	2003	NA	NA	NA	kidney clear cell renal carcinoma	NA	NA	black or african american	not hispanic or latino	NA	399	progressed
+TCGA-BP-5201-01	63	Alive	NA	951	kidney	stage iv	t3b	n0	m1	male	2008	NA	NA	NA	kidney clear cell renal carcinoma	NA	NA	white	not hispanic or latino	NA	-19	censored
+TCGA-B8-A54G-01	50	Alive	NA	53	kidney	stage i	t1a	nx	mx	male	2012	NA	no	NA	kidney clear cell renal carcinoma	7	NA	black or african american	not hispanic or latino	NA	NA	censored
+TCGA-DV-A4W0-01	55	Alive	NA	2008	kidney	stage i	t1b	nx	mx	male	2008	NA	no	100	kidney clear cell renal carcinoma	33	1968	black or african american	not hispanic or latino	YES	2008	censored
+TCGA-B0-4810-01	47	Dead	478	NA	kidney	stage iii	t3a	n1	m0	male	2001	NA	NA	NA	kidney clear cell renal carcinoma	NA	NA	white	not hispanic or latino	NA	205	progressed
+TCGA-CZ-5985-01	58	Alive	NA	1629	kidney	stage ii	t2	n0	m0	male	2006	NA	NA	NA	kidney clear cell renal carcinoma	NA	NA	white	not hispanic or latino	NA	NA	non-progressed
+TCGA-BP-5177-01	46	Alive	NA	293	kidney	stage i	t1a	nx	m0	female	2004	NA	NA	NA	kidney clear cell renal carcinoma	NA	NA	white	NA	NA	NA	censored
+TCGA-CJ-5677-01	54	Dead	782	NA	kidney	stage iv	t3a	nx	m1	female	2004	NA	NA	NA	kidney clear cell renal carcinoma	NA	NA	white	not hispanic or latino	NA	288	progressed
+TCGA-A3-A8OW-01	37	Alive	NA	1	kidney	stage iii	t3a	nx	mx	male	2011	NA	no	NA	kidney clear cell renal carcinoma	10	2001	black or african american	not hispanic or latino	NO	NA	censored
+TCGA-B0-5692-01	66	Alive	NA	1487	kidney	stage iii	t3b	n0	m0	female	2004	NA	no	NA	kidney clear cell renal carcinoma	NA	NA	white	not hispanic or latino	NA	NA	censored
+TCGA-B0-5691-01	66	Alive	NA	2781	kidney	stage i	t1a	n0	m0	female	2002	NA	NA	NA	kidney clear cell renal carcinoma	NA	NA	white	not hispanic or latino	NA	3250	censored
+TCGA-B8-A54K-01	61	Alive	NA	18	kidney	stage i	t1a	nx	mx	male	2012	NA	no	NA	kidney clear cell renal carcinoma	NA	NA	black or african american	not hispanic or latino	NO	NA	censored
+TCGA-CJ-5686-01	59	Alive	NA	2038	kidney	stage i	t1b	nx	m0	female	2005	NA	NA	NA	kidney clear cell renal carcinoma	NA	NA	white	not hispanic or latino	NA	NA	non-progressed
+TCGA-CW-5584-01	74	Dead	164	NA	kidney	stage iii	t3b	n1	m0	male	2003	NA	NA	NA	kidney clear cell renal carcinoma	NA	NA	white	not hispanic or latino	NA	102	progressed
+TCGA-A3-A8OV-01	75	Alive	NA	0	kidney	stage i	t1a	nx	mx	male	2011	NA	no	NA	kidney clear cell renal carcinoma	65	1946	black or african american	not hispanic or latino	NO	NA	NA
+TCGA-CW-5591-01	56	Alive	NA	2271	kidney	stage iv	t3a	n0	m1	male	2004	NA	NA	NA	kidney clear cell renal carcinoma	NA	NA	white	not hispanic or latino	NA	NA	non-progressed
+TCGA-B0-4811-01	48	Dead	1417	NA	kidney	stage iii	t3a	n0	m0	male	2001	NA	NA	NA	kidney clear cell renal carcinoma	NA	NA	white	not hispanic or latino	NA	458	progressed
+TCGA-DV-A4VZ-01	53	Alive	NA	365	kidney	stage i	t1a	nx	mx	male	2007	NA	no	90	kidney clear cell renal carcinoma	NA	NA	black or african american	not hispanic or latino	NA	NA	censored
+TCGA-B0-5707-01	39	Alive	NA	2592	kidney	stage i	t1a	n0	m0	female	2004	NA	no	NA	kidney clear cell renal carcinoma	NA	NA	white	not hispanic or latino	NA	NA	non-progressed
+TCGA-BP-5191-01	79	Alive	NA	967	kidney	stage iii	t3a	n0	m0	male	2007	NA	NA	NA	kidney clear cell renal carcinoma	NA	NA	white	not hispanic or latino	NA	NA	censored
+TCGA-B0-4847-01	60	Dead	793	NA	kidney	stage iv	t3a	nx	m1	male	2004	NA	NA	NA	kidney clear cell renal carcinoma	NA	NA	white	not hispanic or latino	NA	NA	NA
+TCGA-B0-5710-01	57	Alive	NA	957	kidney	stage i	t1b	n0	m0	male	2008	NA	no	NA	kidney clear cell renal carcinoma	NA	NA	white	not hispanic or latino	NA	1447	progressed
+TCGA-BP-5182-01	56	Alive	NA	1165	kidney	stage i	t1a	n0	m0	male	2007	1172	NA	NA	kidney clear cell renal carcinoma	NA	NA	white	not hispanic or latino	NA	NA	censored
+TCGA-AK-3460-01	58	Alive	NA	951	kidney	stage i	t1a	nx	m0	male	2007	NA	no	NA	kidney clear cell renal carcinoma	NA	NA	white	not hispanic or latino	NA	NA	censored
+TCGA-B0-5709-01	62	Alive	NA	2358	kidney	stage iii	t3a	nx	m0	female	2003	NA	no	NA	kidney clear cell renal carcinoma	NA	NA	white	not hispanic or latino	NA	NA	non-progressed
+TCGA-B0-5116-01	52	Alive	NA	103	kidney	stage iii	t3b	n0	m0	male	2010	NA	no	NA	kidney clear cell renal carcinoma	NA	NA	white	not hispanic or latino	NA	NA	censored
+TCGA-CJ-5679-01	73	Dead	679	NA	kidney	stage iii	t3b	nx	m0	male	2003	NA	NA	NA	kidney clear cell renal carcinoma	NA	NA	white	not hispanic or latino	NA	595	progressed
+TCGA-BP-5186-01	50	Alive	NA	693	kidney	stage i	t1a	n0	m0	female	2007	NA	NA	NA	kidney clear cell renal carcinoma	NA	NA	white	NA	NA	NA	censored
+TCGA-CW-5589-01	52	Alive	NA	2378	kidney	stage i	t1a	nx	m0	male	2004	NA	NA	NA	kidney clear cell renal carcinoma	NA	NA	white	not hispanic or latino	NA	NA	non-progressed
+TCGA-CW-6087-01	61	Dead	41	NA	kidney	stage iv	t3a	n1	m1	male	2003	NA	NA	NA	kidney clear cell renal carcinoma	NA	NA	white	not hispanic or latino	NA	NA	NA
+TCGA-DV-5566-01	67	Alive	NA	1398	kidney	stage i	t1a	nx	m0	female	2007	NA	NA	100	kidney clear cell renal carcinoma	NA	NA	white	not hispanic or latino	NA	NA	censored
+TCGA-CJ-4869-01	49	Alive	NA	2554	kidney	stage iii	t2	n1	m0	male	2004	NA	NA	NA	kidney clear cell renal carcinoma	NA	NA	white	hispanic or latino	NA	1754	censored
+TCGA-B0-5694-01	71	Dead	480	NA	kidney	stage iii	t3a	n0	m0	male	2008	NA	NA	NA	kidney clear cell renal carcinoma	NA	NA	white	not hispanic or latino	NA	288	progressed
+TCGA-BP-5194-01	39	Alive	NA	408	kidney	stage i	t1a	nx	m0	male	2008	NA	NA	NA	kidney clear cell renal carcinoma	NA	NA	white	NA	NA	NA	censored
+TCGA-BP-5183-01	57	Alive	NA	1102	kidney	stage iii	t3a	nx	m0	male	2007	NA	NA	NA	kidney clear cell renal carcinoma	NA	NA	white	hispanic or latino	NA	485	progressed
+TCGA-6D-AA2E-01	68	Alive	NA	135	kidney	stage i	t1b	nx	mx	female	2013	NA	no	NA	kidney clear cell renal carcinoma	NA	NA	black or african american	not hispanic or latino	NO	NA	censored
+TCGA-CZ-5470-01	72	Alive	NA	0	kidney	stage ii	t2	n0	m0	female	2008	0	NA	NA	kidney clear cell renal carcinoma	NA	NA	NA	NA	NA	NA	NA
+TCGA-B0-4697-01	46	Dead	578	NA	kidney	stage iv	t3b	nx	m1	female	2003	NA	NA	NA	kidney clear cell renal carcinoma	NA	NA	white	not hispanic or latino	NA	NA	NA
+TCGA-CW-5588-01	78	Alive	NA	2017	kidney	stage i	t1a	nx	m0	female	2004	NA	NA	NA	kidney clear cell renal carcinoma	NA	NA	white	not hispanic or latino	NA	NA	non-progressed
+TCGA-BP-5174-01	45	Alive	NA	2257	kidney	stage i	t1a	nx	m0	female	2004	NA	NA	NA	kidney clear cell renal carcinoma	NA	NA	white	not hispanic or latino	NA	NA	non-progressed
+TCGA-B0-5705-01	65	Alive	NA	3335	kidney	stage i	t1	n0	m0	female	2002	NA	no	NA	kidney clear cell renal carcinoma	NA	NA	white	not hispanic or latino	NA	842	progressed
+TCGA-CW-6093-01	73	Alive	NA	2431	kidney	stage i	t1a	nx	m0	male	2004	NA	no	NA	kidney clear cell renal carcinoma	NA	NA	white	not hispanic or latino	NA	NA	non-progressed
+TCGA-B0-5102-01	74	Dead	2764	NA	kidney	stage i	t1	nx	m0	female	1999	NA	NA	NA	kidney clear cell renal carcinoma	NA	NA	white	not hispanic or latino	NA	2734	censored
+TCGA-B2-5641-01	79	Alive	NA	168	kidney	stage i	t1a	n0	m0	male	2010	NA	no	NA	kidney clear cell renal carcinoma	NA	NA	white	not hispanic or latino	NA	NA	censored
+TCGA-B4-5843-01	45	Alive	NA	11	kidney	stage i	t1	n0	m0	male	2010	NA	no	90	kidney clear cell renal carcinoma	NA	NA	white	not hispanic or latino	NO	NA	censored
+TCGA-B0-4691-01	55	Dead	139	NA	kidney	stage iv	t2	n0	m1	male	2009	NA	NA	NA	kidney clear cell renal carcinoma	NA	NA	white	not hispanic or latino	NA	NA	NA
+TCGA-CJ-5683-01	78	Alive	NA	1889	kidney	stage i	t1b	nx	m0	male	2004	1889	NA	NA	kidney clear cell renal carcinoma	NA	NA	white	not hispanic or latino	NA	NA	non-progressed
+TCGA-CZ-4863-01	51	Alive	NA	1691	kidney	stage iii	t3b	n0	m0	female	2006	NA	NA	NA	kidney clear cell renal carcinoma	NA	NA	white	not hispanic or latino	NA	NA	non-progressed
+TCGA-B8-A54E-01	62	Alive	NA	559	kidney	stage i	t1b	nx	mx	female	2011	NA	no	NA	kidney clear cell renal carcinoma	50	NA	black or african american	hispanic or latino	NO	NA	censored
+TCGA-CZ-5988-01	38	Alive	NA	693	kidney	stage i	t1b	n0	m0	male	2006	693	NA	NA	kidney clear cell renal carcinoma	NA	NA	white	NA	NA	NA	censored
+TCGA-A3-A8OU-01	74	Alive	NA	0	kidney	stage i	t1a	nx	mx	female	2011	NA	NA	NA	kidney clear cell renal carcinoma	NA	NA	black or african american	not hispanic or latino	NA	NA	NA
+TCGA-B8-5553-01	67	Alive	NA	14	kidney	stage i	t1b	n0	m0	female	2010	NA	NA	NA	kidney clear cell renal carcinoma	NA	NA	white	not hispanic or latino	NA	NA	censored
+TCGA-B0-4814-01	58	Dead	168	NA	kidney	stage iv	t4	n0	m1	male	2001	NA	NA	NA	kidney clear cell renal carcinoma	NA	NA	white	not hispanic or latino	NA	NA	NA
+TCGA-BP-4760-01	69	Alive	NA	2249	kidney	stage i	t1a	nx	m0	male	2004	NA	NA	NA	kidney clear cell renal carcinoma	NA	NA	black or african american	not hispanic or latino	NA	1457	progressed
+TCGA-B8-4622-01	57	Alive	NA	181	kidney	stage iv	t3a	n0	m1	male	2010	NA	no	90	kidney clear cell renal carcinoma	NA	NA	white	not hispanic or latino	NA	NA	censored
+TCGA-B0-5399-01	46	Alive	NA	190	kidney	stage i	t1b	n0	m0	male	2010	NA	no	NA	kidney clear cell renal carcinoma	NA	NA	white	not hispanic or latino	NA	NA	censored
+TCGA-A3-3367-01	72	Alive	NA	1054	kidney	stage i	t1b	n0	m0	male	2006	NA	no	NA	kidney clear cell renal carcinoma	NA	NA	white	not hispanic or latino	NO	NA	censored
+TCGA-BP-5195-01	75	Alive	NA	749	kidney	stage i	t1a	nx	m0	male	2008	NA	NA	NA	kidney clear cell renal carcinoma	NA	NA	white	not hispanic or latino	NA	NA	censored
+TCGA-B0-4698-01	75	Dead	42	NA	kidney	stage iv	t4	nx	m0	male	2003	NA	NA	NA	kidney clear cell renal carcinoma	NA	NA	white	not hispanic or latino	NA	NA	NA
+TCGA-T7-A92I-01	47	Alive	NA	-2	kidney	stage i	t1a	nx	mx	female	2013	NA	no	90	kidney clear cell renal carcinoma	26	1987	black or african american	not hispanic or latino	NO	NA	NA
+TCGA-CZ-5466-01	67	Alive	NA	685	kidney	stage iii	t3a	nx	m0	male	2007	NA	NA	NA	kidney clear cell renal carcinoma	NA	NA	NA	NA	NA	NA	censored
+TCGA-B0-4701-01	66	Dead	238	NA	kidney	stage iv	t3a	n0	m1	female	2005	NA	NA	NA	kidney clear cell renal carcinoma	NA	NA	white	not hispanic or latino	NA	NA	NA
+TCGA-CW-6090-01	68	Alive	NA	2308	kidney	stage i	t1b	nx	m0	male	2003	NA	NA	NA	kidney clear cell renal carcinoma	NA	NA	white	NA	NA	2780	censored
+TCGA-B0-5701-01	65	Alive	NA	1276	kidney	stage iii	t3b	n0	m0	male	2007	NA	no	NA	kidney clear cell renal carcinoma	NA	NA	white	not hispanic or latino	NA	224	progressed
+TCGA-CZ-5461-01	52	Dead	330	330	kidney	stage iv	t1b	nx	m1	male	2006	317	NA	NA	kidney clear cell renal carcinoma	NA	NA	white	not hispanic or latino	NA	48	progressed
+TCGA-BP-5187-01	54	Alive	NA	406	kidney	stage i	t1a	nx	m0	male	2007	NA	NA	NA	kidney clear cell renal carcinoma	NA	NA	white	NA	NA	NA	censored
+TCGA-B8-5165-01	43	Alive	NA	8	kidney	stage i	t1a	n0	m0	male	2010	NA	no	NA	kidney clear cell renal carcinoma	NA	NA	white	not hispanic or latino	NA	NA	censored
+TCGA-CJ-4897-01	79	Alive	NA	1808	kidney	stage iii	t3a	nx	m0	female	2005	NA	no	NA	kidney clear cell renal carcinoma	NA	NA	white	hispanic or latino	NA	1423	progressed
+TCGA-CZ-5986-01	61	Alive	NA	373	kidney	stage i	t1	n0	m0	male	2006	373	NA	NA	kidney clear cell renal carcinoma	NA	NA	white	NA	NA	NA	censored
+TCGA-B0-4848-01	54	Dead	883	NA	kidney	stage iii	t3b	nx	m0	male	2004	NA	NA	NA	kidney clear cell renal carcinoma	NA	NA	white	not hispanic or latino	NA	494	progressed
+TCGA-A3-3358-01	57	Alive	NA	1307	kidney	stage i	t1a	n0	m0	female	2005	1307	NA	NA	kidney clear cell renal carcinoma	NA	NA	white	not hispanic or latino	NA	NA	censored
+TCGA-CJ-4902-01	61	Alive	NA	1520	kidney	stage iii	t3a	nx	m0	male	2006	NA	NA	NA	kidney clear cell renal carcinoma	NA	NA	white	not hispanic or latino	NA	NA	censored
+TCGA-BP-5176-01	78	Dead	1590	NA	kidney	stage i	t1a	nx	m0	female	2004	NA	NA	NA	kidney clear cell renal carcinoma	NA	NA	white	NA	NA	NA	NA
+TCGA-A3-A8OX-01	65	Alive	NA	0	kidney	stage i	t1a	nx	mx	female	2012	NA	NA	NA	kidney clear cell renal carcinoma	NA	NA	black or african american	not hispanic or latino	NA	NA	NA
+TCGA-DV-5565-01	59	Alive	NA	1329	kidney	stage i	t1a	nx	m0	male	2007	NA	NA	100	kidney clear cell renal carcinoma	NA	NA	white	not hispanic or latino	NA	NA	censored
+TCGA-B0-5712-01	68	Alive	NA	2438	kidney	stage iv	t2	n0	m1	female	2004	NA	NA	NA	kidney clear cell renal carcinoma	NA	NA	black or african american	not hispanic or latino	NA	725	progressed
+TCGA-B0-4827-01	77	Dead	885	NA	kidney	stage iii	t3b	n0	m0	female	2002	NA	NA	NA	kidney clear cell renal carcinoma	NA	NA	white	not hispanic or latino	NA	668	progressed
+TCGA-B0-5107-01	65	Dead	927	NA	kidney	stage iv	t2	n0	m1	female	2007	NA	NA	NA	kidney clear cell renal carcinoma	NA	NA	white	not hispanic or latino	NA	549	progressed
+TCGA-B0-4816-01	49	Dead	1371	NA	kidney	stage ii	t2	n0	m0	male	2002	NA	NA	NA	kidney clear cell renal carcinoma	NA	NA	white	not hispanic or latino	NA	NA	NA
+TCGA-CZ-5451-01	74	Alive	NA	1668	kidney	stage ii	t2	n0	m0	male	2006	NA	NA	NA	kidney clear cell renal carcinoma	NA	NA	white	NA	NA	NA	non-progressed
+TCGA-B0-4694-01	72	Dead	106	NA	kidney	stage iii	t3b	nx	m0	male	2009	NA	NA	NA	kidney clear cell renal carcinoma	NA	NA	white	not hispanic or latino	NA	NA	NA
+TCGA-B0-5402-01	64	Alive	NA	10	kidney	stage iv	t4	nx	m0	male	2010	NA	no	NA	kidney clear cell renal carcinoma	NA	NA	white	not hispanic or latino	NA	444	progressed
+TCGA-B0-5696-01	69	Alive	NA	944	kidney	stage iii	t3a	n0	m0	male	2007	NA	no	NA	kidney clear cell renal carcinoma	NA	NA	white	hispanic or latino	NA	1717	censored
+TCGA-B0-5096-01	72	Dead	68	NA	kidney	stage iii	t3a	n1	m0	female	1998	NA	NA	NA	kidney clear cell renal carcinoma	NA	NA	white	not hispanic or latino	NA	NA	NA
+TCGA-BP-5178-01	71	Dead	1912	NA	kidney	stage iv	t3a	nx	m1	male	2004	NA	NA	NA	kidney clear cell renal carcinoma	NA	NA	white	NA	NA	1709	censored
+TCGA-B8-A54I-01	48	Alive	NA	150	kidney	stage i	t1b	nx	mx	male	2012	NA	no	NA	kidney clear cell renal carcinoma	NA	NA	black or african american	not hispanic or latino	NA	NA	censored
+TCGA-AK-3458-01	48	Alive	NA	1168	kidney	stage i	t1b	nx	m0	male	2007	NA	NA	NA	kidney clear cell renal carcinoma	NA	NA	white	not hispanic or latino	NA	NA	censored
+TCGA-B4-5836-01	61	Alive	NA	141	kidney	stage i	t1b	n0	m0	female	2010	NA	no	90	kidney clear cell renal carcinoma	NA	NA	white	not hispanic or latino	NO	NA	censored
+TCGA-CZ-5459-01	63	Alive	NA	1515	kidney	stage iii	t3b	nx	m0	male	2006	1515	NA	NA	kidney clear cell renal carcinoma	NA	NA	white	NA	NA	NA	censored
+TCGA-B0-5697-01	50	Alive	NA	1135	kidney	stage i	t1a	n0	m0	male	2007	NA	no	NA	kidney clear cell renal carcinoma	NA	NA	white	not hispanic or latino	NA	NA	censored
+TCGA-DV-5573-01	41	Alive	NA	1130	kidney	stage i	t1a	nx	m0	male	2008	NA	NA	100	kidney clear cell renal carcinoma	NA	NA	white	not hispanic or latino	NA	NA	censored
+TCGA-B0-5695-01	61	Alive	NA	1042	kidney	stage i	t1b	n0	m0	female	2007	NA	no	NA	kidney clear cell renal carcinoma	NA	NA	white	not hispanic or latino	NA	NA	censored
+TCGA-B0-5121-01	56	Alive	NA	186	kidney	stage i	t1b	n0	m0	male	2010	NA	no	NA	kidney clear cell renal carcinoma	NA	NA	white	not hispanic or latino	NA	NA	censored
+TCGA-CJ-4904-01	60	Alive	NA	1792	kidney	stage iv	t3a	n0	m1	female	2006	NA	no	NA	kidney clear cell renal carcinoma	NA	NA	white	not hispanic or latino	NA	278	progressed
+TCGA-B8-5162-01	62	Alive	NA	22	kidney	stage ii	t2a	nx	m0	male	2010	NA	NA	NA	kidney clear cell renal carcinoma	NA	NA	white	not hispanic or latino	NA	NA	censored
+TCGA-B0-4703-01	51	Dead	182	NA	kidney	stage iv	t3a	n0	m1	male	2005	NA	NA	NA	kidney clear cell renal carcinoma	NA	NA	white	not hispanic or latino	NA	NA	NA
+TCGA-B2-5636-01	79	Alive	NA	258	kidney	stage i	t1a	nx	m0	male	2010	NA	no	NA	kidney clear cell renal carcinoma	NA	NA	white	not hispanic or latino	NA	NA	censored
+TCGA-G6-A5PC-01	54	Dead	242	NA	kidney	stage iv	t1b	n0	m1	female	2012	NA	no	NA	kidney clear cell renal carcinoma	30	NA	black or african american	not hispanic or latino	NA	NA	NA
+TCGA-BP-4801-01	57	Alive	NA	1124	kidney	stage i	t1a	nx	m0	male	2007	NA	NA	NA	kidney clear cell renal carcinoma	NA	NA	white	NA	NA	NA	censored
+TCGA-BP-5180-01	53	Alive	NA	1892	kidney	stage i	t1a	nx	m0	male	2004	1892	NA	NA	kidney clear cell renal carcinoma	NA	NA	white	NA	NA	NA	non-progressed
+TCGA-BP-5170-01	55	Alive	NA	2412	kidney	stage i	t1a	nx	m0	male	2004	NA	NA	NA	kidney clear cell renal carcinoma	NA	NA	white	NA	NA	NA	non-progressed
+TCGA-CW-6088-01	60	Alive	NA	2311	kidney	stage i	t1b	n0	m0	male	2003	NA	no	NA	kidney clear cell renal carcinoma	NA	NA	white	not hispanic or latino	NO	NA	non-progressed
+TCGA-DV-5574-01	37	Alive	NA	723	kidney	stage i	t1a	nx	m0	male	2008	NA	no	100	kidney clear cell renal carcinoma	NA	NA	white	not hispanic or latino	NA	357	progressed
+TCGA-BP-5175-01	60	Alive	NA	932	kidney	stage i	t1a	nx	m0	male	2004	NA	NA	NA	kidney clear cell renal carcinoma	NA	NA	white	NA	NA	NA	censored
+TCGA-B4-5377-01	68	Alive	NA	291	kidney	stage iv	t3	n0	m1	female	2010	NA	no	90	kidney clear cell renal carcinoma	NA	NA	white	not hispanic or latino	NA	NA	censored
+TCGA-AK-3454-01	84	Alive	NA	874	kidney	stage i	t1b	nx	m0	male	2006	NA	NA	NA	kidney clear cell renal carcinoma	NA	NA	white	not hispanic or latino	NA	NA	censored
+TCGA-CJ-4916-01	69	Alive	NA	1373	kidney	stage iii	t3a	nx	m0	female	2007	NA	NA	NA	kidney clear cell renal carcinoma	NA	NA	white	not hispanic or latino	NA	NA	censored
+TCGA-CZ-5469-01	41	Dead	946	NA	kidney	stage ii	t2	n0	m0	male	2007	NA	NA	90	kidney clear cell renal carcinoma	NA	NA	white	not hispanic or latino	NA	110	progressed
+TCGA-B2-A4SR-01	61	Alive	NA	343	kidney	stage ii	t2a	nx	m0	male	2012	NA	no	NA	kidney clear cell renal carcinoma	46	1966	black or african american	not hispanic or latino	NO	NA	censored
+TCGA-A3-3357-01	62	Alive	NA	1425	kidney	stage ii	t2	n0	m0	male	2005	NA	no	NA	kidney clear cell renal carcinoma	NA	NA	white	not hispanic or latino	NO	NA	censored
+TCGA-EU-5906-01	55	Alive	NA	206	kidney	stage i	t1b	nx	m0	male	2010	NA	NA	90	kidney clear cell renal carcinoma	NA	NA	white	not hispanic or latino	NA	NA	censored
+TCGA-CJ-4882-01	57	Alive	NA	1883	kidney	stage iii	t3a	nx	m0	male	2005	NA	NA	NA	kidney clear cell renal carcinoma	NA	NA	black or african american	not hispanic or latino	NA	NA	non-progressed
+TCGA-AK-3434-01	72	Alive	NA	2087	kidney	stage i	t1b	nx	m0	male	2004	NA	NA	NA	kidney clear cell renal carcinoma	NA	NA	white	not hispanic or latino	NA	1640	censored
+TCGA-B0-5812-01	53	Alive	NA	2325	kidney	stage i	t1b	nx	m0	male	2003	NA	no	NA	kidney clear cell renal carcinoma	NA	NA	white	not hispanic or latino	NA	NA	non-progressed
+TCGA-B0-5106-01	64	Dead	1598	NA	kidney	stage i	t1a	n0	m0	male	2004	NA	NA	NA	kidney clear cell renal carcinoma	NA	NA	white	not hispanic or latino	NA	NA	NA
+TCGA-B0-4696-01	58	Dead	866	NA	kidney	stage iii	t3a	n0	m0	male	2001	NA	NA	NA	kidney clear cell renal carcinoma	NA	NA	white	not hispanic or latino	NA	794	progressed
+TCGA-B8-A54H-01	69	Alive	NA	256	kidney	stage ii	t2a	n0	mx	female	2012	NA	no	NA	kidney clear cell renal carcinoma	NA	NA	black or african american	NA	NA	NA	censored
+TCGA-CZ-5987-01	60	Dead	445	NA	kidney	stage iv	t3b	nx	m1	male	2006	NA	NA	NA	kidney clear cell renal carcinoma	NA	NA	white	not hispanic or latino	NA	377	progressed
+TCGA-CJ-5672-01	84	Dead	2190	NA	kidney	stage i	t1a	nx	m0	male	2004	NA	NA	NA	kidney clear cell renal carcinoma	NA	NA	white	not hispanic or latino	NA	NA	NA
+TCGA-B8-5550-01	71	Alive	NA	197	kidney	stage iii	t3a	n0	m0	male	2010	NA	no	NA	kidney clear cell renal carcinoma	20	1970	white	not hispanic or latino	NA	NA	censored
+TCGA-B4-5835-01	64	Alive	NA	16	kidney	stage i	t1	n0	m0	female	2010	NA	no	100	kidney clear cell renal carcinoma	NA	NA	white	not hispanic or latino	NO	NA	censored
+TCGA-A3-A6NJ-01	57	Alive	NA	0	kidney	stage i	t1a	nx	mx	female	2012	NA	no	100	kidney clear cell renal carcinoma	NA	NA	black or african american	not hispanic or latino	NO	NA	NA
+TCGA-G6-A8L7-01	81	Alive	NA	1727	kidney	stage i	t1b	n0	mx	female	2008	NA	no	80	kidney clear cell renal carcinoma	40	1965	black or african american	not hispanic or latino	NO	NA	non-progressed
+TCGA-CW-5585-01	51	Alive	NA	2609	kidney	stage iv	t3b	n0	m1	male	2003	2609	NA	NA	kidney clear cell renal carcinoma	NA	NA	white	not hispanic or latino	NA	NA	non-progressed
+TCGA-DV-5569-01	29	Alive	NA	355	kidney	stage i	t1a	nx	m0	female	2009	NA	NA	90	kidney clear cell renal carcinoma	NA	NA	white	not hispanic or latino	NA	NA	censored
+TCGA-CJ-4903-01	50	Alive	NA	1560	kidney	stage i	t1b	nx	m0	male	2006	1559	NA	NA	kidney clear cell renal carcinoma	NA	NA	white	not hispanic or latino	NA	NA	non-progressed
+TCGA-A3-A6NN-01	78	Alive	NA	3	kidney	stage i	t1a	nx	mx	male	2012	NA	no	NA	kidney clear cell renal carcinoma	NA	NA	black or african american	not hispanic or latino	NA	NA	censored
+TCGA-B0-5110-01	71	Alive	NA	560	kidney	stage i	t1a	n0	m0	female	2009	NA	no	NA	kidney clear cell renal carcinoma	NA	NA	white	not hispanic or latino	NA	NA	censored
+TCGA-AK-3440-01	58	Alive	NA	1745	kidney	stage i	t1a	nx	m0	male	2005	NA	no	NA	kidney clear cell renal carcinoma	NA	NA	white	not hispanic or latino	NA	NA	non-progressed
+TCGA-B0-5080-01	63	Dead	342	NA	kidney	stage iv	t3a	n0	m1	male	2005	NA	NA	NA	kidney clear cell renal carcinoma	NA	NA	white	not hispanic or latino	NA	103	progressed
+TCGA-CJ-4912-01	61	Alive	NA	1657	kidney	stage ii	t2	nx	m0	male	2006	NA	NA	NA	kidney clear cell renal carcinoma	NA	NA	white	hispanic or latino	NA	NA	non-progressed
+TCGA-CJ-5675-01	70	Alive	NA	2430	kidney	stage ii	t2a	nx	m0	male	2004	NA	no	NA	kidney clear cell renal carcinoma	NA	NA	white	not hispanic or latino	NA	900	progressed
+TCGA-CJ-4901-01	47	Alive	NA	1450	kidney	stage iii	t3b	nx	m0	male	2006	NA	NA	NA	kidney clear cell renal carcinoma	NA	NA	white	not hispanic or latino	NA	NA	censored
+TCGA-AK-3461-01	72	Alive	NA	853	kidney	stage i	t1a	nx	m0	male	2007	NA	no	NA	kidney clear cell renal carcinoma	NA	NA	white	not hispanic or latino	NA	NA	censored
+TCGA-BP-5185-01	56	Alive	NA	1132	kidney	stage i	t1a	nx	m0	male	2007	NA	NA	NA	kidney clear cell renal carcinoma	NA	NA	white	NA	NA	736	progressed
+TCGA-B0-4842-01	73	Dead	1724	NA	kidney	stage iii	t3a	n0	m0	female	2004	NA	NA	NA	kidney clear cell renal carcinoma	NA	NA	white	not hispanic or latino	NA	250	progressed
+TCGA-AK-3450-01	85	Alive	NA	1499	kidney	stage i	t1a	n0	m0	female	2006	NA	NA	NA	kidney clear cell renal carcinoma	NA	NA	white	not hispanic or latino	NA	NA	censored
+TCGA-BP-5181-01	58	Alive	NA	1495	kidney	stage i	t1b	nx	m0	female	2006	NA	NA	NA	kidney clear cell renal carcinoma	NA	NA	white	NA	NA	NA	censored
+TCGA-MW-A4EC-01	72	Alive	NA	330	kidney	stage i	t1a	nx	mx	female	2012	NA	no	NA	kidney clear cell renal carcinoma	NA	NA	black or african american	hispanic or latino	NO	NA	censored
+TCGA-B2-5633-01	56	Alive	NA	214	kidney	stage i	t1b	n0	m0	male	2010	NA	no	NA	kidney clear cell renal carcinoma	NA	NA	white	not hispanic or latino	NA	NA	censored
+TCGA-CZ-5454-01	63	Dead	722	NA	kidney	stage iv	t2	n0	m1	male	2006	NA	NA	NA	kidney clear cell renal carcinoma	NA	NA	white	not hispanic or latino	NA	423	progressed
+TCGA-A3-3387-01	49	Alive	NA	617	kidney	stage i	t1a	n0	m0	male	2006	NA	NA	NA	kidney clear cell renal carcinoma	NA	NA	white	not hispanic or latino	NA	NA	censored
+TCGA-B0-5083-01	63	Dead	1045	NA	kidney	stage i	t1a	n0	m0	male	2005	NA	NA	NA	kidney clear cell renal carcinoma	NA	NA	white	not hispanic or latino	NA	NA	NA
+TCGA-CJ-5682-01	60	Alive	NA	1883	kidney	stage iv	t3a	nx	m1	male	2004	NA	yes	NA	kidney clear cell renal carcinoma	NA	NA	white	not hispanic or latino	NA	55	progressed
+TCGA-B0-4815-01	65	Dead	1588	NA	kidney	stage iii	t3a	nx	m0	male	2001	NA	NA	NA	kidney clear cell renal carcinoma	NA	NA	white	not hispanic or latino	NA	NA	NA
+TCGA-B8-5545-01	42	Alive	NA	248	kidney	stage i	t1a	n0	m0	male	2010	NA	no	NA	kidney clear cell renal carcinoma	NA	NA	black or african american	not hispanic or latino	NA	NA	censored
+TCGA-B0-5099-01	88	Dead	485	NA	kidney	stage iii	t3b	nx	m0	female	2002	NA	NA	NA	kidney clear cell renal carcinoma	NA	NA	white	not hispanic or latino	NA	NA	NA
+TCGA-AK-3431-01	62	Alive	NA	1853	kidney	stage ii	t2	nx	m0	female	2004	NA	no	NA	kidney clear cell renal carcinoma	NA	NA	white	not hispanic or latino	NA	NA	non-progressed
+TCGA-CZ-5452-01	69	Alive	NA	1556	kidney	stage ii	t2	n0	m0	male	2006	NA	NA	NA	kidney clear cell renal carcinoma	NA	NA	white	not hispanic or latino	NA	NA	non-progressed
+TCGA-DV-A4VX-01	59	Dead	1626	NA	kidney	stage iv	t3b	n0	mx	male	2008	NA	no	0	kidney clear cell renal carcinoma	40	NA	black or african american	not hispanic or latino	NA	NA	NA
+TCGA-B0-4945-01	75	Dead	2145	NA	kidney	stage i	t1a	n0	m0	female	2003	NA	NA	NA	kidney clear cell renal carcinoma	NA	NA	white	not hispanic or latino	NA	NA	NA
+TCGA-B8-A8YJ-01	60	Alive	NA	24	kidney	stage i	t1b	nx	NA	female	2013	NA	no	NA	kidney clear cell renal carcinoma	10	NA	black or african american	NA	NO	NA	censored
+TCGA-B0-4849-01	51	Dead	69	NA	kidney	stage iii	t3a	nx	m0	male	2004	NA	NA	NA	kidney clear cell renal carcinoma	NA	NA	white	not hispanic or latino	NA	4	progressed
+TCGA-B0-4841-01	63	Dead	204	NA	kidney	stage iv	t2	nx	m1	male	2004	NA	NA	NA	kidney clear cell renal carcinoma	NA	NA	white	not hispanic or latino	NA	108	progressed
+TCGA-B0-5120-01	72	Alive	NA	55	kidney	stage i	t1a	n0	m0	female	2010	NA	no	NA	kidney clear cell renal carcinoma	NA	NA	white	not hispanic or latino	NA	NA	censored
+TCGA-B0-4706-01	61	Dead	65	26	kidney	stage iii	t3a	nx	m0	male	2007	26	NA	NA	kidney clear cell renal carcinoma	NA	NA	white	not hispanic or latino	NA	NA	censored
+TCGA-CJ-6030-01	65	Dead	2299	NA	kidney	stage i	t1a	n0	m0	male	2003	NA	NA	NA	kidney clear cell renal carcinoma	NA	NA	white	not hispanic or latino	NA	NA	NA
+TCGA-A3-3385-01	46	Alive	NA	726	kidney	stage i	t1a	n0	m0	female	2007	NA	no	NA	kidney clear cell renal carcinoma	NA	NA	white	not hispanic or latino	NO	NA	censored
+TCGA-B0-4707-01	63	Dead	600	NA	kidney	stage iii	t3a	nx	m0	male	2008	NA	NA	NA	kidney clear cell renal carcinoma	NA	NA	white	not hispanic or latino	NA	NA	NA
+TCGA-A3-3376-01	51	Alive	NA	1070	kidney	stage i	t1a	n0	m0	male	2006	NA	no	NA	kidney clear cell renal carcinoma	NA	NA	black or african american	not hispanic or latino	NO	NA	censored
+TCGA-CZ-4853-01	82	Alive	NA	774	kidney	stage i	t1a	nx	m0	male	2005	NA	NA	NA	kidney clear cell renal carcinoma	NA	NA	white	NA	NA	NA	censored
+TCGA-B0-4846-01	52	Dead	1200	NA	kidney	stage iv	t3a	n0	m1	male	2004	NA	NA	NA	kidney clear cell renal carcinoma	NA	NA	white	not hispanic or latino	NA	163	progressed
+TCGA-GK-A6C7-01	76	Alive	NA	61	kidney	stage i	t1a	nx	mx	female	2012	NA	no	NA	kidney clear cell renal carcinoma	NA	NA	black or african american	not hispanic or latino	NO	NA	censored
+TCGA-DV-5575-01	52	Alive	NA	1006	kidney	stage i	t1a	nx	m0	female	2007	NA	NA	90	kidney clear cell renal carcinoma	NA	NA	white	not hispanic or latino	NA	NA	censored
+TCGA-A3-3373-01	54	Alive	NA	334	kidney	stage i	t1b	n0	m0	female	2007	NA	no	NA	kidney clear cell renal carcinoma	NA	NA	white	not hispanic or latino	NO	NA	censored
+TCGA-CZ-4864-01	86	Dead	2830	NA	kidney	stage ii	t2	n0	m0	male	2002	NA	NA	NA	kidney clear cell renal carcinoma	NA	NA	white	not hispanic or latino	NA	NA	NA
+TCGA-CJ-6028-01	58	Dead	1625	NA	kidney	stage iv	t3a	nx	m1	male	2003	NA	NA	90	kidney clear cell renal carcinoma	NA	NA	white	not hispanic or latino	NA	137	progressed
+TCGA-CZ-4856-01	62	Alive	NA	18	kidney	stage i	t1b	n0	m0	female	2005	NA	NA	90	kidney clear cell renal carcinoma	NA	NA	white	not hispanic or latino	NA	NA	censored
+TCGA-G6-A8L6-01	55	Alive	NA	305	kidney	stage iv	t2a	nx	mx	male	2013	NA	no	90	kidney clear cell renal carcinoma	NA	NA	black or african american	not hispanic or latino	YES	304	progressed
+TCGA-CZ-5989-01	60	Alive	NA	1599	kidney	stage ii	t2	n0	m0	male	2006	NA	NA	NA	kidney clear cell renal carcinoma	NA	NA	white	not hispanic or latino	NA	NA	non-progressed
+TCGA-AK-3453-01	58	Alive	NA	1397	kidney	stage ii	t2	nx	m0	female	2006	NA	no	NA	kidney clear cell renal carcinoma	NA	NA	white	not hispanic or latino	NA	NA	censored
+TCGA-B0-4699-01	74	Dead	110	NA	kidney	stage iv	t4	n0	m1	male	2004	110	NA	NA	kidney clear cell renal carcinoma	NA	NA	white	not hispanic or latino	NA	NA	NA
+TCGA-CZ-5458-01	43	Alive	NA	1558	kidney	stage iii	t3a	nx	m0	male	2006	NA	NA	100	kidney clear cell renal carcinoma	NA	NA	white	NA	NA	NA	non-progressed
+TCGA-BP-4177-01	65	Alive	NA	1670	kidney	stage i	t1a	nx	m0	male	2005	NA	NA	NA	kidney clear cell renal carcinoma	NA	NA	white	not hispanic or latino	NA	NA	non-progressed
+TCGA-BP-4782-01	55	Alive	NA	354	kidney	stage i	t1a	nx	m0	female	2005	NA	NA	NA	kidney clear cell renal carcinoma	NA	NA	white	NA	NA	NA	censored
+TCGA-CJ-5680-01	65	Dead	768	NA	kidney	stage iv	t3a	nx	m1	female	2003	NA	NA	NA	kidney clear cell renal carcinoma	NA	NA	white	not hispanic or latino	NA	153	progressed
+TCGA-B0-4843-01	57	Dead	320	NA	kidney	stage iii	t3a	n0	m0	male	2004	NA	NA	NA	kidney clear cell renal carcinoma	NA	NA	white	not hispanic or latino	NA	NA	NA
+TCGA-BP-5168-01	75	Dead	1463	NA	kidney	stage i	t1a	nx	m0	male	2002	NA	NA	NA	kidney clear cell renal carcinoma	NA	NA	white	NA	NA	NA	NA
+TCGA-A3-A8CQ-01	59	Alive	NA	3	kidney	stage i	t1a	nx	mx	female	2011	NA	NA	90	kidney clear cell renal carcinoma	9	NA	black or african american	not hispanic or latino	NA	NA	censored
+TCGA-CZ-5465-01	76	Alive	NA	1377	kidney	stage iii	t3b	nx	m0	female	2007	NA	NA	100	kidney clear cell renal carcinoma	NA	NA	NA	NA	NA	NA	censored
+TCGA-B0-4710-01	75	Alive	NA	5	kidney	stage iii	t3a	n0	m0	female	2010	NA	no	NA	kidney clear cell renal carcinoma	NA	NA	white	not hispanic or latino	NA	NA	censored
+TCGA-B0-5693-01	47	Alive	NA	1852	kidney	stage i	t1b	nx	m0	female	2003	NA	no	NA	kidney clear cell renal carcinoma	NA	NA	white	not hispanic or latino	NA	NA	non-progressed
+TCGA-B4-5834-01	59	Alive	NA	38	kidney	stage i	t1	n0	m0	male	2010	NA	no	90	kidney clear cell renal carcinoma	NA	NA	white	not hispanic or latino	NO	NA	censored
+TCGA-B0-5711-01	50	Alive	NA	2553	kidney	stage iii	t3b	nx	m0	male	2004	NA	no	NA	kidney clear cell renal carcinoma	NA	NA	white	not hispanic or latino	NA	NA	non-progressed
+TCGA-CZ-4865-01	70	Dead	166	NA	kidney	stage i	t1a	nx	m0	female	2006	NA	NA	NA	kidney clear cell renal carcinoma	NA	NA	white	not hispanic or latino	NA	NA	NA
+TCGA-BP-5200-01	44	Alive	NA	881	kidney	stage ii	t2	nx	m0	male	2008	NA	NA	NA	kidney clear cell renal carcinoma	NA	NA	white	NA	NA	NA	censored
+TCGA-B0-5104-01	90	Dead	2752	NA	kidney	stage i	t1	n0	m0	female	2002	NA	NA	NA	kidney clear cell renal carcinoma	NA	NA	white	not hispanic or latino	NA	NA	NA
+TCGA-B2-4101-01	52	Alive	NA	90	kidney	stage ii	t2a	nx	m0	male	2010	NA	no	NA	kidney clear cell renal carcinoma	NA	NA	white	not hispanic or latino	NA	NA	censored
+TCGA-B4-5378-01	62	Alive	NA	175	kidney	stage i	t1	n0	m0	male	2010	NA	no	90	kidney clear cell renal carcinoma	NA	NA	white	not hispanic or latino	NA	NA	censored
+TCGA-B0-5115-01	43	Alive	NA	91	kidney	stage iv	t2	n0	m1	male	2009	NA	no	NA	kidney clear cell renal carcinoma	NA	NA	white	not hispanic or latino	NA	75	progressed
+TCGA-CZ-5464-01	69	Alive	NA	1492	kidney	stage iv	t3b	nx	m1	male	2007	NA	NA	NA	kidney clear cell renal carcinoma	NA	NA	white	NA	NA	NA	censored
+TCGA-B0-4852-01	78	Dead	1121	NA	kidney	stage ii	t2	n0	m0	female	2004	NA	NA	NA	kidney clear cell renal carcinoma	NA	NA	white	not hispanic or latino	NA	860	progressed
+TCGA-BP-5192-01	59	Alive	NA	714	kidney	stage i	t1a	nx	m0	male	2007	NA	NA	NA	kidney clear cell renal carcinoma	NA	NA	white	NA	NA	NA	censored
+TCGA-B0-5702-01	71	Alive	NA	1158	kidney	stage i	t1b	n0	m0	male	2007	NA	no	NA	kidney clear cell renal carcinoma	NA	NA	white	not hispanic or latino	NA	NA	censored
+TCGA-DV-5567-01	40	Alive	NA	910	kidney	stage i	t1a	nx	m0	female	2008	NA	no	90	kidney clear cell renal carcinoma	NA	NA	black or african american	not hispanic or latino	NA	NA	censored
+TCGA-B4-5844-01	61	Alive	NA	7	kidney	stage ii	t2	n0	m0	female	2010	NA	no	80	kidney clear cell renal carcinoma	NA	NA	white	not hispanic or latino	NA	NA	censored
+TCGA-CZ-5460-01	55	Alive	NA	1430	kidney	stage iv	t3b	nx	m1	male	2006	NA	NA	NA	kidney clear cell renal carcinoma	NA	NA	white	not hispanic or latino	NA	NA	censored
+TCGA-B0-4824-01	49	Dead	1657	NA	kidney	stage i	t1a	n0	m0	female	2002	NA	NA	NA	kidney clear cell renal carcinoma	NA	NA	white	not hispanic or latino	NA	NA	NA
+TCGA-CW-5581-01	44	Alive	NA	2799	kidney	stage i	t1b	nx	m0	male	2003	2799	NA	NA	kidney clear cell renal carcinoma	NA	NA	white	not hispanic or latino	NA	NA	non-progressed
+TCGA-B0-4700-01	60	Dead	1980	NA	kidney	stage iv	t4	nx	m1	male	2004	NA	NA	NA	kidney clear cell renal carcinoma	NA	NA	white	not hispanic or latino	NA	NA	NA
+TCGA-CJ-5676-01	47	Alive	NA	2575	kidney	stage iii	t3b	nx	m0	male	2004	NA	no	NA	kidney clear cell renal carcinoma	NA	NA	white	hispanic or latino	NA	2219	censored
+TCGA-CZ-5457-01	62	Alive	NA	1547	kidney	stage iii	t3a	nx	m0	male	2006	NA	NA	100	kidney clear cell renal carcinoma	NA	NA	white	not hispanic or latino	NA	174	progressed
+TCGA-B0-4818-01	68	Dead	510	NA	kidney	stage ii	t2	nx	m0	female	2002	NA	NA	NA	kidney clear cell renal carcinoma	NA	NA	white	not hispanic or latino	NA	127	progressed
+TCGA-B0-4845-01	70	Dead	1986	NA	kidney	stage iv	t3a	nx	m1	male	2003	NA	NA	NA	kidney clear cell renal carcinoma	NA	NA	white	not hispanic or latino	NA	748	progressed
+TCGA-G6-A8L8-01	62	Alive	NA	474	kidney	stage i	t1b	nx	mx	female	2008	NA	no	60	kidney clear cell renal carcinoma	NA	NA	black or african american	not hispanic or latino	NA	NA	censored
+TCGA-B8-A54D-01	69	Alive	NA	452	kidney	stage iii	t3a	nx	mx	male	2011	NA	no	NA	kidney clear cell renal carcinoma	NA	NA	black or african american	not hispanic or latino	NO	NA	censored
+TCGA-CZ-4859-01	59	Alive	NA	1787	kidney	stage i	t1	n0	m0	female	2005	NA	NA	NA	kidney clear cell renal carcinoma	NA	NA	white	NA	NA	NA	non-progressed
+TCGA-B0-5703-01	73	Alive	NA	263	kidney	stage i	t1b	n0	m0	male	2009	NA	no	NA	kidney clear cell renal carcinoma	NA	NA	white	not hispanic or latino	NA	NA	censored
+TCGA-BP-5184-01	54	Alive	NA	1133	kidney	stage i	t1a	nx	m0	male	2007	NA	NA	NA	kidney clear cell renal carcinoma	NA	NA	white	NA	NA	NA	censored
+TCGA-CJ-6031-01	54	Alive	NA	1906	kidney	stage i	t1b	nx	m0	male	2003	NA	NA	NA	kidney clear cell renal carcinoma	NA	NA	white	not hispanic or latino	NA	NA	non-progressed
+TCGA-B0-5699-01	53	Alive	NA	2426	kidney	stage i	t1	n0	m0	male	2003	NA	no	NA	kidney clear cell renal carcinoma	NA	NA	white	not hispanic or latino	NA	94	progressed
+TCGA-CZ-4866-01	79	Alive	NA	1768	kidney	stage i	t1	nx	m0	female	2006	NA	NA	NA	kidney clear cell renal carcinoma	NA	NA	white	not hispanic or latino	NA	NA	non-progressed
+TCGA-B0-4718-01	57	Alive	NA	215	kidney	stage iii	t3a	nx	m0	male	2010	NA	NA	NA	kidney clear cell renal carcinoma	NA	NA	white	not hispanic or latino	NA	NA	censored
+TCGA-AK-3433-01	48	Alive	NA	2192	kidney	stage ii	t2	n0	m0	female	2004	NA	no	NA	kidney clear cell renal carcinoma	NA	NA	white	not hispanic or latino	NA	NA	non-progressed
+TCGA-B0-5098-01	53	Dead	1584	NA	kidney	stage i	t1	nx	m0	female	1998	NA	NA	NA	kidney clear cell renal carcinoma	NA	NA	black or african american	not hispanic or latino	NA	NA	NA
+TCGA-B0-5119-01	61	Alive	NA	48	kidney	stage i	t1b	n0	m0	female	2010	NA	no	NA	kidney clear cell renal carcinoma	NA	NA	white	not hispanic or latino	NA	NA	censored
+TCGA-BP-5169-01	70	Alive	NA	193	kidney	stage i	t1b	n0	m0	male	2004	NA	NA	NA	kidney clear cell renal carcinoma	NA	NA	white	NA	NA	NA	censored
+TCGA-B8-5159-01	61	Alive	NA	133	kidney	stage i	t1a	n0	m0	female	2010	NA	no	NA	kidney clear cell renal carcinoma	NA	NA	white	not hispanic or latino	NA	NA	censored
+TCGA-CJ-6032-01	63	Alive	NA	2548	kidney	stage ii	t2	nx	m0	female	2004	NA	no	NA	kidney clear cell renal carcinoma	NA	NA	white	hispanic or latino	NA	NA	non-progressed
+TCGA-BP-5202-01	75	Alive	NA	29	kidney	stage iii	t3a	nx	m0	male	2008	NA	NA	NA	kidney clear cell renal carcinoma	NA	NA	white	NA	NA	NA	censored
+TCGA-BP-5199-01	58	Alive	NA	1355	kidney	stage ii	t2	n0	m0	male	2006	NA	NA	NA	kidney clear cell renal carcinoma	NA	NA	white	not hispanic or latino	NA	NA	censored
+TCGA-B0-5713-01	75	Alive	NA	1865	kidney	stage iii	t3b	n0	m0	female	2006	NA	no	NA	kidney clear cell renal carcinoma	NA	NA	white	not hispanic or latino	NA	NA	non-progressed
+TCGA-CJ-4908-01	38	Alive	NA	1531	kidney	stage i	t1a	nx	m0	male	2006	NA	NA	NA	kidney clear cell renal carcinoma	NA	NA	white	not hispanic or latino	NA	NA	non-progressed
+TCGA-BP-5198-01	72	Alive	NA	603	kidney	stage iii	t3b	n0	m0	male	2008	NA	NA	NA	kidney clear cell renal carcinoma	NA	NA	white	NA	NA	NA	censored
+TCGA-CW-5583-01	51	Alive	NA	2489	kidney	stage i	t1a	nx	m0	female	2003	NA	NA	NA	kidney clear cell renal carcinoma	NA	NA	white	NA	NA	NA	non-progressed
+TCGA-AK-3445-01	69	Alive	NA	1280	kidney	stage iii	t3a	nx	m0	male	2006	NA	no	NA	kidney clear cell renal carcinoma	40	1966	white	not hispanic or latino	NA	NA	censored
+TCGA-B8-5163-01	63	Alive	NA	4	kidney	stage iii	t3a	n0	m0	female	2010	NA	no	NA	kidney clear cell renal carcinoma	NA	NA	white	not hispanic or latino	NA	NA	censored
+TCGA-B4-5838-01	52	Alive	NA	166	kidney	stage iv	t3	n1	m0	male	2010	NA	no	80	kidney clear cell renal carcinoma	NA	NA	white	not hispanic or latino	NO	NA	censored
+TCGA-B0-4817-01	81	Dead	1019	NA	kidney	stage iii	t3c	n0	m0	male	2002	NA	NA	NA	kidney clear cell renal carcinoma	NA	NA	white	not hispanic or latino	NA	NA	NA
+TCGA-B0-5700-01	77	Alive	NA	375	kidney	stage i	t1a	n0	m0	male	2009	NA	no	NA	kidney clear cell renal carcinoma	NA	NA	white	not hispanic or latino	NA	NA	censored
+TCGA-B0-5095-01	81	Dead	245	NA	kidney	stage iii	t3a	n0	m0	male	2008	NA	NA	NA	kidney clear cell renal carcinoma	NA	NA	white	not hispanic or latino	NA	NA	NA
+TCGA-B8-A54J-01	60	Alive	NA	66	kidney	stage ii	t2a	nx	mx	male	2012	NA	no	NA	kidney clear cell renal carcinoma	NA	NA	black or african american	not hispanic or latino	NO	NA	censored
+TCGA-B0-4813-01	68	Dead	18	18	kidney	stage iii	t3b	nx	m0	male	2001	18	NA	NA	kidney clear cell renal carcinoma	NA	NA	white	not hispanic or latino	NA	NA	censored
+TCGA-3Z-A93Z-01	69	Alive	NA	4	kidney	stage i	t1a	n0	m0	male	2013	NA	no	100	kidney clear cell renal carcinoma	NA	NA	black or african american	not hispanic or latino	NO	NA	censored
+TCGA-B0-4713-01	76	Dead	202	NA	kidney	stage iii	t3b	nx	m0	female	2010	NA	NA	NA	kidney clear cell renal carcinoma	NA	NA	white	not hispanic or latino	NA	NA	NA
+TCGA-CJ-5671-01	51	Alive	NA	1943	kidney	stage i	t1a	nx	m0	male	2004	NA	no	NA	kidney clear cell renal carcinoma	NA	NA	white	not hispanic or latino	NA	NA	non-progressed
+TCGA-CW-6097-01	32	Dead	571	NA	kidney	stage iii	t3a	nx	m0	male	2004	NA	NA	NA	kidney clear cell renal carcinoma	NA	NA	white	NA	NA	457	progressed
+TCGA-B0-5690-01	53	Alive	NA	2180	kidney	stage i	t1b	nx	m0	female	2004	NA	no	NA	kidney clear cell renal carcinoma	NA	NA	white	not hispanic or latino	NA	NA	non-progressed
+TCGA-B0-5097-01	59	Alive	NA	151	kidney	stage iii	t3b	n0	m0	female	2010	NA	NA	NA	kidney clear cell renal carcinoma	NA	NA	white	not hispanic or latino	NA	359	progressed
+TCGA-DV-5576-01	55	Dead	727	NA	kidney	stage i	t1a	nx	m0	female	2008	NA	NA	100	kidney clear cell renal carcinoma	NA	NA	black or african american	not hispanic or latino	NA	NA	NA
+TCGA-EU-5905-01	67	Alive	NA	119	kidney	stage i	t1	nx	m0	female	2010	NA	NA	100	kidney clear cell renal carcinoma	NA	NA	white	NA	NA	NA	censored
+TCGA-B0-4822-01	78	Dead	1111	NA	kidney	stage ii	t2	nx	m0	male	2002	NA	NA	NA	kidney clear cell renal carcinoma	NA	NA	white	not hispanic or latino	NA	NA	NA
+TCGA-CZ-5455-01	63	Dead	561	NA	kidney	stage iv	t3b	nx	m1	male	2006	NA	NA	NA	kidney clear cell renal carcinoma	NA	NA	white	not hispanic or latino	NA	NA	NA
+TCGA-B0-5109-01	69	Dead	587	NA	kidney	stage iii	t3b	n1	m0	male	2009	NA	NA	NA	kidney clear cell renal carcinoma	NA	NA	white	not hispanic or latino	NA	70	progressed
+TCGA-BP-5189-01	60	Dead	822	NA	kidney	stage i	t1b	nx	m0	male	2007	NA	NA	NA	kidney clear cell renal carcinoma	NA	NA	white	not hispanic or latino	NA	781	progressed
+TCGA-AK-3425-01	68	Alive	NA	3343	kidney	stage i	t1	n0	m0	male	2000	NA	NA	NA	kidney clear cell renal carcinoma	NA	NA	white	not hispanic or latino	NA	NA	non-progressed
+TCGA-CJ-4920-01	64	Dead	139	NA	kidney	stage i	t1b	nx	m0	female	2004	NA	NA	NA	kidney clear cell renal carcinoma	NA	NA	white	not hispanic or latino	NA	NA	NA
+TCGA-B8-A7U6-01	54	Alive	NA	110	kidney	stage i	t1a	nx	NA	female	2013	NA	no	NA	kidney clear cell renal carcinoma	NA	NA	black or african american	not hispanic or latino	NO	NA	censored
+TCGA-B0-5117-01	40	Alive	NA	0	kidney	stage i	t1b	nx	m0	male	2010	NA	no	NA	kidney clear cell renal carcinoma	NA	NA	white	not hispanic or latino	NA	NA	NA
+TCGA-CJ-5684-01	61	Alive	NA	2231	kidney	stage iii	t3a	nx	m0	male	2005	NA	NA	NA	kidney clear cell renal carcinoma	NA	NA	white	not hispanic or latino	NA	NA	non-progressed
+TCGA-B0-5092-01	53	Dead	459	NA	kidney	stage iv	t1a	n0	m1	female	2008	NA	NA	NA	kidney clear cell renal carcinoma	NA	NA	white	not hispanic or latino	NA	NA	NA
+TCGA-B0-4693-01	72	Dead	77	NA	kidney	stage iii	t3a	n0	m0	female	2009	NA	NA	NA	kidney clear cell renal carcinoma	NA	NA	white	not hispanic or latino	NA	NA	NA
+TCGA-B8-4621-01	63	Alive	NA	215	kidney	stage i	t1b	n0	m0	male	2010	NA	no	NA	kidney clear cell renal carcinoma	40	NA	black or african american	not hispanic or latino	NA	NA	censored
+TCGA-CJ-4905-01	62	Alive	NA	1496	kidney	stage i	t1a	nx	m0	female	2006	1496	NA	NA	kidney clear cell renal carcinoma	NA	NA	white	not hispanic or latino	NA	NA	censored
+TCGA-CZ-5462-01	83	Dead	311	NA	kidney	stage iv	t1b	nx	m1	male	2007	NA	NA	NA	kidney clear cell renal carcinoma	NA	NA	white	NA	NA	NA	NA
+TCGA-CW-5587-01	62	Alive	NA	2226	kidney	stage iii	t3b	n0	m0	female	2003	2226	NA	NA	kidney clear cell renal carcinoma	NA	NA	white	not hispanic or latino	NA	2003	censored
+TCGA-B0-5400-01	59	Alive	NA	677	kidney	stage iii	t3b	n0	m0	female	2008	NA	no	NA	kidney clear cell renal carcinoma	NA	NA	white	not hispanic or latino	NA	NA	censored
+TCGA-B0-4688-01	46	Dead	101	NA	kidney	stage iv	t4	n0	m1	male	2008	NA	NA	NA	kidney clear cell renal carcinoma	NA	NA	white	not hispanic or latino	NA	NA	NA
+TCGA-B0-4714-01	81	Dead	99	NA	kidney	stage iv	t3b	nx	m1	male	2010	NA	NA	NA	kidney clear cell renal carcinoma	NA	NA	white	not hispanic or latino	NA	NA	NA
+TCGA-B8-5158-01	56	Alive	NA	90	kidney	stage iii	t3a	n1	m0	male	2010	NA	no	80	kidney clear cell renal carcinoma	10	1996	white	not hispanic or latino	NA	NA	censored
+TCGA-B0-4819-01	60	Dead	183	183	kidney	stage iv	t3b	nx	m1	female	2002	6	NA	NA	kidney clear cell renal carcinoma	NA	NA	white	not hispanic or latino	NA	NA	censored
+TCGA-CW-5580-01	73	Dead	1964	NA	kidney	stage iv	t3a	nx	m1	female	2003	NA	NA	NA	kidney clear cell renal carcinoma	NA	NA	white	not hispanic or latino	NA	NA	NA
+TCGA-BP-5010-01	63	Dead	878	NA	kidney	stage iii	t3a	n0	m0	male	2007	NA	NA	NA	kidney clear cell renal carcinoma	NA	NA	white	not hispanic or latino	NA	781	progressed
+TCGA-A3-A6NL-01	49	Alive	NA	0	kidney	stage i	t1b	nx	mx	female	2012	NA	no	90	kidney clear cell renal carcinoma	NA	NA	black or african american	not hispanic or latino	NO	NA	NA
+TCGA-B2-5639-01	46	Alive	NA	248	kidney	stage iv	t3	nx	m1	male	2010	NA	yes	70	kidney clear cell renal carcinoma	NA	NA	white	not hispanic or latino	NA	163	progressed
+TCGA-CZ-5984-01	51	Alive	NA	1491	kidney	stage i	t1b	n0	m0	male	2005	NA	NA	NA	kidney clear cell renal carcinoma	NA	NA	white	NA	NA	NA	censored
+TCGA-MM-A563-01	41	Alive	NA	268	kidney	stage i	t3	nx	mx	male	2012	NA	no	NA	kidney clear cell renal carcinoma	14	1999	black or african american	not hispanic or latino	NO	NA	censored
+TCGA-B8-5551-01	65	Alive	NA	15	kidney	stage i	t1b	n0	m0	female	2010	NA	NA	NA	kidney clear cell renal carcinoma	NA	NA	black or african american	not hispanic or latino	NA	NA	censored
+TCGA-CZ-5453-01	67	Alive	NA	25	kidney	stage ii	t2	nx	m0	male	2006	NA	NA	NA	kidney clear cell renal carcinoma	NA	NA	white	NA	NA	NA	censored
+TCGA-B0-4690-01	65	Dead	43	NA	kidney	stage iv	t4	n0	m1	male	2008	NA	NA	NA	kidney clear cell renal carcinoma	NA	NA	white	not hispanic or latino	NA	NA	NA
+TCGA-BP-4795-01	74	Alive	NA	620	kidney	stage i	t1a	n0	m0	female	2007	NA	NA	NA	kidney clear cell renal carcinoma	NA	NA	white	NA	NA	NA	censored
+TCGA-MM-A564-01	68	Alive	NA	234	kidney	stage ii	t2a	nx	mx	male	2012	NA	no	NA	kidney clear cell renal carcinoma	NA	NA	black or african american	not hispanic or latino	NO	NA	censored
+TCGA-B8-4146-01	41	Alive	NA	511	kidney	stage i	t1b	nx	m0	female	2009	NA	no	NA	kidney clear cell renal carcinoma	20	NA	white	not hispanic or latino	NA	NA	censored
+TCGA-B8-A54F-01	49	Alive	NA	208	kidney	stage i	t1a	nx	mx	female	2012	NA	no	NA	kidney clear cell renal carcinoma	30	NA	black or african american	not hispanic or latino	NO	NA	censored
+TCGA-B2-5635-01	74	Alive	NA	315	kidney	stage i	t1a	nx	m0	male	2010	NA	no	NA	kidney clear cell renal carcinoma	NA	NA	white	not hispanic or latino	NA	NA	censored
+TCGA-B4-5832-01	65	Alive	NA	7	kidney	stage iii	t3b	n0	m0	male	2010	NA	no	80	kidney clear cell renal carcinoma	NA	NA	white	not hispanic or latino	NO	NA	censored
+TCGA-B0-4828-01	79	Dead	307	NA	kidney	stage iv	t2	nx	m1	male	2003	NA	NA	NA	kidney clear cell renal carcinoma	NA	NA	white	not hispanic or latino	NA	NA	NA
+TCGA-B0-5108-01	54	Alive	NA	162	kidney	stage iii	t3a	n0	m0	male	2009	NA	no	NA	kidney clear cell renal carcinoma	NA	NA	white	not hispanic or latino	NA	NA	censored
+TCGA-B0-4823-01	88	Dead	454	NA	kidney	stage i	t1a	n0	m0	male	2002	NA	NA	NA	kidney clear cell renal carcinoma	NA	NA	white	not hispanic or latino	NA	NA	NA
+TCGA-CZ-5456-01	57	Alive	NA	1558	kidney	stage ii	t2	n0	m0	male	2006	NA	NA	90	kidney clear cell renal carcinoma	NA	NA	white	NA	NA	951	progressed
+TCGA-B0-5100-01	72	Dead	1913	NA	kidney	stage iii	t3a	nx	m0	male	1998	NA	NA	NA	kidney clear cell renal carcinoma	NA	NA	black or african american	not hispanic or latino	NA	1426	progressed
+TCGA-B0-5706-01	45	Alive	NA	2414	kidney	stage ii	t2	n0	m0	male	2004	NA	no	NA	kidney clear cell renal carcinoma	NA	NA	white	not hispanic or latino	NA	NA	non-progressed
+TCGA-CJ-4923-01	63	Dead	572	NA	kidney	stage iv	t3a	nx	m1	female	2004	NA	NA	NA	kidney clear cell renal carcinoma	NA	NA	white	not hispanic or latino	NA	25	progressed
+TCGA-B8-5549-01	53	Alive	NA	194	kidney	stage i	t1b	n0	m0	male	2010	NA	no	NA	kidney clear cell renal carcinoma	NA	NA	white	not hispanic or latino	NA	NA	censored
+TCGA-CJ-4907-01	58	Alive	NA	1499	kidney	stage iii	t3b	nx	m0	male	2006	NA	NA	NA	kidney clear cell renal carcinoma	NA	NA	white	not hispanic or latino	NA	NA	censored
+TCGA-A3-A6NI-01	47	Alive	NA	20	kidney	stage i	t1a	nx	mx	male	2011	NA	no	NA	kidney clear cell renal carcinoma	NA	NA	black or african american	not hispanic or latino	NO	NA	censored
+TCGA-CJ-6027-01	77	Alive	NA	1855	kidney	stage i	t1a	nx	m0	male	2003	NA	no	NA	kidney clear cell renal carcinoma	NA	NA	white	not hispanic or latino	NA	NA	non-progressed
+TCGA-CZ-5463-01	76	Alive	NA	662	kidney	stage ii	t2	nx	m0	male	2007	NA	NA	NA	kidney clear cell renal carcinoma	NA	NA	white	NA	NA	NA	censored
+TCGA-BP-4993-01	58	Alive	NA	177	kidney	stage i	t1a	nx	m0	male	2007	177	NA	NA	kidney clear cell renal carcinoma	NA	NA	white	NA	NA	NA	censored
+TCGA-CJ-5689-01	90	Dead	1620	NA	kidney	stage i	t1b	nx	m0	male	2005	NA	NA	NA	kidney clear cell renal carcinoma	NA	NA	white	hispanic or latino	NA	NA	NA
+TCGA-BP-5190-01	61	Alive	NA	1011	kidney	stage i	t1a	nx	m0	male	2007	NA	NA	NA	kidney clear cell renal carcinoma	NA	NA	white	not hispanic or latino	NA	NA	censored
+TCGA-B8-5552-01	41	Alive	NA	219	kidney	stage i	t1b	nx	m0	female	2010	NA	no	NA	kidney clear cell renal carcinoma	NA	NA	white	not hispanic or latino	NA	NA	censored
+TCGA-CZ-5467-01	86	Dead	73	NA	kidney	stage iii	t3a	n0	m0	female	2007	NA	NA	NA	kidney clear cell renal carcinoma	NA	NA	white	not hispanic or latino	NA	62	progressed
+TCGA-B8-5164-01	65	Alive	NA	23	kidney	stage iii	t3a	n0	m0	male	2010	NA	NA	NA	kidney clear cell renal carcinoma	40	NA	white	not hispanic or latino	NA	NA	censored
+TCGA-B0-4844-01	60	Dead	313	NA	kidney	stage iv	t3a	nx	m1	male	2004	NA	NA	NA	kidney clear cell renal carcinoma	NA	NA	white	not hispanic or latino	NA	62	progressed
+TCGA-DV-5568-01	26	Alive	NA	370	kidney	stage i	t1a	nx	m0	male	2009	NA	NA	100	kidney clear cell renal carcinoma	NA	NA	white	not hispanic or latino	NA	NA	censored
+TCGA-B8-5546-01	38	Alive	NA	14	kidney	stage i	t1b	n0	m0	female	2010	NA	NA	NA	kidney clear cell renal carcinoma	NA	NA	black or african american	not hispanic or latino	NA	NA	censored
+TCGA-EU-5904-01	47	Alive	NA	551	kidney	stage i	t1	nx	m0	female	2009	NA	NA	90	kidney clear cell renal carcinoma	NA	NA	white	NA	NA	NA	censored
+TCGA-BP-5196-01	53	Alive	NA	1018	kidney	stage i	t1a	nx	m0	male	2008	NA	NA	NA	kidney clear cell renal carcinoma	NA	NA	white	NA	NA	NA	censored
+TCGA-CJ-6033-01	54	Dead	224	NA	kidney	stage iv	t3a	n0	m1	female	2004	NA	NA	NA	kidney clear cell renal carcinoma	NA	NA	white	not hispanic or latino	NA	144	progressed
+TCGA-MM-A84U-01	58	Alive	NA	337	kidney	stage i	t1a	nx	mx	female	2013	NA	no	NA	kidney clear cell renal carcinoma	NA	1996	black or african american	not hispanic or latino	NO	NA	censored
+TCGA-B0-5698-01	77	Alive	NA	2181	kidney	stage i	t1b	n0	m0	male	2005	NA	no	NA	kidney clear cell renal carcinoma	NA	NA	black or african american	not hispanic or latino	NA	NA	non-progressed
+TCGA-AK-3428-01	62	Alive	NA	2223	kidney	stage iii	t3b	n0	m0	male	2004	NA	no	100	kidney clear cell renal carcinoma	NA	NA	white	not hispanic or latino	NA	NA	non-progressed
+TCGA-B0-5113-01	69	Alive	NA	22	kidney	stage iii	t3a	n0	m0	female	2010	NA	no	NA	kidney clear cell renal carcinoma	NA	NA	white	not hispanic or latino	NA	NA	censored

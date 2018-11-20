@@ -1,0 +1,498 @@
+years_to_birth	vital_status	days_to_death	days_to_last_followup	tumor_tissue_site	pathologic_stage	pathology_T_stage	pathology_N_stage	pathology_M_stage	gender	date_of_initial_pathologic_diagnosis	radiation_therapy	histological_type	residual_tumor	number_of_lymph_nodes	gleason_score	psa_value	days_to_psa	race	ethnicity	new_tumor_event_after_initial_treatment	days_to_new_tumor_event_after_initial_treatment	progression_status
+TCGA-G9-6361-01	61	Alive	NA	1008	prostate	NA	t3a	n0	NA	male	2009	no	prostate adenocarcinoma acinar type	r1	0	7	0.1	1002	white	not hispanic or latino	NO	NA	censored
+TCGA-V1-A9ZI-01	68	Alive	NA	86	prostate	NA	t3b	n0	NA	male	NA	no	prostate adenocarcinoma acinar type	r0	0	9	3.11	86	NA	NA	YES	NA	censored
+TCGA-EJ-5518-01	66	Alive	NA	1195	prostate	NA	t4	n0	NA	male	2008	no	prostate adenocarcinoma acinar type	r1	0	9	0.1	1195	white	not hispanic or latino	NO	NA	censored
+TCGA-G9-6378-01	54	Alive	NA	664	prostate	NA	t2c	NA	NA	male	2009	no	prostate adenocarcinoma acinar type	r1	NA	7	0.03	223	black or african american	not hispanic or latino	NO	NA	censored
+TCGA-2A-AAYO-01	57	Alive	NA	922	prostate	NA	t2c	NA	NA	male	2011	no	prostate adenocarcinoma acinar type	r0	NA	6	0.05	922	NA	NA	NO	NA	censored
+TCGA-KK-A6E7-01	46	Alive	NA	2040	prostate	NA	t3a	n1	NA	male	2007	no	prostate adenocarcinoma acinar type	r1	1	9	0.1	1847	NA	NA	YES	925	progressed
+TCGA-HC-A6HY-01	51	Alive	NA	134	prostate	NA	t2c	NA	NA	male	2012	NA	prostate adenocarcinoma acinar type	r0	NA	7	NA	NA	NA	NA	NA	NA	censored
+TCGA-ZG-A9L0-01	71	Alive	NA	68	prostate	NA	t3b	n1	NA	male	2013	no	prostate adenocarcinoma acinar type	r1	7	9	NA	NA	NA	NA	NO	NA	censored
+TCGA-KK-A8IB-01	65	Alive	NA	83	prostate	NA	t3a	n0	NA	male	2012	NA	prostate adenocarcinoma acinar type	r0	NA	9	NA	NA	NA	NA	NA	NA	censored
+TCGA-FC-7961-01	62	Alive	NA	70	prostate	NA	t3a	n0	NA	male	2011	no	prostate adenocarcinoma acinar type	NA	0	9	NA	NA	white	not hispanic or latino	NO	NA	censored
+TCGA-V1-A8MM-01	60	Alive	NA	1019	prostate	NA	t3a	n0	NA	male	NA	no	prostate adenocarcinoma acinar type	r0	0	7	0.37	990	NA	NA	YES	NA	censored
+TCGA-SU-A7E7-01	60	Alive	NA	112	prostate	NA	t2b	n0	NA	male	2013	no	prostate adenocarcinoma acinar type	r0	0	8	0.01	426	NA	NA	NO	NA	censored
+TCGA-EJ-7218-01	71	Alive	NA	2542	prostate	NA	t2c	n0	NA	male	2006	no	prostate adenocarcinoma acinar type	r0	0	7	0.1	1473	NA	NA	NO	NA	non-progressed
+TCGA-V1-A8WS-01	56	Alive	NA	474	prostate	NA	t3b	NA	NA	male	NA	no	prostate adenocarcinoma acinar type	r0	NA	6	0.09	474	NA	NA	YES	NA	censored
+TCGA-CH-5751-01	68	Alive	NA	1065	prostate	NA	t4	n1	NA	male	2006	no	prostate adenocarcinoma acinar type	r1	1	10	0.01	1004	white	not hispanic or latino	YES	365	progressed
+TCGA-EJ-A7NG-01	64	Alive	NA	264	prostate	NA	t3a	n0	NA	male	2013	no	prostate adenocarcinoma acinar type	r0	0	7	0.1	264	NA	NA	NO	NA	censored
+TCGA-G9-6342-01	61	Alive	NA	1338	prostate	NA	t3a	NA	NA	male	2008	no	prostate adenocarcinoma acinar type	r0	NA	6	0.05	1338	white	not hispanic or latino	NO	NA	censored
+TCGA-EJ-7330-01	68	Alive	NA	191	prostate	NA	t3a	n0	NA	male	2011	NA	prostate adenocarcinoma acinar type	r0	0	7	0.1	191	white	not hispanic or latino	NA	NA	censored
+TCGA-CH-5767-01	66	Alive	NA	458	prostate	NA	t2c	n0	NA	male	2007	no	prostate adenocarcinoma acinar type	r0	0	7	0.04	377	white	not hispanic or latino	NO	NA	censored
+TCGA-KK-A59Y-01	56	Alive	NA	1359	prostate	NA	t3a	n1	NA	male	2009	yes	prostate adenocarcinoma acinar type	rx	2	9	0.1	1359	NA	NA	NO	NA	censored
+TCGA-ZG-A9L2-01	70	Alive	NA	986	prostate	NA	t3b	n0	NA	male	2011	no	prostate adenocarcinoma acinar type	r1	0	9	0.01	1137	NA	NA	NO	NA	censored
+TCGA-HC-7740-01	59	Alive	NA	53	prostate	NA	t2c	n0	NA	male	2011	no	prostate adenocarcinoma acinar type	r0	0	7	0	154	white	not hispanic or latino	NO	NA	censored
+TCGA-EJ-A8FN-01	58	Alive	NA	203	prostate	NA	t2c	n0	NA	male	2013	no	prostate adenocarcinoma acinar type	r0	0	7	0.1	203	NA	NA	NO	NA	censored
+TCGA-HC-7079-01	51	Alive	NA	126	prostate	NA	t3a	n0	NA	male	2010	no	prostate adenocarcinoma acinar type	r0	0	7	0.1	126	white	not hispanic or latino	YES	380	progressed
+TCGA-KK-A8I6-01	58	Alive	NA	668	prostate	NA	t3a	n0	NA	male	2011	no	prostate adenocarcinoma acinar type	r0	0	7	0.2	668	NA	NA	NA	NA	censored
+TCGA-EJ-7318-01	51	Alive	NA	510	prostate	NA	t3a	NA	NA	male	2011	no	prostate adenocarcinoma acinar type	r0	NA	7	0.08	189	NA	NA	NO	NA	censored
+TCGA-M7-A720-01	53	Alive	NA	302	prostate	NA	t2c	NA	NA	male	2013	no	prostate adenocarcinoma acinar type	r0	NA	6	NA	302	NA	NA	NO	NA	censored
+TCGA-EJ-7331-01	64	Alive	NA	9	prostate	NA	t2c	n0	NA	male	2011	no	prostate adenocarcinoma acinar type	r0	0	7	0.8	189	white	not hispanic or latino	NO	NA	censored
+TCGA-J4-A67N-01	61	Alive	NA	503	prostate	NA	t3a	n0	NA	male	2011	no	prostate adenocarcinoma acinar type	r0	0	7	0.7	503	NA	NA	YES	442	progressed
+TCGA-EJ-7785-01	54	Alive	NA	259	prostate	NA	t3a	n0	NA	male	2011	no	prostate adenocarcinoma acinar type	r0	0	7	0.1	259	white	not hispanic or latino	NO	NA	censored
+TCGA-EJ-7782-01	71	Alive	NA	350	prostate	NA	t2c	n0	NA	male	2010	no	prostate adenocarcinoma acinar type	r0	0	8	0.1	350	black or african american	not hispanic or latino	NO	NA	censored
+TCGA-YL-A9WK-01	63	Alive	NA	1897	prostate	NA	t3b	n0	NA	male	2008	no	prostate adenocarcinoma acinar type	r1	0	9	15.6	1871	NA	NA	YES	1009	progressed
+TCGA-KK-A8IL-01	65	Dead	628	NA	prostate	NA	t3b	n1	NA	male	2009	NA	prostate adenocarcinoma acinar type	r1	1	9	0.1	144	NA	NA	NA	NA	NA
+TCGA-ZG-A9LZ-01	66	Alive	NA	692	prostate	NA	t3b	n0	NA	male	2011	yes	prostate adenocarcinoma acinar type	r1	0	9	2.19	692	NA	NA	NO	NA	censored
+TCGA-J4-A67S-01	63	Alive	NA	523	prostate	NA	t3a	n0	NA	male	2012	no	prostate adenocarcinoma acinar type	r1	0	7	0.1	522	NA	NA	YES	708	progressed
+TCGA-J4-AATZ-01	66	Alive	NA	412	prostate	NA	t3a	n0	NA	male	2013	yes	prostate adenocarcinoma acinar type	r1	0	9	0	386	NA	NA	NA	NA	censored
+TCGA-KK-A7AY-01	60	Alive	NA	1572	prostate	NA	t2c	n0	NA	male	2010	no	prostate adenocarcinoma acinar type	r0	0	7	0.2	1572	NA	NA	NO	NA	non-progressed
+TCGA-2A-A8VX-01	70	Alive	NA	1033	prostate	NA	t3b	n0	NA	male	2011	no	prostate adenocarcinoma acinar type	r0	0	8	0.05	1033	NA	NA	NO	NA	censored
+TCGA-G9-7519-01	58	Alive	NA	457	prostate	NA	t2c	NA	NA	male	2010	no	prostate adenocarcinoma acinar type	r0	NA	7	0.03	457	NA	NA	NO	NA	censored
+TCGA-EJ-5496-01	59	Alive	NA	595	prostate	NA	t2c	n0	NA	male	2009	no	prostate adenocarcinoma acinar type	r0	0	7	0.1	595	white	not hispanic or latino	NO	NA	censored
+TCGA-EJ-A7NK-01	58	Alive	NA	295	prostate	NA	t3a	n0	NA	male	2012	no	prostate adenocarcinoma acinar type	r0	0	7	0.1	295	NA	NA	NO	NA	censored
+TCGA-EJ-5514-01	66	Alive	NA	724	prostate	NA	t2c	n0	NA	male	2009	no	prostate adenocarcinoma acinar type	r0	0	9	0.1	724	white	not hispanic or latino	NO	NA	censored
+TCGA-EJ-A46B-01	66	Alive	NA	162	prostate	NA	t3a	n0	NA	male	2012	no	prostate adenocarcinoma acinar type	r0	0	8	0.1	157	NA	NA	NO	NA	censored
+TCGA-KK-A6E0-01	59	Alive	NA	913	prostate	NA	t3a	n0	NA	male	2011	yes	prostate adenocarcinoma acinar type	r0	0	9	0.3	941	NA	NA	NO	NA	censored
+TCGA-EJ-7123-01	59	Alive	NA	1491	prostate	NA	t2c	n0	NA	male	2007	no	prostate adenocarcinoma acinar type	r0	0	7	0.1	1491	white	not hispanic or latino	NO	NA	non-progressed
+TCGA-FC-A5OB-01	53	Alive	NA	273	prostate	NA	t3b	n0	NA	male	2012	yes	prostate adenocarcinoma acinar type	r1	0	9	5.22	110	NA	NA	NO	NA	censored
+TCGA-EJ-8472-01	63	Alive	NA	756	prostate	NA	t3a	n0	NA	male	2011	no	prostate adenocarcinoma acinar type	r0	0	8	0.4	196	NA	NA	NO	NA	censored
+TCGA-KK-A7B0-01	67	Alive	NA	999	prostate	NA	t3b	n0	NA	male	2011	no	prostate adenocarcinoma acinar type	r0	0	9	0.1	999	NA	NA	NO	NA	censored
+TCGA-YL-A8SJ-01	60	Alive	NA	1395	prostate	NA	t3b	n0	NA	male	2010	no	prostate adenocarcinoma acinar type	r0	0	9	0.24	1426	NA	NA	YES	752	progressed
+TCGA-EJ-7791-01	67	Alive	NA	217	prostate	NA	t2c	n0	NA	male	2011	no	prostate adenocarcinoma acinar type	r0	0	7	0.1	217	white	not hispanic or latino	NO	NA	censored
+TCGA-HC-A6AP-01	61	Alive	NA	71	prostate	NA	t2c	NA	NA	male	2012	NA	prostate adenocarcinoma acinar type	rx	NA	7	NA	NA	NA	NA	NA	NA	censored
+TCGA-XK-AAJR-01	61	Alive	NA	824	prostate	NA	t3a	n0	NA	male	2011	no	prostate adenocarcinoma acinar type	r0	0	7	0.09	753	NA	NA	NO	NA	censored
+TCGA-V1-A8WN-01	47	Alive	NA	476	prostate	NA	t2c	NA	NA	male	NA	no	prostate adenocarcinoma acinar type	r0	NA	6	0.02	463	NA	NA	NO	NA	censored
+TCGA-J4-A67L-01	54	Alive	NA	518	prostate	NA	t3a	n0	NA	male	2011	no	prostate adenocarcinoma acinar type	r0	0	7	0.01	518	NA	NA	NO	NA	censored
+TCGA-J9-A8CL-01	66	Alive	NA	405	prostate	NA	t3b	NA	NA	male	2013	NA	prostate adenocarcinoma acinar type	r1	NA	9	12.01	405	NA	NA	NA	NA	censored
+TCGA-ZG-A8QX-01	56	Alive	NA	150	prostate	NA	t2c	n0	NA	male	2013	no	prostate adenocarcinoma acinar type	r0	0	6	NA	NA	NA	NA	NO	NA	censored
+TCGA-MG-AAMC-01	59	Alive	NA	173	prostate	NA	t3a	n0	NA	male	2013	no	prostate adenocarcinoma acinar type	r0	NA	9	0.01	54	NA	NA	NA	NA	censored
+TCGA-KC-A7FE-01	62	Alive	NA	352	prostate	NA	t2c	n0	NA	male	2013	no	prostate adenocarcinoma acinar type	r1	0	7	0	185	NA	NA	NA	NA	censored
+TCGA-G9-6339-01	58	Alive	NA	2110	prostate	NA	t3b	n0	NA	male	2007	no	prostate adenocarcinoma acinar type	r0	0	7	0.03	2110	NA	NA	NO	NA	non-progressed
+TCGA-VP-A87K-01	63	Alive	NA	655	prostate	NA	t3b	n0	NA	male	2010	no	prostate adenocarcinoma  other subtype	r1	0	8	0.3	655	NA	NA	YES	697	progressed
+TCGA-KK-A8I5-01	55	Alive	NA	2553	prostate	NA	t2b	n0	NA	male	2006	no	prostate adenocarcinoma acinar type	r0	NA	7	0.1	1979	NA	NA	NA	NA	non-progressed
+TCGA-J4-A67Q-01	77	Alive	NA	624	prostate	NA	t2c	NA	NA	male	2011	no	prostate adenocarcinoma acinar type	NA	NA	6	0.1	616	NA	NA	NO	NA	censored
+TCGA-G9-6498-01	53	Alive	NA	1608	prostate	NA	t3a	NA	NA	male	2008	no	prostate adenocarcinoma acinar type	r1	NA	7	0.03	1608	NA	NA	NO	NA	non-progressed
+TCGA-EJ-8474-01	69	Alive	NA	314	prostate	NA	t3a	n0	NA	male	2011	no	prostate adenocarcinoma acinar type	r0	0	8	0.01	766	NA	NA	NO	NA	censored
+TCGA-EJ-5509-01	63	Alive	NA	1102	prostate	NA	t2c	n0	NA	male	2009	no	prostate adenocarcinoma acinar type	r0	0	7	0.1	1102	white	not hispanic or latino	NO	NA	censored
+TCGA-VP-A879-01	70	Dead	728	NA	prostate	NA	t2b	n0	NA	male	2006	no	prostate adenocarcinoma acinar type	r0	0	9	0.01	688	NA	NA	NO	NA	NA
+TCGA-KC-A7FD-01	62	Alive	NA	270	prostate	NA	t3a	n0	NA	male	2013	no	prostate adenocarcinoma acinar type	r0	0	7	0	144	NA	NA	NA	NA	censored
+TCGA-HC-A8D0-01	61	Alive	NA	110	prostate	NA	t2a	n0	NA	male	2012	no	prostate adenocarcinoma acinar type	r0	0	7	0.01	110	NA	NA	NO	NA	censored
+TCGA-EJ-A7NJ-01	59	Alive	NA	197	prostate	NA	t2c	n0	NA	male	2013	no	prostate adenocarcinoma acinar type	r0	0	8	0.1	92	NA	NA	NO	NA	censored
+TCGA-CH-5753-01	70	Alive	NA	31	prostate	NA	t3b	n1	NA	male	2008	NA	prostate adenocarcinoma acinar type	r0	3	9	4.53	31	white	not hispanic or latino	NA	NA	censored
+TCGA-VP-A876-01	46	Alive	NA	2576	prostate	NA	t2c	n0	NA	male	2005	no	prostate adenocarcinoma acinar type	r0	0	8	0.1	2576	NA	NA	NO	NA	non-progressed
+TCGA-2A-A8VO-01	57	Alive	NA	1332	prostate	NA	t3a	NA	NA	male	2010	no	prostate adenocarcinoma acinar type	r1	NA	6	0.05	1332	NA	NA	NO	NA	censored
+TCGA-Y6-A9XI-01	72	Alive	NA	526	prostate	NA	NA	n0	NA	male	2012	no	prostate adenocarcinoma acinar type	r1	0	8	0.06	519	NA	NA	NO	NA	censored
+TCGA-YL-A8SL-01	74	Alive	NA	798	prostate	NA	t3b	n1	NA	male	2011	no	prostate adenocarcinoma acinar type	r0	3	8	0	623	NA	NA	NO	NA	censored
+TCGA-HC-A9TE-01	64	Alive	NA	134	prostate	NA	t3b	n0	NA	male	2013	no	prostate adenocarcinoma acinar type	r1	1	9	0.064	134	NA	NA	YES	216	progressed
+TCGA-V1-A8WW-01	59	Alive	NA	709	prostate	NA	t3b	n1	NA	male	NA	no	prostate adenocarcinoma acinar type	r0	1	9	0.015	695	NA	NA	YES	NA	censored
+TCGA-G9-A9S0-01	53	Dead	791	NA	prostate	NA	t3b	n1	NA	male	2011	yes	prostate adenocarcinoma acinar type	r1	5	8	10.87	759	NA	NA	YES	650	progressed
+TCGA-G9-6332-01	55	Alive	NA	2328	prostate	NA	t3a	n0	NA	male	2005	no	prostate adenocarcinoma acinar type	r0	0	7	0.73	2090	white	not hispanic or latino	YES	1180	progressed
+TCGA-J4-A83L-01	61	Alive	NA	316	prostate	NA	t2c	n0	NA	male	2013	no	prostate adenocarcinoma acinar type	r0	0	7	0.1	316	NA	NA	NO	NA	censored
+TCGA-KK-A8I9-01	61	Alive	NA	721	prostate	NA	t3a	n0	NA	male	2012	yes	prostate adenocarcinoma acinar type	rx	NA	8	0.1	721	NA	NA	YES	940	progressed
+TCGA-HC-7212-01	56	Alive	NA	41	prostate	NA	t2a	n0	NA	male	2011	NA	prostate adenocarcinoma acinar type	NA	0	7	0.28	424	white	not hispanic or latino	YES	NA	censored
+TCGA-VP-A878-01	58	Alive	NA	2704	prostate	NA	t2c	n1	NA	male	2006	no	prostate adenocarcinoma acinar type	r1	1	9	0.1	2704	NA	NA	YES	2354	censored
+TCGA-TK-A8OK-01	73	Alive	NA	27	prostate	NA	NA	NA	NA	male	2013	no	prostate adenocarcinoma acinar type	NA	NA	7	NA	NA	NA	NA	NA	NA	censored
+TCGA-KK-A6E8-01	68	Alive	NA	1770	prostate	NA	t2c	n0	NA	male	2007	no	prostate adenocarcinoma acinar type	rx	0	9	0.1	1769	NA	NA	NA	NA	non-progressed
+TCGA-CH-5739-01	65	Alive	NA	671	prostate	NA	t3a	n0	NA	male	2006	no	prostate adenocarcinoma acinar type	r0	0	7	0.02	586	white	not hispanic or latino	NO	NA	censored
+TCGA-EJ-7781-01	65	Alive	NA	169	prostate	NA	t2c	n0	NA	male	2011	no	prostate adenocarcinoma acinar type	r0	0	7	0.1	169	white	not hispanic or latino	NO	NA	censored
+TCGA-ZG-A9L9-01	60	Alive	NA	602	prostate	NA	t3b	n1	NA	male	2012	yes	prostate adenocarcinoma acinar type	r1	3	9	NA	NA	NA	NA	NO	NA	censored
+TCGA-HC-A4ZV-01	56	Alive	NA	23	prostate	NA	t3b	n0	NA	male	2012	NA	prostate adenocarcinoma acinar type	r1	0	9	NA	NA	NA	NA	NA	NA	censored
+TCGA-G9-6366-01	61	Alive	NA	101	prostate	NA	t3b	NA	NA	male	2009	NA	prostate adenocarcinoma acinar type	r0	NA	7	0.1	101	white	not hispanic or latino	NA	NA	censored
+TCGA-HC-7819-01	53	Alive	NA	1	prostate	NA	t2c	n0	NA	male	2011	no	prostate adenocarcinoma acinar type	r2	0	8	0.01	172	white	not hispanic or latino	NO	NA	censored
+TCGA-HC-7736-01	59	Alive	NA	22	prostate	NA	t2c	n0	NA	male	2010	no	prostate adenocarcinoma acinar type	r0	0	7	0.02	102	white	not hispanic or latino	NO	NA	censored
+TCGA-YL-A8SP-01	58	Alive	NA	2170	prostate	NA	t3b	NA	NA	male	2008	no	prostate adenocarcinoma acinar type	r1	NA	9	0.38	2155	NA	NA	YES	2036	censored
+TCGA-HC-7820-01	72	Alive	NA	102	prostate	NA	t2c	NA	NA	male	2011	no	prostate adenocarcinoma acinar type	r0	NA	7	NA	NA	white	not hispanic or latino	NO	NA	censored
+TCGA-KK-A7AV-01	58	Alive	NA	822	prostate	NA	t2c	n0	NA	male	2012	no	prostate adenocarcinoma acinar type	rx	0	7	0.1	822	NA	NA	NO	NA	censored
+TCGA-YL-A9WI-01	63	Alive	NA	1259	prostate	NA	t3a	n1	NA	male	2010	no	prostate adenocarcinoma acinar type	r0	1	9	0.03	1259	NA	NA	NO	NA	censored
+TCGA-J4-A83J-01	68	Alive	NA	310	prostate	NA	t2c	n0	NA	male	2013	no	prostate adenocarcinoma acinar type	r1	0	7	0.04	235	NA	NA	NO	NA	censored
+TCGA-EJ-5498-01	56	Alive	NA	537	prostate	NA	t2c	n0	NA	male	2010	no	prostate adenocarcinoma acinar type	r0	0	7	0.1	537	white	not hispanic or latino	NO	NA	censored
+TCGA-EJ-5527-01	69	Alive	NA	397	prostate	NA	t3a	n0	NA	male	2009	no	prostate adenocarcinoma acinar type	r0	0	7	0.1	217	white	not hispanic or latino	NO	NA	censored
+TCGA-EJ-8468-01	63	Alive	NA	1961	prostate	NA	t3a	n0	NA	male	2007	no	prostate adenocarcinoma acinar type	r0	0	8	0.1	1961	NA	NA	NO	NA	non-progressed
+TCGA-J4-8198-01	49	Alive	NA	98	prostate	NA	t3b	NA	NA	male	2011	no	prostate adenocarcinoma acinar type	NA	NA	7	0.1	76	NA	NA	NO	NA	censored
+TCGA-J4-A67M-01	55	Alive	NA	488	prostate	NA	t3a	n0	NA	male	2011	no	prostate adenocarcinoma acinar type	r0	0	7	0.1	482	NA	NA	NO	NA	censored
+TCGA-CH-5769-01	48	Alive	NA	62	prostate	NA	t3b	n0	NA	male	2007	NA	prostate adenocarcinoma acinar type	r1	0	9	11.16	60	white	not hispanic or latino	NA	NA	censored
+TCGA-KK-A8IK-01	56	Alive	NA	1563	prostate	NA	t2c	n0	NA	male	2008	no	prostate adenocarcinoma acinar type	r0	NA	9	0	NA	NA	NA	NA	NA	non-progressed
+TCGA-J9-A8CN-01	53	Alive	NA	1237	prostate	NA	t3a	NA	NA	male	2011	no	prostate adenocarcinoma acinar type	r1	NA	6	0.03	963	NA	NA	NA	NA	censored
+TCGA-2A-A8VT-01	47	Alive	NA	995	prostate	NA	t4	n1	NA	male	2011	yes	prostate adenocarcinoma acinar type	r1	2	9	0.05	995	NA	NA	NO	NA	censored
+TCGA-ZG-A9N3-01	73	Alive	NA	244	prostate	NA	t3b	n1	NA	male	2013	no	prostate adenocarcinoma acinar type	r1	1	9	0.1	244	NA	NA	NO	NA	censored
+TCGA-M7-A725-01	56	Alive	NA	96	prostate	NA	t3b	n0	NA	male	2012	no	prostate adenocarcinoma acinar type	r1	0	7	NA	96	NA	NA	NO	NA	censored
+TCGA-HI-7171-01	56	Dead	1329	NA	prostate	NA	t3b	n0	NA	male	2008	no	prostate adenocarcinoma acinar type	r1	0	9	0.7	631	white	not hispanic or latino	YES	NA	progressed
+TCGA-HC-7230-01	50	Alive	NA	51	prostate	NA	t2c	n0	NA	male	2011	no	prostate adenocarcinoma acinar type	r0	0	7	3	NA	white	not hispanic or latino	NO	NA	censored
+TCGA-J9-A8CM-01	66	Alive	NA	463	prostate	NA	t3b	n1	NA	male	2013	no	prostate adenocarcinoma acinar type	r1	1	9	0.55	463	NA	NA	NA	NA	censored
+TCGA-CH-5752-01	66	Alive	NA	943	prostate	NA	t3a	n0	NA	male	2006	yes	prostate adenocarcinoma acinar type	r0	0	8	0.02	868	white	not hispanic or latino	NO	NA	censored
+TCGA-G9-6384-01	53	Alive	NA	390	prostate	NA	t3a	n0	NA	male	2010	no	prostate adenocarcinoma acinar type	r0	0	7	0.03	390	white	not hispanic or latino	NO	NA	censored
+TCGA-EJ-7792-01	53	Alive	NA	526	prostate	NA	t2c	n0	NA	male	2010	no	prostate adenocarcinoma acinar type	r0	0	7	0.13	526	white	not hispanic or latino	NO	NA	censored
+TCGA-EJ-5530-01	61	Alive	NA	1272	prostate	NA	t2c	n0	NA	male	2008	no	prostate adenocarcinoma acinar type	r0	0	7	0.1	586	white	not hispanic or latino	NO	NA	censored
+TCGA-YL-A9WX-01	68	Alive	NA	1518	prostate	NA	t3b	n1	NA	male	2009	no	prostate adenocarcinoma acinar type	r1	1	9	0.76	1610	NA	NA	YES	1506	censored
+TCGA-HC-8266-01	55	Alive	NA	35	prostate	NA	t3b	n0	NA	male	2012	no	prostate adenocarcinoma acinar type	r1	0	8	NA	NA	NA	NA	NA	NA	censored
+TCGA-EJ-A65G-01	57	Alive	NA	278	prostate	NA	t2c	n0	NA	male	2012	no	prostate adenocarcinoma acinar type	r0	0	8	0.1	152	NA	NA	NO	NA	censored
+TCGA-EJ-8470-01	58	Alive	NA	821	prostate	NA	t2c	n0	NA	male	2010	no	prostate adenocarcinoma acinar type	NA	0	7	NA	NA	NA	NA	NO	NA	censored
+TCGA-QU-A6IN-01	61	Alive	NA	3487	prostate	NA	t2c	n0	NA	male	2003	no	prostate adenocarcinoma acinar type	r0	0	7	0.1	3428	NA	NA	NO	NA	non-progressed
+TCGA-EJ-A65F-01	59	Alive	NA	560	prostate	NA	t3b	n0	NA	male	2012	yes	prostate adenocarcinoma  other subtype	r0	0	9	0.8	75	NA	NA	NO	NA	censored
+TCGA-V1-A9OY-01	57	Alive	NA	170	prostate	NA	t3a	n1	NA	male	NA	no	prostate adenocarcinoma acinar type	r1	1	7	0.099	170	NA	NA	NO	NA	censored
+TCGA-ZG-A9ND-01	55	Alive	NA	261	prostate	NA	t3a	n0	NA	male	2013	no	prostate adenocarcinoma acinar type	r0	0	9	0.08	184	NA	NA	NO	NA	censored
+TCGA-YL-A8HO-01	67	Alive	NA	2183	prostate	NA	t3a	n0	NA	male	2008	no	prostate adenocarcinoma acinar type	r1	0	7	0.01	2168	NA	NA	YES	1068	progressed
+TCGA-EJ-A46E-01	57	Alive	NA	524	prostate	NA	NA	n0	NA	male	2011	no	prostate adenocarcinoma acinar type	r0	0	8	0.1	503	NA	NA	NA	NA	censored
+TCGA-G9-6338-01	61	Alive	NA	1649	prostate	NA	t3a	n0	NA	male	2007	no	prostate adenocarcinoma acinar type	r1	0	7	0.05	1634	white	not hispanic or latino	NO	NA	non-progressed
+TCGA-FC-7708-01	52	Alive	NA	32	prostate	NA	t3a	n0	NA	male	2011	no	prostate adenocarcinoma acinar type	rx	0	7	NA	NA	asian	not hispanic or latino	NO	NA	censored
+TCGA-ZG-A9LU-01	67	Alive	NA	549	prostate	NA	t3a	n0	NA	male	2012	yes	prostate adenocarcinoma acinar type	r1	0	9	0.7	549	NA	NA	NO	NA	censored
+TCGA-VP-A87H-01	76	Alive	NA	663	prostate	NA	t3b	n0	NA	male	2009	no	prostate adenocarcinoma acinar type	r2	0	9	0.01	663	NA	NA	NO	NA	censored
+TCGA-HC-7211-01	62	Alive	NA	24	prostate	NA	t2c	n0	NA	male	2010	no	prostate adenocarcinoma acinar type	r0	0	7	10.9	-17	white	not hispanic or latino	NO	NA	censored
+TCGA-G9-6329-01	67	Alive	NA	923	prostate	NA	t2c	NA	NA	male	2009	no	prostate adenocarcinoma acinar type	r0	NA	7	0.03	923	white	not hispanic or latino	NO	NA	censored
+TCGA-EJ-A65J-01	62	Alive	NA	91	prostate	NA	t3a	n0	NA	male	2012	no	prostate adenocarcinoma acinar type	r0	0	9	0.1	91	NA	NA	NO	NA	censored
+TCGA-EJ-7325-01	63	Alive	NA	533	prostate	NA	t3b	n0	NA	male	2011	no	prostate adenocarcinoma acinar type	r0	0	7	0.1	507	NA	NA	NO	NA	censored
+TCGA-G9-6369-01	55	Alive	NA	851	prostate	NA	t2c	n0	NA	male	2009	no	prostate adenocarcinoma acinar type	r0	0	7	0.03	851	white	not hispanic or latino	NO	NA	censored
+TCGA-HC-A9TH-01	58	Alive	NA	295	prostate	NA	t3b	n0	NA	male	2013	no	prostate adenocarcinoma acinar type	r1	0	9	0.38	295	NA	NA	YES	351	progressed
+TCGA-CH-5750-01	72	Alive	NA	396	prostate	NA	t2c	n0	NA	male	2008	no	prostate adenocarcinoma acinar type	r0	0	7	0.02	337	white	not hispanic or latino	NO	NA	censored
+TCGA-J4-AAU2-01	59	Alive	NA	304	prostate	NA	t2c	n0	NA	male	2012	no	prostate adenocarcinoma acinar type	r0	0	6	0	224	NA	NA	NO	NA	censored
+TCGA-KK-A6E3-01	56	Alive	NA	2056	prostate	NA	t2c	n0	NA	male	2004	no	prostate adenocarcinoma acinar type	r0	0	7	0.1	1065	NA	NA	NA	NA	non-progressed
+TCGA-CH-5763-01	66	Alive	NA	365	prostate	NA	t3a	n0	NA	male	2008	no	prostate adenocarcinoma acinar type	r0	0	7	0.1	360	white	not hispanic or latino	NO	NA	censored
+TCGA-EJ-5502-01	50	Alive	NA	245	prostate	NA	t2c	n0	NA	male	2010	no	prostate adenocarcinoma acinar type	r0	0	7	0.1	603	NA	NA	NO	NA	censored
+TCGA-XA-A8JR-01	68	Alive	NA	119	prostate	NA	t2c	n0	NA	male	2013	no	prostate adenocarcinoma acinar type	r2	0	7	0	69	NA	NA	NO	NA	censored
+TCGA-YL-A8SA-01	69	Alive	NA	512	prostate	NA	t3b	n0	NA	male	2009	yes	prostate adenocarcinoma acinar type	r1	0	8	0.06	467	NA	NA	NA	NA	censored
+TCGA-EJ-7312-01	58	Alive	NA	663	prostate	NA	t3b	n0	NA	male	2011	no	prostate adenocarcinoma acinar type	r0	0	7	0.1	376	NA	NA	NO	NA	censored
+TCGA-V1-A9OA-01	61	Alive	NA	636	prostate	NA	t3b	n1	NA	male	NA	yes	prostate adenocarcinoma acinar type	r0	1	9	0.01	510	NA	NA	NO	NA	censored
+TCGA-FC-A4JI-01	70	Alive	NA	29	prostate	NA	t3a	NA	NA	male	2012	yes	prostate adenocarcinoma acinar type	r0	NA	8	NA	NA	NA	NA	NO	NA	censored
+TCGA-KC-A4BV-01	66	Alive	NA	1328	prostate	NA	t3a	n0	NA	male	2010	no	prostate adenocarcinoma acinar type	r0	0	9	0.53	1328	NA	NA	NA	NA	censored
+TCGA-J9-A8CP-01	66	Alive	NA	386	prostate	NA	t3a	NA	NA	male	2013	no	prostate adenocarcinoma acinar type	r0	NA	7	0.01	298	NA	NA	NA	NA	censored
+TCGA-2A-A8VV-01	52	Alive	NA	671	prostate	NA	t2b	n0	NA	male	2010	no	prostate adenocarcinoma acinar type	r0	0	6	0.05	560	NA	NA	NO	NA	censored
+TCGA-XK-AAJU-01	65	Alive	NA	1206	prostate	NA	t2c	n0	NA	male	2010	no	prostate adenocarcinoma acinar type	r0	0	7	0.09	1206	NA	NA	NO	NA	censored
+TCGA-V1-A9OQ-01	67	Alive	NA	371	prostate	NA	t3a	NA	NA	male	NA	no	prostate adenocarcinoma acinar type	r1	NA	6	0.01	371	NA	NA	NO	NA	censored
+TCGA-KC-A4BR-01	75	Alive	NA	1349	prostate	NA	t3b	n1	NA	male	2009	no	prostate adenocarcinoma acinar type	r0	1	9	0	1258	NA	NA	NA	NA	censored
+TCGA-G9-6377-01	61	Alive	NA	518	prostate	NA	t2c	n0	NA	male	2009	no	prostate adenocarcinoma acinar type	r0	0	7	0.03	518	white	not hispanic or latino	NO	NA	censored
+TCGA-CH-5791-01	72	Alive	NA	1004	prostate	NA	t3a	n0	NA	male	2006	no	prostate adenocarcinoma acinar type	r1	0	7	0.18	882	white	not hispanic or latino	YES	396	progressed
+TCGA-V1-A8ML-01	63	Alive	NA	448	prostate	NA	t2c	n0	NA	male	NA	no	prostate adenocarcinoma acinar type	r0	0	7	0.01	448	NA	NA	NO	NA	censored
+TCGA-EJ-5507-01	54	Alive	NA	182	prostate	NA	t3b	n1	NA	male	2010	no	prostate adenocarcinoma acinar type	r0	2	9	0.1	182	white	not hispanic or latino	NO	NA	censored
+TCGA-EJ-5511-01	55	Alive	NA	788	prostate	NA	t3a	n0	NA	male	2009	no	prostate adenocarcinoma acinar type	r0	0	7	0.04	788	black or african american	not hispanic or latino	NO	NA	censored
+TCGA-HC-7232-01	66	Alive	NA	89	prostate	NA	t3b	NA	NA	male	2011	no	prostate adenocarcinoma acinar type	r0	NA	9	NA	NA	white	not hispanic or latino	YES	766	progressed
+TCGA-EJ-5531-01	62	Alive	NA	724	prostate	NA	t3a	n0	NA	male	2009	no	prostate adenocarcinoma acinar type	r0	0	7	0.1	724	white	not hispanic or latino	NO	NA	censored
+TCGA-YL-A8HM-01	66	Alive	NA	1124	prostate	NA	t3b	n0	NA	male	2010	yes	prostate adenocarcinoma acinar type	r0	0	9	0.03	1124	NA	NA	YES	1473	progressed
+TCGA-HC-8261-01	48	Alive	NA	62	prostate	NA	t2c	NA	NA	male	2011	no	prostate adenocarcinoma acinar type	r0	NA	7	NA	NA	NA	NA	NO	NA	censored
+TCGA-EJ-5519-01	64	Alive	NA	1153	prostate	NA	t3b	n1	NA	male	2008	no	prostate adenocarcinoma acinar type	r0	3	8	0.2	1153	white	not hispanic or latino	NO	NA	censored
+TCGA-V1-A9ZK-01	68	Alive	NA	1049	prostate	NA	t3b	n0	NA	male	NA	no	prostate adenocarcinoma acinar type	r0	0	8	0.01	1049	NA	NA	NO	NA	censored
+TCGA-CH-5745-01	68	Alive	NA	91	prostate	NA	t3a	n0	NA	male	2008	NA	prostate adenocarcinoma acinar type	r0	0	7	4.3	84	white	not hispanic or latino	NA	NA	censored
+TCGA-XK-AAJT-01	75	Alive	NA	1126	prostate	NA	t3a	n0	NA	male	2010	no	prostate adenocarcinoma acinar type	r1	0	7	0.09	566	NA	NA	NO	NA	censored
+TCGA-V1-A9OH-01	63	Alive	NA	1253	prostate	NA	t2b	NA	NA	male	NA	no	prostate adenocarcinoma acinar type	r0	NA	8	0.01	1253	NA	NA	NA	NA	censored
+TCGA-KK-A7AZ-01	56	Alive	NA	840	prostate	NA	t3a	n0	NA	male	2010	NA	prostate adenocarcinoma acinar type	r0	0	7	NA	NA	NA	NA	NA	NA	censored
+TCGA-CH-5792-01	57	Alive	NA	91	prostate	NA	t3a	n0	NA	male	2009	NA	prostate adenocarcinoma acinar type	r1	0	9	11.49	91	white	not hispanic or latino	NA	NA	censored
+TCGA-J4-A83I-01	63	Alive	NA	279	prostate	NA	t3a	n0	NA	male	2013	no	prostate adenocarcinoma acinar type	r0	0	7	0.1	257	NA	NA	NO	NA	censored
+TCGA-EJ-AB20-01	61	Alive	NA	131	prostate	NA	t2c	n0	NA	male	2013	no	prostate adenocarcinoma acinar type	r0	0	6	0.1	131	NA	NA	NO	NA	censored
+TCGA-XJ-A9DI-01	NA	Alive	NA	1461	prostate	NA	t3b	n0	NA	male	2009	yes	prostate adenocarcinoma acinar type	r0	0	9	0.1	1461	NA	NA	NO	NA	censored
+TCGA-KK-A7AW-01	57	Alive	NA	1054	prostate	NA	t3a	n1	NA	male	2010	NA	prostate adenocarcinoma acinar type	r0	1	7	0.8	204	NA	NA	NA	NA	censored
+TCGA-CH-5754-01	65	Alive	NA	62	prostate	NA	t3b	n1	NA	male	2008	NA	prostate adenocarcinoma acinar type	r1	3	9	37.36	62	white	not hispanic or latino	NA	NA	censored
+TCGA-EJ-5532-01	57	Alive	NA	926	prostate	NA	t3a	n0	NA	male	2009	no	prostate adenocarcinoma acinar type	r0	0	7	0.1	926	white	not hispanic or latino	NO	NA	censored
+TCGA-ZG-A9L4-01	61	Alive	NA	1108	prostate	NA	t3b	n0	NA	male	2011	no	prostate adenocarcinoma acinar type	r1	0	9	0.03	1108	NA	NA	NO	NA	censored
+TCGA-YL-A8SK-01	67	Alive	NA	1155	prostate	NA	t3b	n1	NA	male	2010	yes	prostate adenocarcinoma acinar type	r1	4	9	0.03	924	NA	NA	NO	NA	censored
+TCGA-KK-A8I8-01	69	Alive	NA	774	prostate	NA	t3b	n0	NA	male	2012	yes	prostate adenocarcinoma acinar type	r1	NA	9	0.1	757	NA	NA	NO	NA	censored
+TCGA-HC-7077-01	64	Alive	NA	77	prostate	NA	t3a	NA	NA	male	2006	no	prostate adenocarcinoma acinar type	r0	NA	6	0.83	1749	black or african american	not hispanic or latino	NO	NA	censored
+TCGA-HC-7750-01	50	Alive	NA	34	prostate	NA	t2c	NA	NA	male	2011	no	prostate adenocarcinoma acinar type	r0	NA	7	0.1	83	white	not hispanic or latino	NO	NA	censored
+TCGA-EJ-A65B-01	55	Alive	NA	536	prostate	NA	t3b	n0	NA	male	2012	no	prostate adenocarcinoma  other subtype	r1	0	9	0.01	536	NA	NA	NO	NA	censored
+TCGA-V1-A8X3-01	51	Alive	NA	202	prostate	NA	t2c	n0	NA	male	NA	no	prostate adenocarcinoma acinar type	r1	0	7	0.03	202	NA	NA	NO	NA	censored
+TCGA-EJ-A8FO-01	51	Alive	NA	156	prostate	NA	t3a	n0	NA	male	2013	no	prostate adenocarcinoma  other subtype	r0	0	7	0.1	156	NA	NA	NO	NA	censored
+TCGA-KK-A6E4-01	69	Alive	NA	2753	prostate	NA	t2b	n0	NA	male	2004	no	prostate adenocarcinoma acinar type	r0	0	7	0.1	890	NA	NA	NA	NA	non-progressed
+TCGA-ZG-A9LS-01	64	Alive	NA	211	prostate	NA	t3b	n1	NA	male	2013	yes	prostate adenocarcinoma acinar type	r1	3	9	0.03	147	NA	NA	NO	NA	censored
+TCGA-XJ-A83G-01	NA	Alive	NA	1157	prostate	NA	t3b	n0	NA	male	2010	no	prostate adenocarcinoma acinar type	NA	0	7	0.01	1126	NA	NA	NO	NA	censored
+TCGA-CH-5740-01	57	Alive	NA	31	prostate	NA	t2c	n0	NA	male	2009	NA	prostate adenocarcinoma acinar type	r0	0	7	1.6	NA	white	not hispanic or latino	NA	NA	censored
+TCGA-HC-8260-01	43	Alive	NA	106	prostate	NA	t2c	n0	NA	male	2011	no	prostate adenocarcinoma acinar type	r1	0	7	0.01	106	NA	NA	NO	NA	censored
+TCGA-J4-A67R-01	65	Alive	NA	454	prostate	NA	t2c	n0	NA	male	2012	no	prostate adenocarcinoma acinar type	r0	0	7	0.1	454	NA	NA	NO	NA	censored
+TCGA-G9-6351-01	51	Alive	NA	1215	prostate	NA	t2c	NA	NA	male	2008	yes	prostate adenocarcinoma acinar type	r1	NA	7	0.03	1215	white	not hispanic or latino	NO	NA	censored
+TCGA-CH-5764-01	66	Alive	NA	31	prostate	NA	t3b	n0	NA	male	2008	NA	prostate adenocarcinoma acinar type	r0	0	7	13.95	29	white	not hispanic or latino	NA	NA	censored
+TCGA-CH-5794-01	65	Alive	NA	882	prostate	NA	t2b	n0	NA	male	2006	no	prostate adenocarcinoma acinar type	r0	0	7	0.01	821	white	not hispanic or latino	NO	NA	censored
+TCGA-HI-7168-01	62	Alive	NA	2315	prostate	NA	t3b	n0	NA	male	2005	no	prostate adenocarcinoma acinar type	r0	0	9	0.3	2289	white	not hispanic or latino	YES	NA	censored
+TCGA-EJ-7315-01	68	Alive	NA	289	prostate	NA	t3a	n0	NA	male	2011	no	prostate adenocarcinoma acinar type	r0	0	7	0.1	289	white	not hispanic or latino	NO	NA	censored
+TCGA-G9-6373-01	68	Alive	NA	505	prostate	NA	t3a	NA	NA	male	2009	no	prostate adenocarcinoma acinar type	r0	NA	7	NA	NA	white	not hispanic or latino	NO	NA	censored
+TCGA-ZG-A9LB-01	72	Alive	NA	485	prostate	NA	t3b	n0	NA	male	2012	no	prostate adenocarcinoma acinar type	r1	0	9	0.02	485	NA	NA	NO	NA	censored
+TCGA-G9-7523-01	44	Alive	NA	324	prostate	NA	t3a	n0	NA	male	2011	no	prostate adenocarcinoma acinar type	r1	0	10	0.03	324	NA	NA	NO	NA	censored
+TCGA-FC-A66V-01	74	Alive	NA	122	prostate	NA	t3b	n0	NA	male	2012	no	prostate adenocarcinoma acinar type	r0	0	7	10.8	-164	NA	NA	NO	NA	censored
+TCGA-KK-A8I7-01	55	Alive	NA	1891	prostate	NA	t3b	n0	NA	male	2009	no	prostate adenocarcinoma acinar type	r1	0	9	0.1	1877	NA	NA	YES	1756	censored
+TCGA-ZG-A9LN-01	57	Alive	NA	115	prostate	NA	t3b	n1	NA	male	2013	no	prostate adenocarcinoma acinar type	r1	6	9	7.42	90	NA	NA	NO	NA	censored
+TCGA-J4-A6G3-01	57	Alive	NA	528	prostate	NA	t3b	n0	NA	male	2012	yes	prostate adenocarcinoma acinar type	r1	0	8	0.4	528	NA	NA	YES	618	progressed
+TCGA-XJ-A83H-01	NA	Alive	NA	1280	prostate	NA	t2c	NA	NA	male	2007	no	prostate adenocarcinoma acinar type	r0	NA	7	0.03	1280	NA	NA	NA	NA	censored
+TCGA-HC-8213-01	48	Alive	NA	1	prostate	NA	t2c	NA	NA	male	2011	no	prostate adenocarcinoma acinar type	r0	NA	6	NA	NA	NA	NA	NO	NA	censored
+TCGA-VN-A88O-01	49	Alive	NA	481	prostate	NA	t2c	n0	NA	male	2012	no	prostate adenocarcinoma acinar type	r0	0	7	0	376	NA	NA	NA	NA	censored
+TCGA-VN-A88I-01	59	Alive	NA	269	prostate	NA	t3a	n0	NA	male	2011	NA	prostate adenocarcinoma acinar type	r0	0	8	0.16	269	NA	NA	NA	NA	censored
+TCGA-J4-A67K-01	68	Alive	NA	662	prostate	NA	t2c	NA	NA	male	2011	no	prostate adenocarcinoma acinar type	r0	NA	7	0.1	557	NA	NA	NO	NA	censored
+TCGA-EJ-5516-01	49	Alive	NA	783	prostate	NA	t3a	n0	NA	male	2009	no	prostate adenocarcinoma acinar type	r0	0	7	0.12	730	white	not hispanic or latino	NO	NA	censored
+TCGA-CH-5741-01	56	Alive	NA	395	prostate	NA	t3b	n1	NA	male	2008	yes	prostate adenocarcinoma acinar type	r1	1	9	0.02	339	white	not hispanic or latino	NO	NA	censored
+TCGA-G9-6333-01	66	Alive	NA	1925	prostate	NA	t2c	n0	NA	male	2006	no	prostate adenocarcinoma acinar type	r0	0	7	0.03	1920	white	not hispanic or latino	NO	NA	non-progressed
+TCGA-EJ-7317-01	71	Alive	NA	285	prostate	NA	t2c	n0	NA	male	2011	no	prostate adenocarcinoma acinar type	r0	0	7	0.1	285	white	not hispanic or latino	NO	NA	censored
+TCGA-HC-7749-01	70	Alive	NA	60	prostate	NA	t3a	n0	NA	male	2011	no	prostate adenocarcinoma acinar type	r0	0	7	0.1	102	white	not hispanic or latino	NO	NA	censored
+TCGA-XJ-A9DX-01	NA	Alive	NA	790	prostate	NA	t3b	n1	NA	male	2012	NA	prostate adenocarcinoma acinar type	r1	2	9	0.05	790	NA	NA	YES	NA	censored
+TCGA-V1-A9O7-01	60	Alive	NA	2425	prostate	NA	t3a	n0	NA	male	NA	yes	prostate adenocarcinoma acinar type	r1	0	9	9.69	2425	NA	NA	YES	NA	censored
+TCGA-G9-6365-01	71	Alive	NA	804	prostate	NA	t4	n0	NA	male	2009	no	prostate adenocarcinoma acinar type	r1	0	7	0.01	804	white	not hispanic or latino	NO	NA	censored
+TCGA-KC-A7F3-01	67	Alive	NA	665	prostate	NA	t2c	n0	NA	male	2013	no	prostate adenocarcinoma acinar type	r0	0	7	0	664	NA	NA	NA	NA	censored
+TCGA-J4-AATV-01	71	Alive	NA	358	prostate	NA	t2c	n0	NA	male	2013	no	prostate adenocarcinoma acinar type	r1	NA	6	0	358	NA	NA	NO	NA	censored
+TCGA-G9-6496-01	61	Alive	NA	1014	prostate	NA	t2c	n0	NA	male	2008	no	prostate adenocarcinoma acinar type	r0	0	7	0.03	703	white	not hispanic or latino	NO	NA	censored
+TCGA-HC-A6AN-01	67	Alive	NA	49	prostate	NA	t3a	n0	NA	male	2012	NA	prostate adenocarcinoma acinar type	r1	0	7	NA	NA	NA	NA	NA	NA	censored
+TCGA-2A-A8W1-01	54	Alive	NA	112	prostate	NA	t3a	n0	NA	male	2011	NA	prostate adenocarcinoma acinar type	r1	0	7	0.05	-122	NA	NA	NO	NA	censored
+TCGA-FC-A6HD-01	77	Alive	NA	54	prostate	NA	t3a	n0	NA	male	2013	no	prostate adenocarcinoma acinar type	r0	0	7	NA	NA	NA	NA	NO	NA	censored
+TCGA-ZG-A9L6-01	64	Alive	NA	664	prostate	NA	t3b	n0	NA	male	2011	no	prostate adenocarcinoma acinar type	r1	0	9	0.36	664	NA	NA	NO	NA	censored
+TCGA-KK-A8IM-01	55	Alive	NA	1438	prostate	NA	t2c	n0	NA	male	2009	no	prostate adenocarcinoma acinar type	r0	NA	7	0.1	1438	NA	NA	NO	NA	censored
+TCGA-V1-A9Z8-01	59	Alive	NA	187	prostate	NA	t3b	n0	NA	male	NA	no	prostate adenocarcinoma acinar type	r1	0	9	0.01	181	NA	NA	NA	NA	censored
+TCGA-VN-A88L-01	54	Alive	NA	394	prostate	NA	t2c	n0	NA	male	2012	no	prostate adenocarcinoma acinar type	r0	0	7	0	394	NA	NA	NO	NA	censored
+TCGA-EJ-A65D-01	66	Alive	NA	393	prostate	NA	t3a	n0	NA	male	2012	no	prostate adenocarcinoma  other subtype	r0	0	8	0.1	393	NA	NA	NO	NA	censored
+TCGA-EJ-8469-01	46	Alive	NA	1946	prostate	NA	t3a	n0	NA	male	2007	no	prostate adenocarcinoma acinar type	rx	0	9	3.1	1925	NA	NA	YES	1925	censored
+TCGA-YJ-A8SW-01	NA	Alive	NA	148	prostate	NA	t3b	n0	NA	male	2008	NA	prostate adenocarcinoma  other subtype	r1	0	9	0.38	148	NA	NA	NA	NA	censored
+TCGA-EJ-5504-01	65	Alive	NA	229	prostate	NA	t3a	n1	NA	male	2010	no	prostate adenocarcinoma acinar type	r1	1	7	1	77	white	not hispanic or latino	YES	NA	censored
+TCGA-HI-7169-01	55	Alive	NA	1949	prostate	NA	t3a	n0	NA	male	2006	no	prostate adenocarcinoma acinar type	r1	0	7	0.1	1941	white	not hispanic or latino	NO	NA	non-progressed
+TCGA-KC-A4BL-01	65	Alive	NA	934	prostate	NA	t2c	n0	NA	male	2006	NA	prostate adenocarcinoma acinar type	r0	0	7	3.15	206	NA	NA	NA	NA	censored
+TCGA-EJ-5542-01	60	Alive	NA	519	prostate	NA	t3a	n0	NA	male	2010	no	prostate adenocarcinoma acinar type	r0	0	7	0.1	519	white	not hispanic or latino	NO	NA	censored
+TCGA-EJ-7784-01	63	Alive	NA	167	prostate	NA	t2c	n0	NA	male	2011	no	prostate adenocarcinoma acinar type	r0	0	7	0.1	167	white	not hispanic or latino	NO	NA	censored
+TCGA-CH-5790-01	64	Alive	NA	974	prostate	NA	t2c	n0	NA	male	2006	no	prostate adenocarcinoma acinar type	r0	0	7	0.1	914	white	not hispanic or latino	NO	NA	censored
+TCGA-YL-A8SO-01	64	Alive	NA	3247	prostate	NA	t3a	NA	NA	male	2004	no	prostate adenocarcinoma acinar type	r1	NA	9	0	3247	NA	NA	NO	NA	non-progressed
+TCGA-G9-6363-01	64	Alive	NA	993	prostate	NA	t4	n0	NA	male	2009	no	prostate adenocarcinoma acinar type	r0	0	7	0.03	993	white	not hispanic or latino	NO	NA	censored
+TCGA-HC-7818-01	66	Alive	NA	45	prostate	NA	t2c	n0	NA	male	2011	no	prostate adenocarcinoma acinar type	r0	0	7	0.01	99	white	not hispanic or latino	NO	NA	censored
+TCGA-J9-A52C-01	57	Alive	NA	178	prostate	NA	t3b	NA	NA	male	2012	no	prostate adenocarcinoma acinar type	r0	NA	9	0.03	178	NA	NA	NA	NA	censored
+TCGA-CH-5772-01	63	Alive	NA	486	prostate	NA	t3a	n0	NA	male	2008	yes	prostate adenocarcinoma acinar type	r1	0	9	0.03	424	white	not hispanic or latino	NO	NA	censored
+TCGA-EJ-7789-01	66	Alive	NA	70	prostate	NA	t3a	n0	NA	male	2011	no	prostate adenocarcinoma acinar type	r0	0	7	NA	NA	black or african american	not hispanic or latino	NO	NA	censored
+TCGA-EJ-5510-01	48	Alive	NA	738	prostate	NA	t2c	n0	NA	male	2009	no	prostate adenocarcinoma acinar type	r0	0	7	0.1	738	white	not hispanic or latino	NO	NA	censored
+TCGA-CH-5768-01	72	Alive	NA	731	prostate	NA	t3a	n0	NA	male	2007	no	prostate adenocarcinoma acinar type	r0	0	6	0.1	634	white	not hispanic or latino	NO	NA	censored
+TCGA-QU-A6IL-01	64	Alive	NA	97	prostate	NA	t2c	n0	NA	male	2002	no	prostate adenocarcinoma acinar type	r0	0	7	0.2	91	NA	NA	NO	NA	censored
+TCGA-YL-A9WJ-01	47	Dead	1855	NA	prostate	NA	t3b	n1	NA	male	2008	yes	prostate adenocarcinoma acinar type	r1	1	8	3.1	838	NA	NA	YES	1476	censored
+TCGA-KK-A6E6-01	69	Alive	NA	3447	prostate	NA	t3a	n0	NA	male	2002	no	prostate adenocarcinoma acinar type	r0	0	9	0.1	3447	NA	NA	NA	NA	non-progressed
+TCGA-KK-A6E2-01	54	Alive	NA	4604	prostate	NA	t2c	n0	NA	male	2000	no	prostate adenocarcinoma acinar type	r0	0	7	0.1	438	NA	NA	NA	NA	non-progressed
+TCGA-G9-7522-01	49	Alive	NA	452	prostate	NA	t2c	n0	NA	male	2011	no	prostate adenocarcinoma acinar type	r0	0	7	0.1	452	NA	NA	NO	NA	censored
+TCGA-EJ-A8FU-01	64	Alive	NA	82	prostate	NA	t3a	n0	NA	male	2013	no	prostate adenocarcinoma acinar type	r0	0	8	NA	NA	NA	NA	NO	NA	censored
+TCGA-V1-A9Z9-01	63	Alive	NA	295	prostate	NA	t2c	n0	NA	male	NA	no	prostate adenocarcinoma acinar type	r0	0	9	0.015	291	NA	NA	NO	NA	censored
+TCGA-EJ-A46I-01	57	Alive	NA	668	prostate	NA	t3a	n0	NA	male	2011	no	prostate adenocarcinoma acinar type	r0	NA	7	0.1	484	NA	NA	NO	NA	censored
+TCGA-V1-A9ZR-01	68	Alive	NA	177	prostate	NA	t4	n0	NA	male	NA	no	prostate adenocarcinoma acinar type	r1	NA	8	1.44	54	NA	NA	NA	NA	censored
+TCGA-VN-A88N-01	62	Alive	NA	176	prostate	NA	t2c	n0	NA	male	2013	no	prostate adenocarcinoma acinar type	r0	0	7	0	176	NA	NA	NO	NA	censored
+TCGA-VN-A88R-01	53	Alive	NA	459	prostate	NA	t2c	n0	NA	male	2012	no	prostate adenocarcinoma acinar type	r0	0	8	0.15	459	NA	NA	YES	512	progressed
+TCGA-EJ-5515-01	60	Alive	NA	1061	prostate	NA	t3a	n0	NA	male	2009	no	prostate adenocarcinoma acinar type	r0	0	7	0.1	1061	white	not hispanic or latino	NO	NA	censored
+TCGA-EJ-AB27-01	51	Alive	NA	145	prostate	NA	t2c	n0	NA	male	2013	no	prostate adenocarcinoma acinar type	r0	0	6	0.1	145	NA	NA	NO	NA	censored
+TCGA-XK-AAIW-01	78	Alive	NA	972	prostate	NA	t3b	n0	NA	male	2011	no	prostate adenocarcinoma acinar type	r1	0	9	0.09	769	NA	NA	NO	NA	censored
+TCGA-ZG-A9KY-01	73	Alive	NA	34	prostate	NA	t4	n1	NA	male	2013	no	prostate adenocarcinoma acinar type	r1	2	9	NA	NA	NA	NA	NO	NA	censored
+TCGA-HC-7233-01	NA	Alive	NA	52	prostate	NA	t2a	n0	NA	male	2010	no	prostate adenocarcinoma acinar type	r1	0	7	NA	NA	white	NA	NO	NA	censored
+TCGA-XK-AAJ3-01	56	Alive	NA	868	prostate	NA	t3a	n0	NA	male	2010	no	prostate adenocarcinoma acinar type	r0	0	8	0.09	863	NA	NA	NA	NA	censored
+TCGA-G9-6347-01	59	Alive	NA	1718	prostate	NA	t2c	NA	NA	male	2008	no	prostate adenocarcinoma acinar type	r0	NA	6	0.03	1718	NA	NA	NO	NA	non-progressed
+TCGA-KC-A7FA-01	63	Alive	NA	598	prostate	NA	t3a	n0	NA	male	2013	no	prostate adenocarcinoma acinar type	r0	0	7	0	161	NA	NA	NA	NA	censored
+TCGA-VP-AA1N-01	70	Alive	NA	542	prostate	NA	t3a	n0	NA	male	2008	yes	prostate adenocarcinoma acinar type	r1	0	9	0.01	542	NA	NA	NO	NA	censored
+TCGA-XK-AAIV-01	63	Alive	NA	958	prostate	NA	t3b	n1	NA	male	2011	yes	prostate adenocarcinoma acinar type	r1	2	10	0.32	85	NA	NA	NO	NA	censored
+TCGA-V1-A8MU-01	56	Alive	NA	1399	prostate	NA	t3a	n1	NA	male	NA	no	prostate adenocarcinoma acinar type	r1	1	7	0.015	1384	NA	NA	YES	NA	censored
+TCGA-4L-AA1F-01	64	Alive	NA	350	prostate	NA	t3b	n0	NA	male	2013	no	prostate adenocarcinoma acinar type	r1	0	8	3.5	350	NA	NA	NA	NA	censored
+TCGA-HC-7744-01	46	Alive	NA	51	prostate	NA	t3b	n0	NA	male	2011	yes	prostate adenocarcinoma acinar type	r1	0	7	0.04	282	white	not hispanic or latino	NO	NA	censored
+TCGA-EJ-7788-01	53	Alive	NA	52	prostate	NA	t3b	n0	NA	male	2011	no	prostate adenocarcinoma acinar type	r0	0	7	0.2	52	white	not hispanic or latino	NO	NA	censored
+TCGA-EJ-5526-01	56	Alive	NA	567	prostate	NA	t3a	n1	NA	male	2009	no	prostate adenocarcinoma acinar type	r0	1	8	0.1	175	white	not hispanic or latino	YES	537	progressed
+TCGA-EJ-5497-01	47	Alive	NA	405	prostate	NA	t2c	n0	NA	male	2009	no	prostate adenocarcinoma acinar type	r0	0	7	0.1	204	white	not hispanic or latino	NO	NA	censored
+TCGA-YL-A8HK-01	59	Alive	NA	1491	prostate	NA	t3b	n0	NA	male	2009	yes	prostate adenocarcinoma acinar type	r1	0	9	1	1491	NA	NA	YES	1376	progressed
+TCGA-KK-A8IF-01	57	Alive	NA	804	prostate	NA	t3a	n0	NA	male	2007	NA	prostate adenocarcinoma acinar type	r0	NA	7	0.7	788	NA	NA	NA	NA	censored
+TCGA-ZG-A9L5-01	58	Alive	NA	854	prostate	NA	t4	n1	NA	male	2011	no	prostate adenocarcinoma acinar type	r1	1	9	NA	NA	NA	NA	NO	NA	censored
+TCGA-KC-A4BN-01	55	Alive	NA	1815	prostate	NA	t2a	n0	NA	male	2009	no	prostate adenocarcinoma acinar type	r0	0	7	0	529	NA	NA	NA	NA	non-progressed
+TCGA-YL-A8S8-01	68	Alive	NA	1890	prostate	NA	t3a	n0	NA	male	2008	no	prostate adenocarcinoma acinar type	r1	0	9	1.36	1890	NA	NA	YES	679	progressed
+TCGA-G9-6494-01	66	Alive	NA	1442	prostate	NA	t4	n0	NA	male	2008	no	prostate adenocarcinoma acinar type	r1	0	7	1.13	1423	white	not hispanic or latino	NO	NA	censored
+TCGA-M7-A724-01	64	Alive	NA	483	prostate	NA	t3a	n0	NA	male	2012	no	prostate adenocarcinoma acinar type	r1	0	8	NA	483	NA	NA	YES	NA	censored
+TCGA-EJ-7793-01	49	Alive	NA	114	prostate	NA	t2c	NA	NA	male	2011	no	prostate adenocarcinoma acinar type	r0	NA	7	0.1	114	white	not hispanic or latino	NO	NA	censored
+TCGA-XJ-A9DQ-01	NA	Alive	NA	91	prostate	NA	t2a	NA	NA	male	2007	no	prostate adenocarcinoma acinar type	r0	NA	6	NA	NA	NA	NA	NA	NA	censored
+TCGA-J4-A83M-01	64	Alive	NA	437	prostate	NA	t2c	n0	NA	male	2012	yes	prostate adenocarcinoma acinar type	r1	0	7	0.2	437	NA	NA	YES	521	progressed
+TCGA-QU-A6IP-01	66	Alive	NA	2620	prostate	NA	t2a	n0	NA	male	2004	no	prostate adenocarcinoma acinar type	r0	0	6	0	2620	NA	NA	NO	NA	non-progressed
+TCGA-KK-A8IC-01	54	Alive	NA	2051	prostate	NA	t3b	n0	NA	male	2008	no	prostate adenocarcinoma acinar type	r0	NA	9	0.9	2047	NA	NA	YES	1060	progressed
+TCGA-H9-7775-01	68	Alive	NA	44	prostate	NA	t2c	NA	NA	male	2011	no	prostate adenocarcinoma acinar type	NA	NA	7	0.04	73	white	not hispanic or latino	NO	NA	censored
+TCGA-HC-7080-01	66	Alive	NA	104	prostate	NA	t2a	n0	NA	male	2010	no	prostate adenocarcinoma acinar type	r0	0	7	0.1	104	white	not hispanic or latino	YES	894	progressed
+TCGA-ZG-A8QZ-01	65	Alive	NA	308	prostate	NA	t3b	n1	NA	male	2013	yes	prostate adenocarcinoma acinar type	r1	1	9	0.01	239	NA	NA	NO	NA	censored
+TCGA-CH-5748-01	64	Alive	NA	31	prostate	NA	t3a	n0	NA	male	2009	NA	prostate adenocarcinoma acinar type	r1	0	7	NA	NA	white	not hispanic or latino	NA	NA	censored
+TCGA-YL-A8SQ-01	61	Alive	NA	1943	prostate	NA	t3b	n0	NA	male	2008	no	prostate adenocarcinoma acinar type	r1	0	9	1.1	1943	NA	NA	YES	329	progressed
+TCGA-CH-5743-01	66	Alive	NA	425	prostate	NA	t2c	n0	NA	male	2008	no	prostate adenocarcinoma acinar type	r0	0	7	0.1	394	white	not hispanic or latino	YES	425	progressed
+TCGA-YL-A8SH-01	69	Dead	875	NA	prostate	NA	t3a	n0	NA	male	2009	no	prostate adenocarcinoma acinar type	r0	0	7	0.06	617	NA	NA	NA	NA	NA
+TCGA-G9-6343-01	62	Alive	NA	554	prostate	NA	t2c	NA	NA	male	2008	no	prostate adenocarcinoma acinar type	r0	NA	7	0.03	554	white	not hispanic or latino	NA	NA	censored
+TCGA-YL-A9WY-01	57	Alive	NA	846	prostate	NA	t3b	n1	NA	male	2011	no	prostate adenocarcinoma acinar type	r1	11	9	1.8	765	NA	NA	YES	765	progressed
+TCGA-HC-8257-01	70	Alive	NA	29	prostate	NA	t3b	n1	NA	male	2011	no	prostate adenocarcinoma acinar type	r1	1	7	0.1	726	NA	NA	NO	NA	censored
+TCGA-HC-A76W-01	73	Alive	NA	213	prostate	NA	t3b	n0	NA	male	2012	NA	prostate adenocarcinoma acinar type	r1	0	7	0.01	213	NA	NA	NA	NA	censored
+TCGA-HC-A631-01	67	Alive	NA	54	prostate	NA	t2c	n0	NA	male	2012	NA	prostate adenocarcinoma acinar type	r1	0	9	NA	NA	NA	NA	NA	NA	censored
+TCGA-EJ-7321-01	57	Alive	NA	233	prostate	NA	t3a	n0	NA	male	2011	no	prostate adenocarcinoma acinar type	r0	0	6	0.1	128	black or african american	not hispanic or latino	NO	NA	censored
+TCGA-G9-6356-01	60	Alive	NA	1000	prostate	NA	t3b	n0	NA	male	2009	no	prostate adenocarcinoma acinar type	r1	0	9	0.13	986	white	not hispanic or latino	NO	NA	censored
+TCGA-KK-A8IG-01	55	Alive	NA	2211	prostate	NA	t3a	n0	NA	male	2008	no	prostate adenocarcinoma acinar type	r1	NA	7	0.1	2211	NA	NA	NO	NA	non-progressed
+TCGA-HC-A6HX-01	55	Alive	NA	38	prostate	NA	t2c	n0	NA	male	2013	NA	prostate adenocarcinoma acinar type	r0	0	7	NA	NA	NA	NA	NA	NA	censored
+TCGA-HC-A6AS-01	70	Alive	NA	44	prostate	NA	t2a	n0	NA	male	2012	NA	prostate adenocarcinoma acinar type	r0	0	7	NA	NA	NA	NA	NA	NA	censored
+TCGA-EJ-7797-01	53	Alive	NA	187	prostate	NA	t2c	n0	NA	male	2011	no	prostate adenocarcinoma acinar type	r0	0	7	0.1	187	white	not hispanic or latino	NO	NA	censored
+TCGA-HC-7209-01	60	Alive	NA	41	prostate	NA	t2c	n0	NA	male	2011	no	prostate adenocarcinoma acinar type	r0	0	6	0.05	108	white	not hispanic or latino	NO	NA	censored
+TCGA-YL-A8SI-01	69	Alive	NA	1441	prostate	NA	t3a	n0	NA	male	2010	no	prostate adenocarcinoma acinar type	r0	0	9	0.48	1441	NA	NA	YES	1423	progressed
+TCGA-HC-A6AL-01	64	Alive	NA	67	prostate	NA	t2c	n0	NA	male	2012	NA	prostate adenocarcinoma acinar type	r0	0	7	NA	NA	NA	NA	NA	NA	censored
+TCGA-HC-8216-01	58	Alive	NA	42	prostate	NA	t3a	n0	NA	male	2011	no	prostate adenocarcinoma acinar type	r0	0	7	0.19	137	NA	NA	NO	NA	censored
+TCGA-X4-A8KS-01	61	Alive	NA	846	prostate	NA	t2c	NA	NA	male	2011	no	prostate adenocarcinoma acinar type	rx	NA	7	0.01	797	NA	NA	NO	NA	censored
+TCGA-V1-A8MJ-01	58	Alive	NA	1230	prostate	NA	t3a	n1	NA	male	NA	no	prostate adenocarcinoma acinar type	r0	1	7	0.015	1230	NA	NA	YES	NA	censored
+TCGA-G9-6362-01	57	Alive	NA	822	prostate	NA	t3a	n0	NA	male	2009	no	prostate adenocarcinoma acinar type	r1	0	7	0.07	815	white	not hispanic or latino	NO	NA	censored
+TCGA-KK-A8IH-01	50	Alive	NA	1635	prostate	NA	t3a	n0	NA	male	2009	no	prostate adenocarcinoma acinar type	r0	NA	7	0.1	1634	NA	NA	NO	NA	non-progressed
+TCGA-G9-6354-01	55	Alive	NA	1501	prostate	NA	t2b	NA	NA	male	2009	no	prostate adenocarcinoma acinar type	r0	NA	7	0.03	525	NA	NA	NO	NA	non-progressed
+TCGA-HC-A76X-01	62	Alive	NA	150	prostate	NA	t2c	n0	NA	male	2013	NA	prostate adenocarcinoma acinar type	r0	0	7	0.01	150	NA	NA	NA	NA	censored
+TCGA-KK-A7AP-01	55	Alive	NA	196	prostate	NA	t3b	n1	NA	male	2010	NA	prostate adenocarcinoma acinar type	r1	2	9	NA	NA	NA	NA	NA	NA	censored
+TCGA-HC-8264-01	60	Alive	NA	48	prostate	NA	t3b	n1	NA	male	2011	NA	prostate adenocarcinoma acinar type	r1	1	9	NA	NA	NA	NA	NA	NA	censored
+TCGA-KK-A7B1-01	65	Alive	NA	1063	prostate	NA	t3a	n0	NA	male	2011	no	prostate adenocarcinoma acinar type	r0	0	7	0.1	179	NA	NA	NA	NA	censored
+TCGA-ZG-A9M4-01	65	Alive	NA	223	prostate	NA	t3b	n1	NA	male	2012	no	prostate adenocarcinoma acinar type	r1	1	9	0.95	218	NA	NA	NO	NA	censored
+TCGA-CH-5788-01	69	Alive	NA	821	prostate	NA	t3b	n1	NA	male	2007	no	prostate adenocarcinoma acinar type	r0	6	7	3.58	786	white	not hispanic or latino	NA	NA	censored
+TCGA-G9-6336-01	57	Alive	NA	1669	prostate	NA	NA	n0	NA	male	2007	no	prostate adenocarcinoma acinar type	r1	0	7	0.1	1669	white	not hispanic or latino	NO	NA	non-progressed
+TCGA-EJ-A65M-01	65	Alive	NA	230	prostate	NA	t2c	n0	NA	male	2013	no	prostate adenocarcinoma acinar type	NA	0	6	0.1	230	NA	NA	NO	NA	censored
+TCGA-KK-A7B2-01	68	Alive	NA	692	prostate	NA	t3a	n1	NA	male	2012	no	prostate adenocarcinoma acinar type	r0	1	9	0.3	845	NA	NA	YES	692	progressed
+TCGA-HC-7081-01	NA	Alive	NA	72	prostate	NA	t3b	NA	NA	male	2010	yes	prostate adenocarcinoma acinar type	r2	NA	9	NA	NA	white	NA	NO	NA	censored
+TCGA-KC-A7F5-01	54	Alive	NA	91	prostate	NA	t2c	n0	NA	male	2013	no	prostate adenocarcinoma acinar type	r0	0	7	0	91	NA	NA	NA	NA	censored
+TCGA-QU-A6IM-01	59	Alive	NA	1247	prostate	NA	t2a	n0	NA	male	2003	no	prostate adenocarcinoma acinar type	r0	0	7	0.1	896	NA	NA	NO	NA	censored
+TCGA-HC-A6AO-01	52	Alive	NA	167	prostate	NA	t2c	NA	NA	male	2012	no	prostate adenocarcinoma acinar type	r0	NA	7	NA	NA	NA	NA	NO	NA	censored
+TCGA-EJ-7125-01	44	Alive	NA	1860	prostate	NA	t2c	n0	NA	male	2005	no	prostate adenocarcinoma acinar type	r0	0	7	0.1	1860	white	not hispanic or latino	NO	NA	non-progressed
+TCGA-2A-AAYU-01	56	Alive	NA	615	prostate	NA	t3a	n0	NA	male	2012	no	prostate adenocarcinoma acinar type	r1	0	6	0.05	269	NA	NA	NO	NA	censored
+TCGA-M7-A71Y-01	55	Alive	NA	158	prostate	NA	t2c	NA	NA	male	2013	no	prostate adenocarcinoma acinar type	r0	NA	7	NA	158	NA	NA	NO	NA	censored
+TCGA-EJ-A7NH-01	56	Alive	NA	172	prostate	NA	t2c	n0	NA	male	2013	no	prostate adenocarcinoma acinar type	r0	NA	7	0.1	105	NA	NA	NO	NA	censored
+TCGA-EJ-A46F-01	57	Alive	NA	299	prostate	NA	t3b	n1	NA	male	2011	no	prostate adenocarcinoma acinar type	r0	1	8	19.8	215	NA	NA	NO	NA	censored
+TCGA-G9-6499-01	66	Alive	NA	1109	prostate	NA	t3a	n0	NA	male	2008	no	prostate adenocarcinoma acinar type	r0	0	9	0.11	1109	white	not hispanic or latino	NO	NA	censored
+TCGA-YL-A9WL-01	59	Alive	NA	740	prostate	NA	t3a	n0	NA	male	2011	yes	prostate adenocarcinoma acinar type	r0	0	9	6.4	740	NA	NA	YES	740	progressed
+TCGA-2A-A8W3-01	69	Alive	NA	771	prostate	NA	t3a	n0	NA	male	2011	no	prostate adenocarcinoma acinar type	r0	0	9	0.36	771	NA	NA	YES	198	progressed
+TCGA-CH-5771-01	63	Alive	NA	396	prostate	NA	t2c	n0	NA	male	2008	no	prostate adenocarcinoma acinar type	r0	0	7	0.03	396	white	not hispanic or latino	NO	NA	censored
+TCGA-ZG-A9LM-01	72	Alive	NA	121	prostate	NA	t3a	n1	NA	male	2013	no	prostate adenocarcinoma acinar type	r0	2	9	0	121	NA	NA	NO	NA	censored
+TCGA-HC-7210-01	74	Alive	NA	149	prostate	NA	t2a	n0	NA	male	2011	no	prostate adenocarcinoma acinar type	r0	0	7	0.1	149	white	not hispanic or latino	NO	NA	censored
+TCGA-HC-7747-01	52	Alive	NA	57	prostate	NA	t2c	n0	NA	male	2011	yes	prostate adenocarcinoma acinar type	NA	0	7	0.19	392	white	not hispanic or latino	NO	NA	censored
+TCGA-VP-A87B-01	63	Alive	NA	2309	prostate	NA	t2b	n0	NA	male	2007	yes	prostate adenocarcinoma acinar type	r0	0	8	3.37	2309	NA	NA	YES	2473	censored
+TCGA-KK-A8IJ-01	59	Alive	NA	1559	prostate	NA	t3b	n1	NA	male	2009	NA	prostate adenocarcinoma acinar type	r0	1	7	0.1	167	NA	NA	NA	NA	non-progressed
+TCGA-J4-A6G1-01	68	Alive	NA	405	prostate	NA	t3a	n0	NA	male	2012	yes	prostate adenocarcinoma acinar type	r0	0	8	0.1	178	NA	NA	NO	NA	censored
+TCGA-KK-A6E5-01	63	Alive	NA	1498	prostate	NA	t3b	n0	NA	male	2009	no	prostate adenocarcinoma acinar type	r0	0	7	0.1	1496	NA	NA	NO	NA	non-progressed
+TCGA-EJ-5503-01	50	Alive	NA	530	prostate	NA	t3a	n0	NA	male	2010	no	prostate adenocarcinoma acinar type	r0	0	8	0.1	530	white	not hispanic or latino	NO	NA	censored
+TCGA-VN-A88M-01	55	Alive	NA	183	prostate	NA	t2c	n0	NA	male	2013	no	prostate adenocarcinoma acinar type	r0	0	7	NA	NA	NA	NA	NA	NA	censored
+TCGA-YL-A9WH-01	67	Alive	NA	427	prostate	NA	t3b	n1	NA	male	2011	yes	prostate adenocarcinoma acinar type	r1	1	9	0.03	349	NA	NA	NO	NA	censored
+TCGA-CH-5744-01	64	Alive	NA	60	prostate	NA	t2c	n0	NA	male	2008	NA	prostate adenocarcinoma acinar type	r0	0	7	9.63	48	white	not hispanic or latino	NA	NA	censored
+TCGA-V1-A9O5-01	64	Alive	NA	1776	prostate	NA	t4	n1	NA	male	NA	yes	prostate adenocarcinoma acinar type	r1	6	9	3.26	1776	NA	NA	YES	NA	censored
+TCGA-KK-A5A1-01	72	Alive	NA	2364	prostate	NA	t3b	n0	NA	male	2003	no	prostate adenocarcinoma acinar type	r1	0	9	0.1	420	NA	NA	NA	NA	non-progressed
+TCGA-EJ-5525-01	67	Alive	NA	790	prostate	NA	t2c	n0	NA	male	2009	no	prostate adenocarcinoma acinar type	r0	0	9	3	521	white	not hispanic or latino	YES	546	progressed
+TCGA-XQ-A8TB-01	67	Alive	NA	770	prostate	NA	t3b	n0	NA	male	2012	yes	prostate adenocarcinoma acinar type	r1	0	9	0	674	NA	NA	NO	NA	censored
+TCGA-YL-A8S9-01	63	Alive	NA	1842	prostate	NA	t3a	n0	NA	male	2008	no	prostate adenocarcinoma acinar type	r1	0	9	0.03	1839	NA	NA	YES	1006	progressed
+TCGA-HC-8259-01	50	Alive	NA	123	prostate	NA	t2a	NA	NA	male	2011	no	prostate adenocarcinoma acinar type	r0	NA	6	0.01	123	NA	NA	NO	NA	censored
+TCGA-ZG-A9L1-01	66	Alive	NA	1147	prostate	NA	t3b	n1	NA	male	2010	yes	prostate adenocarcinoma acinar type	r1	1	9	0.07	1147	NA	NA	NO	NA	censored
+TCGA-EJ-A6RA-01	70	Alive	NA	353	prostate	NA	t3b	n1	NA	male	2012	no	prostate adenocarcinoma acinar type	r0	1	8	0.652	353	NA	NA	NO	NA	censored
+TCGA-TP-A8TV-01	62	Alive	NA	249	prostate	NA	t2c	n0	NA	male	2013	yes	prostate adenocarcinoma acinar type	r1	0	7	0.019	249	NA	NA	NO	NA	censored
+TCGA-XQ-A8TA-01	59	Dead	146	NA	prostate	NA	NA	NA	NA	male	2012	no	prostate adenocarcinoma acinar type	NA	NA	10	323	62	NA	NA	NO	NA	NA
+TCGA-V1-A9OX-01	56	Alive	NA	256	prostate	NA	t2c	n0	NA	male	NA	no	prostate adenocarcinoma acinar type	r0	0	8	0.04	256	NA	NA	NO	NA	censored
+TCGA-HC-7738-01	58	Alive	NA	81	prostate	NA	t2c	NA	NA	male	2011	no	prostate adenocarcinoma acinar type	r0	NA	7	NA	NA	white	not hispanic or latino	YES	420	progressed
+TCGA-HC-8262-01	57	Alive	NA	76	prostate	NA	t2c	n0	NA	male	2011	no	prostate adenocarcinoma acinar type	r0	0	8	0.1	112	NA	NA	NO	NA	censored
+TCGA-V1-A8MG-01	53	Alive	NA	857	prostate	NA	t3b	NA	NA	male	NA	no	prostate adenocarcinoma acinar type	r1	NA	7	0.03	583	NA	NA	NO	NA	censored
+TCGA-EJ-5499-01	61	Alive	NA	533	prostate	NA	t3a	n0	NA	male	2010	no	prostate adenocarcinoma acinar type	r0	0	7	0.1	533	asian	not hispanic or latino	NO	NA	censored
+TCGA-EJ-5505-01	57	Alive	NA	448	prostate	NA	t2c	n0	NA	male	2010	no	prostate adenocarcinoma acinar type	r0	0	7	0.1	448	white	not hispanic or latino	NO	NA	censored
+TCGA-ZG-A8QW-01	72	Alive	NA	50	prostate	NA	t3b	n1	NA	male	2013	no	prostate adenocarcinoma acinar type	r0	1	9	NA	NA	NA	NA	NO	NA	censored
+TCGA-EJ-A8FS-01	66	Alive	NA	216	prostate	NA	t3a	n0	NA	male	2013	no	prostate adenocarcinoma acinar type	r0	0	7	0.3	216	NA	NA	NO	NA	censored
+TCGA-HC-8258-01	56	Alive	NA	66	prostate	NA	t2c	n0	NA	male	2011	no	prostate adenocarcinoma acinar type	NA	0	6	0.01	162	NA	NA	NO	NA	censored
+TCGA-KK-A6E1-01	57	Alive	NA	1659	prostate	NA	t3b	n1	NA	male	2008	yes	prostate adenocarcinoma acinar type	rx	5	9	0.1	356	NA	NA	NA	NA	non-progressed
+TCGA-J9-A52B-01	62	Alive	NA	422	prostate	NA	t3b	n0	NA	male	2012	no	prostate adenocarcinoma acinar type	r1	0	9	0.01	414	NA	NA	NA	NA	censored
+TCGA-XK-AAJP-01	66	Alive	NA	889	prostate	NA	t3a	n0	NA	male	2011	no	prostate adenocarcinoma acinar type	r0	0	7	0.09	889	NA	NA	NO	NA	censored
+TCGA-M7-A721-01	70	Alive	NA	204	prostate	NA	t2c	NA	NA	male	2012	no	prostate adenocarcinoma acinar type	r1	NA	7	NA	162	NA	NA	NA	NA	censored
+TCGA-KK-A8I4-01	64	Alive	NA	2068	prostate	NA	t3b	n1	NA	male	2008	no	prostate adenocarcinoma acinar type	r0	1	7	0.2	1964	NA	NA	YES	2162	censored
+TCGA-G9-7509-01	48	Alive	NA	1164	prostate	NA	t2c	NA	NA	male	2009	no	prostate adenocarcinoma acinar type	r0	NA	6	0.03	352	NA	NA	NO	NA	censored
+TCGA-J4-A6M7-01	53	Alive	NA	279	prostate	NA	t2c	NA	NA	male	2012	no	prostate adenocarcinoma acinar type	r0	NA	7	0.1	279	NA	NA	NO	NA	censored
+TCGA-KK-A7AQ-01	62	Alive	NA	1386	prostate	NA	t2c	n0	NA	male	2010	no	prostate adenocarcinoma acinar type	r0	0	7	0.1	1385	NA	NA	NO	NA	censored
+TCGA-EJ-5501-01	55	Alive	NA	729	prostate	NA	t3b	n0	NA	male	2010	no	prostate adenocarcinoma acinar type	r0	0	7	0.1	729	white	not hispanic or latino	NO	NA	censored
+TCGA-CH-5765-01	55	Alive	NA	700	prostate	NA	t3a	n0	NA	male	2007	no	prostate adenocarcinoma acinar type	r0	0	7	0.02	694	white	not hispanic or latino	NO	NA	censored
+TCGA-CH-5737-01	73	Alive	NA	91	prostate	NA	t2c	n0	NA	male	2007	NA	prostate adenocarcinoma acinar type	r0	0	7	14.69	NA	white	not hispanic or latino	NA	NA	censored
+TCGA-EJ-A8FP-01	59	Alive	NA	117	prostate	NA	t2c	n0	NA	male	2013	no	prostate adenocarcinoma  other subtype	r0	0	8	0.2	117	NA	NA	NO	NA	censored
+TCGA-H9-A6BX-01	60	Alive	NA	570	prostate	NA	t2c	NA	NA	male	2012	no	prostate adenocarcinoma acinar type	r0	NA	6	0.04	570	NA	NA	NO	NA	censored
+TCGA-YL-A8SF-01	62	Alive	NA	1373	prostate	NA	t3b	n0	NA	male	2010	no	prostate adenocarcinoma acinar type	r1	0	8	0.01	1247	NA	NA	NO	NA	censored
+TCGA-Y6-A8TL-01	65	Alive	NA	775	prostate	NA	t3a	n0	NA	male	2012	no	prostate adenocarcinoma acinar type	r0	0	6	0	775	NA	NA	NO	NA	censored
+TCGA-CH-5762-01	60	Alive	NA	1339	prostate	NA	t3b	n0	NA	male	2005	yes	prostate adenocarcinoma acinar type	r1	0	7	0.01	1313	white	not hispanic or latino	NO	NA	censored
+TCGA-KK-A59Z-01	66	Alive	NA	1879	prostate	NA	t2c	n0	NA	male	2007	no	prostate adenocarcinoma acinar type	r0	0	7	0.1	849	NA	NA	NA	NA	non-progressed
+TCGA-HC-A48F-01	47	Alive	NA	46	prostate	NA	t2c	n1	NA	male	2012	yes	prostate adenocarcinoma acinar type	r1	1	8	NA	NA	NA	NA	NO	NA	censored
+TCGA-EJ-7327-01	61	Alive	NA	175	prostate	NA	t3b	n0	NA	male	2011	no	prostate adenocarcinoma acinar type	r0	0	7	0.1	175	white	not hispanic or latino	NO	NA	censored
+TCGA-J4-8200-01	47	Alive	NA	196	prostate	NA	t2c	n0	NA	male	2011	no	prostate adenocarcinoma acinar type	r0	0	7	0.1	196	NA	NA	NO	NA	censored
+TCGA-EJ-7328-01	70	Alive	NA	170	prostate	NA	t3a	n0	NA	male	2011	no	prostate adenocarcinoma acinar type	r0	0	7	NA	NA	white	not hispanic or latino	NO	NA	censored
+TCGA-V1-A8WL-01	64	Alive	NA	1375	prostate	NA	t3a	n0	NA	male	NA	no	prostate adenocarcinoma acinar type	r0	0	7	0.015	1175	NA	NA	NO	NA	censored
+TCGA-ZG-A8QY-01	67	Alive	NA	34	prostate	NA	t3b	n1	NA	male	2013	no	prostate adenocarcinoma acinar type	rx	1	9	NA	NA	NA	NA	NO	NA	censored
+TCGA-HC-7737-01	55	Alive	NA	64	prostate	NA	t2c	n1	NA	male	2010	no	prostate adenocarcinoma acinar type	r0	1	7	0.1	147	black or african american	NA	NO	NA	censored
+TCGA-KK-A6DY-01	50	Alive	NA	3524	prostate	NA	t2c	n0	NA	male	2002	no	prostate adenocarcinoma acinar type	r1	0	7	0.1	903	NA	NA	NA	NA	non-progressed
+TCGA-V1-A8WV-01	52	Alive	NA	686	prostate	NA	t3b	n1	NA	male	NA	no	prostate adenocarcinoma acinar type	r0	1	9	0.01	686	NA	NA	NO	NA	censored
+TCGA-EJ-5517-01	55	Alive	NA	850	prostate	NA	t2c	n0	NA	male	2008	no	prostate adenocarcinoma acinar type	r0	0	6	0.1	187	white	not hispanic or latino	NO	NA	censored
+TCGA-EJ-5495-01	68	Alive	NA	606	prostate	NA	t3b	n1	NA	male	2009	no	prostate adenocarcinoma acinar type	r0	1	8	0.13	606	white	not hispanic or latino	NO	NA	censored
+TCGA-HC-7078-01	69	Alive	NA	162	prostate	NA	t3a	n0	NA	male	2007	no	prostate adenocarcinoma acinar type	r0	0	7	0.01	1409	white	not hispanic or latino	NO	NA	censored
+TCGA-J4-A83K-01	52	Alive	NA	206	prostate	NA	t2c	NA	NA	male	2013	no	prostate adenocarcinoma acinar type	r0	NA	6	0.1	205	NA	NA	NO	NA	censored
+TCGA-YL-A8HL-01	58	Alive	NA	1173	prostate	NA	t3b	n1	NA	male	2010	yes	prostate adenocarcinoma acinar type	r1	2	9	0.03	1173	NA	NA	NO	NA	censored
+TCGA-G9-7521-01	52	Alive	NA	487	prostate	NA	t3a	n1	NA	male	2010	no	prostate adenocarcinoma acinar type	r0	1	8	0.06	487	NA	NA	NO	NA	censored
+TCGA-YL-A8SR-01	64	Alive	NA	213	prostate	NA	t3a	n0	NA	male	2011	no	prostate adenocarcinoma acinar type	r1	0	9	0.06	222	NA	NA	NA	NA	censored
+TCGA-VN-A88Q-01	60	Alive	NA	1001	prostate	NA	t2c	n0	NA	male	2010	no	prostate adenocarcinoma  other subtype	r0	0	8	0	1000	NA	NA	NO	NA	censored
+TCGA-VP-A875-01	67	Alive	NA	805	prostate	NA	t3a	n0	NA	male	2005	no	prostate adenocarcinoma acinar type	r0	0	7	0.01	867	NA	NA	NO	NA	censored
+TCGA-EJ-7115-01	65	Alive	NA	822	prostate	NA	t3a	n0	NA	male	2006	no	prostate adenocarcinoma acinar type	r0	0	7	0.1	204	white	not hispanic or latino	NO	NA	censored
+TCGA-ZG-A9LY-01	60	Alive	NA	287	prostate	NA	t3b	n1	NA	male	2012	yes	prostate adenocarcinoma acinar type	r1	1	9	0.01	288	NA	NA	NO	NA	censored
+TCGA-G9-6385-01	66	Alive	NA	356	prostate	NA	t2c	NA	NA	male	2010	no	prostate adenocarcinoma acinar type	r0	NA	7	0.064	336	white	not hispanic or latino	NO	NA	censored
+TCGA-V1-A8MK-01	41	Alive	NA	508	prostate	NA	t2c	n0	NA	male	NA	no	prostate adenocarcinoma acinar type	r0	NA	6	0.83	-1	NA	NA	NO	NA	censored
+TCGA-HC-8256-01	53	Alive	NA	95	prostate	NA	t2c	NA	NA	male	2011	no	prostate adenocarcinoma acinar type	r0	NA	7	NA	NA	NA	NA	NO	NA	censored
+TCGA-VN-A943-01	71	Alive	NA	132	prostate	NA	t2c	n0	NA	male	2013	no	prostate adenocarcinoma acinar type	r0	0	8	0.01	132	NA	NA	NO	NA	censored
+TCGA-V1-A8MF-01	65	Alive	NA	1254	prostate	NA	t3a	n0	NA	male	NA	no	prostate adenocarcinoma acinar type	r1	0	6	0.14	1218	NA	NA	NO	NA	censored
+TCGA-EJ-5524-01	57	Alive	NA	834	prostate	NA	t3a	n0	NA	male	2009	no	prostate adenocarcinoma acinar type	r0	0	9	0.1	811	white	not hispanic or latino	YES	265	progressed
+TCGA-G9-7510-01	66	Alive	NA	674	prostate	NA	t3a	n0	NA	male	2010	no	prostate adenocarcinoma acinar type	r1	0	8	0.03	674	NA	NA	NO	NA	censored
+TCGA-HC-7817-01	52	Alive	NA	32	prostate	NA	t3b	NA	NA	male	2011	yes	prostate adenocarcinoma acinar type	NA	NA	7	0.1	171	NA	NA	NO	NA	censored
+TCGA-VP-A87D-01	54	Alive	NA	1853	prostate	NA	t3a	n1	NA	male	2007	no	prostate adenocarcinoma acinar type	r0	3	9	0.2	1853	NA	NA	NO	NA	non-progressed
+TCGA-YL-A8SC-01	66	Alive	NA	1261	prostate	NA	t3a	n0	NA	male	2010	no	prostate adenocarcinoma acinar type	r1	0	9	0.65	1261	NA	NA	YES	152	progressed
+TCGA-EJ-7314-01	62	Alive	NA	295	prostate	NA	t3b	n0	NA	male	2011	no	prostate adenocarcinoma acinar type	r0	0	7	0.1	295	white	not hispanic or latino	NO	NA	censored
+TCGA-KC-A7F6-01	63	Alive	NA	263	prostate	NA	t2c	n0	NA	male	2013	no	prostate adenocarcinoma acinar type	r0	0	7	0	193	NA	NA	NA	NA	censored
+TCGA-EJ-7794-01	67	Alive	NA	285	prostate	NA	t2c	n0	NA	male	2010	no	prostate adenocarcinoma acinar type	r0	0	7	0.1	285	white	not hispanic or latino	NO	NA	censored
+TCGA-HC-8265-01	66	Alive	NA	70	prostate	NA	t3a	n0	NA	male	2011	yes	prostate adenocarcinoma acinar type	r1	0	8	0.1	119	NA	NA	NO	NA	censored
+TCGA-HC-7213-01	53	Alive	NA	60	prostate	NA	t3b	n0	NA	male	2010	no	prostate adenocarcinoma acinar type	r0	0	9	4.09	170	white	not hispanic or latino	YES	170	progressed
+TCGA-X4-A8KQ-01	65	Alive	NA	1131	prostate	NA	t3b	n0	NA	male	2010	yes	prostate adenocarcinoma acinar type	rx	0	9	0.25	963	NA	NA	YES	NA	censored
+TCGA-G9-A9S7-01	55	Alive	NA	643	prostate	NA	t3a	n0	NA	male	2012	yes	prostate adenocarcinoma acinar type	r0	0	8	0.13	643	NA	NA	NO	NA	censored
+TCGA-EJ-5512-01	46	Alive	NA	782	prostate	NA	t2c	n0	NA	male	2009	no	prostate adenocarcinoma acinar type	r0	0	7	0	782	white	not hispanic or latino	NO	NA	censored
+TCGA-M7-A723-01	54	Alive	NA	62	prostate	NA	t3b	n1	NA	male	2012	yes	prostate adenocarcinoma acinar type	r1	1	7	0.1	62	NA	NA	NO	NA	censored
+TCGA-J4-A67T-01	63	Alive	NA	183	prostate	NA	t2c	NA	NA	male	2012	no	prostate adenocarcinoma acinar type	r0	NA	7	0.1	154	NA	NA	NA	NA	censored
+TCGA-HC-7745-01	65	Alive	NA	63	prostate	NA	t3b	n0	NA	male	2011	no	prostate adenocarcinoma acinar type	r0	0	7	NA	NA	white	not hispanic or latino	NO	NA	censored
+TCGA-EJ-A65E-01	67	Alive	NA	417	prostate	NA	t3b	n0	NA	male	2012	no	prostate adenocarcinoma  other subtype	r0	0	7	0.1	254	NA	NA	NO	NA	censored
+TCGA-V1-A9OT-01	61	Alive	NA	476	prostate	NA	t2c	NA	NA	male	NA	no	prostate adenocarcinoma acinar type	r1	NA	6	0.01	349	NA	NA	YES	NA	censored
+TCGA-EJ-7786-01	62	Alive	NA	79	prostate	NA	t2c	n0	NA	male	2011	no	prostate adenocarcinoma acinar type	r0	0	7	0.1	79	white	not hispanic or latino	NO	NA	censored
+TCGA-YL-A8SB-01	62	Alive	NA	1384	prostate	NA	t3a	n0	NA	male	2010	yes	prostate adenocarcinoma acinar type	r1	0	9	0.23	1384	NA	NA	YES	1384	progressed
+TCGA-KK-A8II-01	61	Dead	3467	NA	prostate	NA	t3a	n0	NA	male	2004	no	prostate adenocarcinoma  other subtype	r0	NA	9	39.8	2891	NA	NA	YES	1854	censored
+TCGA-HC-A8CY-01	63	Alive	NA	290	prostate	NA	t3a	n1	NA	male	2013	NA	prostate adenocarcinoma acinar type	r1	1	9	0.9	290	NA	NA	NA	NA	censored
+TCGA-H9-A6BY-01	63	Alive	NA	112	prostate	NA	t3a	n0	NA	male	2012	NA	prostate adenocarcinoma acinar type	rx	0	7	NA	NA	NA	NA	NA	NA	censored
+TCGA-KK-A59V-01	64	Alive	NA	2859	prostate	NA	t3b	n0	NA	male	2005	no	prostate adenocarcinoma acinar type	r0	0	9	0.1	2500	NA	NA	NA	NA	non-progressed
+TCGA-HC-7742-01	58	Alive	NA	113	prostate	NA	t3a	n0	NA	male	2011	no	prostate adenocarcinoma acinar type	r0	0	7	0.1	113	white	not hispanic or latino	YES	NA	censored
+TCGA-EJ-A7NF-01	56	Alive	NA	216	prostate	NA	t2c	n0	NA	male	2013	no	prostate adenocarcinoma acinar type	r0	0	7	0.1	117	NA	NA	NO	NA	censored
+TCGA-G9-6370-01	52	Alive	NA	806	prostate	NA	t3b	n0	NA	male	2009	no	prostate adenocarcinoma acinar type	r0	0	7	0.03	806	white	not hispanic or latino	NO	NA	censored
+TCGA-ZG-A9MC-01	69	Alive	NA	428	prostate	NA	t3b	n1	NA	male	2012	yes	prostate adenocarcinoma acinar type	r1	2	9	31.85	427	NA	NA	NO	NA	censored
+TCGA-EJ-A46H-01	60	Alive	NA	229	prostate	NA	t2c	n0	NA	male	2012	no	prostate adenocarcinoma acinar type	r0	NA	7	0.1	131	NA	NA	NO	NA	censored
+TCGA-XK-AAIR-01	75	Alive	NA	972	prostate	NA	t2c	n0	NA	male	2011	no	prostate adenocarcinoma acinar type	r0	0	8	0.09	953	NA	NA	NO	NA	censored
+TCGA-EJ-A46G-01	71	Alive	NA	93	prostate	NA	t3a	n0	NA	male	2012	no	prostate adenocarcinoma  other subtype	r0	0	8	0.1	93	NA	NA	NO	NA	censored
+TCGA-EJ-A46D-01	53	Alive	NA	129	prostate	NA	t2c	n0	NA	male	2012	no	prostate adenocarcinoma acinar type	NA	0	8	0.03	122	NA	NA	NO	NA	censored
+TCGA-KK-A8ID-01	70	Alive	NA	1973	prostate	NA	t3b	n1	NA	male	2009	no	prostate adenocarcinoma acinar type	r1	2	9	0.1	1924	NA	NA	NO	NA	non-progressed
+TCGA-KK-A7B4-01	64	Alive	NA	637	prostate	NA	t3b	n1	NA	male	2012	no	prostate adenocarcinoma acinar type	r1	8	9	0.6	637	NA	NA	YES	963	progressed
+TCGA-V1-A9O9-01	56	Alive	NA	204	prostate	NA	t3b	n0	NA	male	NA	no	prostate adenocarcinoma acinar type	r0	0	8	5.04	-53	NA	NA	NO	NA	censored
+TCGA-YL-A8HJ-01	58	Alive	NA	1611	prostate	NA	t3b	NA	NA	male	2009	yes	prostate adenocarcinoma  other subtype	r0	NA	9	0.03	1589	NA	NA	NO	NA	non-progressed
+TCGA-HC-A6AQ-01	60	Alive	NA	106	prostate	NA	t2c	NA	NA	male	2012	NA	prostate adenocarcinoma acinar type	r0	NA	7	NA	NA	NA	NA	NA	NA	censored
+TCGA-HC-7821-01	54	Alive	NA	56	prostate	NA	t3b	n1	NA	male	2011	yes	prostate adenocarcinoma acinar type	NA	2	8	0.01	236	white	not hispanic or latino	YES	NA	censored
+TCGA-G9-6367-01	60	Alive	NA	875	prostate	NA	t3a	n0	NA	male	2009	no	prostate adenocarcinoma acinar type	r1	0	9	0.42	836	white	not hispanic or latino	NO	NA	censored
+TCGA-G9-7525-01	64	Alive	NA	512	prostate	NA	t2c	n0	NA	male	2010	no	prostate adenocarcinoma acinar type	r0	0	7	0.03	512	NA	NA	NO	NA	censored
+TCGA-CH-5761-01	61	Alive	NA	28	prostate	NA	t3b	n0	NA	male	2007	NA	prostate adenocarcinoma acinar type	r0	0	9	8.49	39	white	not hispanic or latino	NA	NA	censored
+TCGA-2A-A8VL-01	51	Alive	NA	621	prostate	NA	t2b	n0	NA	male	2010	no	prostate adenocarcinoma acinar type	r0	0	6	0.05	585	NA	NA	NO	NA	censored
+TCGA-CH-5746-01	57	Alive	NA	731	prostate	NA	t2c	n0	NA	male	2007	yes	prostate adenocarcinoma acinar type	r1	0	7	0.1	693	white	not hispanic or latino	NO	NA	censored
+TCGA-J4-A67O-01	59	Alive	NA	491	prostate	NA	t2c	n0	NA	male	2012	no	prostate adenocarcinoma acinar type	r0	0	7	0.1	490	NA	NA	NO	NA	censored
+TCGA-EJ-A7NM-01	64	Alive	NA	128	prostate	NA	t3b	n1	NA	male	2013	no	prostate adenocarcinoma  other subtype	r0	3	9	0.1	128	NA	NA	NO	NA	censored
+TCGA-V1-A9OL-01	65	Alive	NA	589	prostate	NA	t3b	n0	NA	male	NA	no	prostate adenocarcinoma acinar type	r0	0	9	0.01	559	NA	NA	YES	NA	censored
+TCGA-G9-A9S4-01	62	Alive	NA	757	prostate	NA	t3b	n1	NA	male	2012	no	prostate adenocarcinoma acinar type	r1	4	8	0.03	753	NA	NA	NO	NA	censored
+TCGA-FC-A8O0-01	68	Alive	NA	54	prostate	NA	t3a	n0	NA	male	2013	NA	prostate adenocarcinoma acinar type	r0	0	6	7.82	18	NA	NA	NO	NA	censored
+TCGA-CH-5738-01	72	Alive	NA	212	prostate	NA	NA	NA	NA	male	2006	no	prostate adenocarcinoma acinar type	r0	NA	6	0.01	195	white	not hispanic or latino	NO	NA	censored
+TCGA-VN-A88P-01	60	Alive	NA	917	prostate	NA	t2c	n0	NA	male	2011	no	prostate adenocarcinoma acinar type	r0	0	7	0	917	NA	NA	NO	NA	censored
+TCGA-EJ-5506-01	67	Alive	NA	356	prostate	NA	t3b	n1	NA	male	2010	no	prostate adenocarcinoma acinar type	rx	1	8	0.1	356	white	not hispanic or latino	NO	NA	censored
+TCGA-VP-A87C-01	67	Alive	NA	1690	prostate	NA	t2c	n0	NA	male	2007	no	prostate adenocarcinoma acinar type	r0	0	7	0.5	1690	NA	NA	NO	NA	non-progressed
+TCGA-EJ-7783-01	70	Alive	NA	172	prostate	NA	t3a	n0	NA	male	2011	no	prostate adenocarcinoma acinar type	r0	0	7	0.7	172	white	not hispanic or latino	NO	NA	censored
+TCGA-V1-A9OF-01	49	Alive	NA	1184	prostate	NA	t2c	NA	NA	male	NA	no	prostate adenocarcinoma acinar type	r1	NA	6	0.01	1184	NA	NA	NO	NA	censored
+TCGA-HC-A632-01	68	Alive	NA	61	prostate	NA	t3a	n0	NA	male	2013	NA	prostate adenocarcinoma acinar type	r0	0	9	NA	NA	NA	NA	NA	NA	censored
+TCGA-V1-A9ZG-01	64	Alive	NA	1117	prostate	NA	t2c	n0	NA	male	NA	no	prostate adenocarcinoma acinar type	r0	0	9	0.015	893	NA	NA	NO	NA	censored
+TCGA-G9-6364-01	72	Alive	NA	841	prostate	NA	t3a	n0	NA	male	2009	no	prostate adenocarcinoma acinar type	r0	0	7	0.03	841	white	not hispanic or latino	NO	NA	censored
+TCGA-EJ-A6RC-01	64	Alive	NA	693	prostate	NA	NA	n0	NA	male	2011	no	prostate adenocarcinoma acinar type	r0	0	7	0.1	693	NA	NA	NO	NA	censored
+TCGA-KK-A7AU-01	63	Alive	NA	1621	prostate	NA	t3b	n1	NA	male	2010	no	prostate adenocarcinoma acinar type	r1	3	9	0	1621	NA	NA	NO	NA	non-progressed
+TCGA-HC-7748-01	60	Alive	NA	62	prostate	NA	t2a	n0	NA	male	2011	no	prostate adenocarcinoma acinar type	r0	0	6	0.1	99	white	not hispanic or latino	NO	NA	censored
+TCGA-XK-AAK1-01	62	Alive	NA	614	prostate	NA	t2c	n0	NA	male	2012	no	prostate adenocarcinoma acinar type	r0	0	7	0.09	614	NA	NA	NO	NA	censored
+TCGA-XK-AAJA-01	62	Alive	NA	930	prostate	NA	t3a	n0	NA	male	2010	no	prostate adenocarcinoma acinar type	r0	0	7	0.09	712	NA	NA	NA	NA	censored
+TCGA-J9-A8CK-01	66	Alive	NA	321	prostate	NA	t3a	NA	NA	male	2012	no	prostate adenocarcinoma acinar type	r1	NA	9	0.01	321	NA	NA	NA	NA	censored
+TCGA-VP-A87E-01	59	Alive	NA	2037	prostate	NA	t2c	n0	NA	male	2008	no	prostate adenocarcinoma acinar type	r0	0	6	0.11	2037	NA	NA	NO	NA	non-progressed
+TCGA-M7-A722-01	65	Alive	NA	717	prostate	NA	t3a	n0	NA	male	2011	no	prostate adenocarcinoma acinar type	r1	0	8	NA	559	NA	NA	YES	NA	censored
+TCGA-ZG-A9NI-01	73	Alive	NA	132	prostate	NA	t3b	n0	NA	male	2013	no	prostate adenocarcinoma acinar type	r1	0	9	0.03	99	NA	NA	NO	NA	censored
+TCGA-G9-6379-01	68	Alive	NA	1393	prostate	NA	t3b	n0	NA	male	2009	no	prostate adenocarcinoma acinar type	r1	0	7	0.03	1393	NA	NA	NO	NA	censored
+TCGA-HC-7075-01	NA	Alive	NA	63	prostate	NA	t2a	NA	NA	male	2010	no	prostate adenocarcinoma acinar type	r0	NA	6	0.01	96	white	not hispanic or latino	NO	NA	censored
+TCGA-VP-A87J-01	56	Alive	NA	1296	prostate	NA	t3a	n1	NA	male	2010	no	prostate adenocarcinoma acinar type	r2	1	7	0.13	1296	NA	NA	NO	NA	censored
+TCGA-XJ-A83F-01	NA	Alive	NA	762	prostate	NA	t3a	n0	NA	male	2011	no	prostate adenocarcinoma acinar type	rx	0	7	0.01	762	NA	NA	NO	NA	censored
+TCGA-KK-A59X-01	55	Alive	NA	1712	prostate	NA	t3b	n1	NA	male	2008	yes	prostate adenocarcinoma acinar type	r1	2	9	NA	NA	NA	NA	YES	2233	censored
+TCGA-WW-A8ZI-01	70	Alive	NA	176	prostate	NA	t2c	n0	NA	male	2013	no	prostate adenocarcinoma acinar type	r0	0	8	0	176	NA	NA	NO	NA	censored
+TCGA-J4-A83N-01	57	Alive	NA	617	prostate	NA	t2c	NA	NA	male	2012	no	prostate adenocarcinoma acinar type	r0	NA	7	0.1	530	NA	NA	YES	433	progressed
+TCGA-HC-A8D1-01	68	Alive	NA	168	prostate	NA	t2c	n0	NA	male	2012	no	prostate adenocarcinoma acinar type	r0	0	7	0.01	168	NA	NA	NO	NA	censored
+TCGA-EJ-5522-01	51	Alive	NA	1403	prostate	NA	t2c	n0	NA	male	2008	no	prostate adenocarcinoma acinar type	r0	0	7	0.1	1403	white	not hispanic or latino	NO	NA	censored
+TCGA-G9-6371-01	58	Alive	NA	846	prostate	NA	t2c	NA	NA	male	2009	no	prostate adenocarcinoma acinar type	r1	NA	6	0.03	846	white	not hispanic or latino	NO	NA	censored
+TCGA-G9-6348-01	68	Alive	NA	1144	prostate	NA	t2c	n0	NA	male	2008	no	prostate adenocarcinoma acinar type	r0	0	7	0.02	1136	white	not hispanic or latino	NO	NA	censored
+TCGA-EJ-5521-01	63	Alive	NA	842	prostate	NA	t3a	n0	NA	male	2008	no	prostate adenocarcinoma acinar type	r0	0	7	0.1	240	white	not hispanic or latino	NO	NA	censored
+TCGA-KK-A7B3-01	62	Alive	NA	637	prostate	NA	t3b	n0	NA	male	2012	no	prostate adenocarcinoma acinar type	r0	0	9	0.1	637	NA	NA	YES	294	progressed
+TCGA-XJ-A9DK-01	NA	Alive	NA	275	prostate	NA	t2c	NA	NA	male	2007	no	prostate adenocarcinoma acinar type	r0	NA	8	0.1	275	NA	NA	NA	NA	censored
+TCGA-EJ-5508-01	65	Alive	NA	907	prostate	NA	t3a	n0	NA	male	2008	no	prostate adenocarcinoma acinar type	r0	0	7	0.1	907	white	not hispanic or latino	NO	NA	censored
+TCGA-CH-5766-01	55	Alive	NA	31	prostate	NA	t3a	n1	NA	male	2007	NA	prostate adenocarcinoma acinar type	r0	1	7	13.9	39	white	not hispanic or latino	NA	NA	censored
+TCGA-EJ-A7NN-01	61	Alive	NA	197	prostate	NA	t3b	n1	NA	male	2013	no	prostate adenocarcinoma acinar type	r1	3	7	0.3	197	NA	NA	NO	NA	censored
+TCGA-TP-A8TT-01	64	Alive	NA	362	prostate	NA	t3a	n0	NA	male	2013	yes	prostate adenocarcinoma acinar type	r0	0	7	0.024	237	NA	NA	NA	NA	censored
+TCGA-HC-7752-01	61	Alive	NA	98	prostate	NA	t2c	n0	NA	male	2011	no	prostate adenocarcinoma acinar type	r0	0	7	0.1	138	white	not hispanic or latino	NO	NA	censored
+TCGA-M7-A71Z-01	62	Alive	NA	209	prostate	NA	t3a	n0	NA	male	2013	no	prostate adenocarcinoma acinar type	r0	0	7	NA	209	NA	NA	NO	NA	censored
+TCGA-CH-5789-01	61	Alive	NA	304	prostate	NA	t3a	n0	NA	male	2006	no	prostate adenocarcinoma acinar type	r0	0	7	0.02	229	white	not hispanic or latino	NO	NA	censored
+TCGA-J9-A52D-01	71	Alive	NA	212	prostate	NA	t3a	NA	NA	male	2012	no	prostate adenocarcinoma  other subtype	r0	NA	9	0.059	146	NA	NA	NA	NA	censored
+TCGA-VN-A88K-01	58	Alive	NA	776	prostate	NA	t3a	n1	NA	male	2011	no	prostate adenocarcinoma acinar type	r0	15	8	0	776	NA	NA	NO	NA	censored
+TCGA-HI-7170-01	58	Alive	NA	1780	prostate	NA	t2c	n0	NA	male	2006	no	prostate adenocarcinoma acinar type	r0	0	6	0.1	1746	white	not hispanic or latino	NO	NA	non-progressed
+TCGA-HC-7231-01	66	Alive	NA	72	prostate	NA	t2c	NA	NA	male	2011	no	prostate adenocarcinoma acinar type	r0	NA	7	NA	NA	white	NA	NO	NA	censored
+TCGA-G9-6353-01	58	Alive	NA	848	prostate	NA	t3a	NA	NA	male	2009	no	prostate adenocarcinoma acinar type	r1	NA	7	0.1	590	white	not hispanic or latino	NO	NA	censored
+TCGA-VP-A872-01	60	Alive	NA	3253	prostate	NA	t3a	n0	NA	male	2005	no	prostate adenocarcinoma  other subtype	r0	0	8	0.01	3253	NA	NA	NO	NA	non-progressed
+TCGA-QU-A6IO-01	53	Alive	NA	1436	prostate	NA	t2c	n0	NA	male	2003	no	prostate adenocarcinoma acinar type	r1	0	6	0.1	1436	NA	NA	NO	NA	censored
+TCGA-V1-A9Z7-01	54	Alive	NA	123	prostate	NA	t3b	n0	NA	male	NA	no	prostate adenocarcinoma acinar type	r0	0	9	28.1	-75	NA	NA	NA	NA	censored
+TCGA-EJ-5494-01	50	Alive	NA	378	prostate	NA	t3a	n0	NA	male	2009	no	prostate adenocarcinoma acinar type	r0	0	7	NA	184	white	not hispanic or latino	NO	NA	censored
+TCGA-KK-A8IA-01	69	Alive	NA	1439	prostate	NA	t3b	n1	NA	male	2009	no	prostate adenocarcinoma acinar type	rx	3	9	0.1	1383	NA	NA	NA	NA	censored
+TCGA-J9-A52E-01	65	Alive	NA	323	prostate	NA	t3b	n0	NA	male	2012	no	prostate adenocarcinoma acinar type	r1	0	9	0.01	393	NA	NA	NA	NA	censored
+TCGA-2A-AAYF-01	57	Alive	NA	972	prostate	NA	t3a	NA	NA	male	2011	no	prostate adenocarcinoma acinar type	r0	NA	7	0.05	972	NA	NA	NO	NA	censored

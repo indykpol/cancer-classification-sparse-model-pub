@@ -1,0 +1,112 @@
+---
+title: "Display stats instead of raw measurements"
+output: html_notebook
+---
+
+```{r}
+
+load("D:/Git/cancer-classification-sparse-model-pub/data/PRAD_progressing_10foldCV_varianceLogic.RData")
+data <- "../../../../../data/data_PRAD_progressing_lazyReady.R_CACHE/"
+```
+
+```{r}
+require(IrksomeModels)
+require(reshape2)
+require(dplyr)
+require(pROC)
+colour_palette <- c("#56B4E9","#D55E00")
+
+gene <- "CAD"
+meth <- read_methylation_matrix_gene(cache = data, genename = gene)
+test_m <- testDM(meth = meth[samplenames,], expr = expr_logUQ[gene, samplenames], grouping = samplenames %in% grouping[[1]], prior = prior_meth)$p_bartlett
+if (!is.na(test_m) & test <= log(0.05)) same_cov <- FALSE else same_cov <- TRUE
+test_e_scale <- testDE(expr = expr_logUQ[gene, samplenames], grouping = samplenames %in% grouping[[1]], k_win = 2.5, prior = prior_expr)$p_scale
+if (test_e_scale <= log(0.05)) same_sd <- FALSE else same_sd <- TRUE
+fm <- fitMeth(meth = meth[samplenames,], expr = expr_logUQ[gene, samplenames], grouping = samplenames %in% grouping[[1]], prior = prior_meth)
+fe <- fitExpr(expr = expr_logUQ[gene, samplenames], grouping = samplenames %in% grouping[[1]], k_win = 2.5, prior = prior_expr)
+EBADIMEX_expr_logODDs <- exprLogLik(expr = expr_logUQ[gene, samplenames], param = fe, k_win = 2.5, same_sd = same_sd)
+EBADIMEX_meth_logODDs <- methLogLik(meth = meth[samplenames,], expr = expr_logUQ[gene, samplenames], param = fm$param, same_cov = same_cov)
+EBADIMEX_joint_logODDs <- EBADIMEX_expr_logODDs + EBADIMEX_meth_logODDs
+
+plotter <- data.frame(sample_name = names(EBADIMEX_joint_logODDs), progressed = samplenames %in% grouping[[1]],
+                      EBADIMEX_expr_classProbs = exp(EBADIMEX_expr_logODDs)/(1+exp(EBADIMEX_expr_logODDs)),
+                      EBADIMEX_meth_classProbs = exp(EBADIMEX_meth_logODDs)/(1+exp(EBADIMEX_meth_logODDs)),
+                      EBADIMEX_joint_classProbs = exp(EBADIMEX_joint_logODDs)/(1+exp(EBADIMEX_joint_logODDs))
+                      ) %>% melt(id.vars=c("sample_name", "progressed"))
+ggplot(plotter, aes(x=value, colour=progressed, fill=progressed)) + geom_density(alpha=0.5) + geom_rug(alpha=0.35) + scale_fill_manual(values=colour_palette) + scale_colour_manual(values=colour_palette) + facet_wrap(~ variable, scales="free_y") + scale_x_continuous(limits=c(0,1)) + theme_bw() + theme(panel.grid.major = element_blank(), panel.grid.minor = element_blank(), strip.background = element_rect(fill="white"), legend.position="bottom")
+auc(predictor = EBADIMEX_expr_logODDs, response = names(EBADIMEX_expr_logODDs) %in% grouping[[1]])
+auc(predictor = EBADIMEX_meth_logODDs, response = names(EBADIMEX_expr_logODDs) %in% grouping[[1]])
+auc(predictor = EBADIMEX_joint_logODDs, response = names(EBADIMEX_expr_logODDs) %in% grouping[[1]])
+```
+
+
+```{r}
+load("D:/Git/cancer-classification-sparse-model-pub/data/PRAD_progressing_10foldCV_varianceLogic.RData")
+data <- "../../../../../data/data_PRAD_progressing_lazyReady.R_CACHE/"
+load("C:/Users/AU444789/Documents/PRAD_irksome_top1_table.RData")
+```
+
+```{r}
+require(reshape2)
+require(dplyr)
+require(pROC)
+colour_palette <- c("#56B4E9","#D55E00")
+
+gene <- "CAD"
+which_gene <- which(rownames(expr_logUQ) %in% gene)
+
+EBADIMEX_expr_logODDs <- unlist(lapply(1:opt$folds, FUN=function(x) expr_logliks_test_list[[x]][[which_gene]]))[samplenames]
+EBADIMEX_meth_logODDs <- unlist(lapply(1:opt$folds, FUN=function(x) meth_logliks_test_list[[x]][[which_gene]]))[samplenames]
+EBADIMEX_joint_logODDs <- unlist(lapply(1:opt$folds, FUN=function(x) joint_logliks_test_list[[x]][[which_gene]]))[samplenames]
+PRAD_irksome_top1_table <- PRAD_irksome_top1_table[samplenames,]
+
+plotter <- data.frame(sample_name = names(EBADIMEX_joint_logODDs), progressed = samplenames %in% grouping[[1]],
+                      EBADIMEX_expr_classProbs = exp(EBADIMEX_expr_logODDs)/(1+exp(EBADIMEX_expr_logODDs)),
+                      EBADIMEX_meth_classProbs = exp(EBADIMEX_meth_logODDs)/(1+exp(EBADIMEX_meth_logODDs)),
+                      EBADIMEX_joint_classProbs = exp(EBADIMEX_joint_logODDs)/(1+exp(EBADIMEX_joint_logODDs)),
+                      RLR_clinicalData_classProbs = exp(PRAD_irksome_top1_table[,2])/(1+exp(PRAD_irksome_top1_table[,2])),
+                      EBADIMEX_plus_clinicalData_classProbs = exp(PRAD_irksome_top1_table[,3])/(1+exp(PRAD_irksome_top1_table[,3]))
+                      ) %>% melt(id.vars=c("sample_name", "progressed"))
+plot <- ggplot(plotter, aes(x=value, colour=progressed, fill=progressed)) + geom_density(alpha=0.5) + geom_rug(alpha=0.35) + scale_fill_manual(values=colour_palette) + scale_colour_manual(values=colour_palette) + facet_wrap(~ variable, scales="free_y") + scale_x_continuous(limits=c(0,1)) + theme_bw() + theme(panel.grid.major = element_blank(), panel.grid.minor = element_blank(), strip.background = element_rect(fill="white"), legend.position="bottom")
+auc(predictor = EBADIMEX_expr_logODDs, response = names(EBADIMEX_expr_logODDs) %in% grouping[[1]])
+auc(predictor = EBADIMEX_meth_logODDs, response = names(EBADIMEX_expr_logODDs) %in% grouping[[1]])
+auc(predictor = EBADIMEX_joint_logODDs, response = names(EBADIMEX_expr_logODDs) %in% grouping[[1]])
+auc(predictor = PRAD_irksome_top1_table[,2], response = names(EBADIMEX_expr_logODDs) %in% grouping[[1]])
+auc(predictor = PRAD_irksome_top1_table[,3], response = names(EBADIMEX_expr_logODDs) %in% grouping[[1]])
+plot
+pdf(file="CAD EBADIMEX RLR and combined illustration.pdf", width = 10, height = 5); plot; dev.off()
+```
+
+```{r}
+load("D:/Git/cancer-classification-sparse-model-pub/data/PRAD_Ts_vs_ANs_7foldCV_varianceLogic.RData")
+```
+
+```{r}
+require(reshape2)
+require(dplyr)
+require(pROC)
+colour_palette <- c("#56B4E9","#D55E00")
+
+gene <- "EFS"
+which_gene <- which(rownames(expr_logUQ) %in% gene)
+
+EBADIMEX_expr_logODDs <- unlist(lapply(1:opt$folds, FUN=function(x) expr_logliks_test_list[[x]][[which_gene]]))[samplenames]
+EBADIMEX_meth_logODDs <- unlist(lapply(1:opt$folds, FUN=function(x) meth_logliks_test_list[[x]][[which_gene]]))[samplenames]
+EBADIMEX_joint_logODDs <- unlist(lapply(1:opt$folds, FUN=function(x) joint_logliks_test_list[[x]][[which_gene]]))[samplenames]
+
+plotter <- data.frame(sample_name = names(EBADIMEX_joint_logODDs), Normals = samplenames %in% grouping[[1]],
+                      EBADIMEX_expr_classProbs = exp(EBADIMEX_expr_logODDs)/(1+exp(EBADIMEX_expr_logODDs)),
+                      EBADIMEX_meth_classProbs = exp(EBADIMEX_meth_logODDs)/(1+exp(EBADIMEX_meth_logODDs)),
+                      EBADIMEX_joint_classProbs = exp(EBADIMEX_joint_logODDs)/(1+exp(EBADIMEX_joint_logODDs))
+                      ) %>% melt(id.vars=c("sample_name", "Normals"))
+
+plot <- ggplot(plotter, aes(x=value, colour=Normals, fill=Normals, alpha=Normals)) + geom_density(alpha=0.5) + geom_rug() + scale_fill_manual(values=colour_palette) + scale_colour_manual(values=colour_palette) + facet_wrap(~ variable, scales="free_y") + scale_x_continuous(limits=c(0,1)) + theme_bw() + theme(panel.grid.major = element_blank(), panel.grid.minor = element_blank(), strip.background = element_rect(fill="white"), legend.position="bottom") + scale_alpha_manual(values=c(0.1, 0.75))
+
+auc(predictor = EBADIMEX_expr_logODDs, response = names(EBADIMEX_expr_logODDs) %in% grouping[[2]])
+auc(predictor = EBADIMEX_meth_logODDs, response = names(EBADIMEX_expr_logODDs) %in% grouping[[2]])
+auc(predictor = EBADIMEX_joint_logODDs, response = names(EBADIMEX_expr_logODDs) %in% grouping[[2]])
+
+plot
+pdf(file="EFS EBADIMEX RLR and combined illustration.pdf", width = 10, height = 3.5); plot; dev.off()
+```
+

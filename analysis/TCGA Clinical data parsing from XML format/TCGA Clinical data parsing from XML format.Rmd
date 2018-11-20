@@ -1,0 +1,142 @@
+---
+title: "TCGA Clinical data parsing from XML format"
+output: html_notebook
+---
+
+1st, parse the data
+```{r}
+require(readr)
+require(XML)
+MANIFEST <- read_delim("D:/TCGA/Clinical/LUSC/raw/MANIFEST.txt", "\t", escape_double = FALSE, trim_ws = TRUE)
+
+clinical_data <- NULL
+dir_appendage <- "D:/TCGA/Clinical/LUSC/raw/"
+for (i in 1:nrow(MANIFEST)) {
+  clinical_data[[i]] <- xmlToList(xmlParse(paste(dir_appendage, MANIFEST$filename[i], sep="")))
+}
+```
+
+2nd, extract the relevant information
+```{r}
+patient_barcodes <- unlist(lapply(1:length(clinical_data), FUN = function(x) clinical_data[[x]]$patient$bcr_patient_barcode$text))
+days_to_last_followup <- unlist(lapply(1:length(clinical_data), FUN = function(x) as.numeric(tryCatch(clinical_data[[x]]$patient$days_to_last_followup$text, error = function(e) return(NA)))))
+days_to_death <- unlist(lapply(1:length(clinical_data), FUN = function(x) as.numeric(tryCatch(clinical_data[[x]]$patient$days_to_death$text, error = function(e) return(NA)))))
+new_tumor_event_after_initial_treatment <- unlist(lapply(1:length(clinical_data), FUN = function(x) {
+  out <- tryCatch(clinical_data[[x]]$patient$follow_ups$follow_up$new_tumor_event_after_initial_treatment$text, error = function(e) return(NA))
+  if (is.null(out)) return(NA) else return(out)
+}))
+days_to_new_tumor_event_after_initial_treatment <- as.numeric(unlist(lapply(1:length(clinical_data), FUN = function(x) {
+  out <- tryCatch(clinical_data[[x]]$patient$follow_ups$follow_up$new_tumor_event$days_to_new_tumor_event_after_initial_treatment$text, error = function(e) return(NA))
+  if (is.null(out)) out <- tryCatch(clinical_data[[x]]$patient$follow_ups$follow_up$days_to_new_tumor_event_after_initial_treatment$text, error = function(e) return(NA))
+  if(!is.null(out)) if(is.na(out)) out <- tryCatch(clinical_data[[x]]$patient$follow_ups$follow_up$days_to_new_tumor_event_after_initial_treatment$text, error = function(e) return(NA))
+  if (is.null(out)) return(NA) else return(as.numeric(out))
+})))
+alive <- unlist(lapply(1:length(clinical_data), FUN = function(x) tryCatch(clinical_data[[x]]$patient$vital_status$text, error = function(e) return(NA))))
+```
+
+3rd, make a data frame and define progressed and non-non progressed groups
+```{r}
+clinical.df <- data.frame(patient_barcodes=patient_barcodes, days_to_last_followup=days_to_last_followup, alive=alive, days_to_death=days_to_death, new_tumor_event_after_initial_treatment=new_tumor_event_after_initial_treatment, days_to_new_tumor_event_after_initial_treatment=days_to_new_tumor_event_after_initial_treatment)
+
+nrow(subset(clinical.df, days_to_new_tumor_event_after_initial_treatment > 0 | new_tumor_event_after_initial_treatment == "YES")) # number of progressed tumours
+
+progressed.df <- subset(clinical.df, days_to_new_tumor_event_after_initial_treatment > 0 | (new_tumor_event_after_initial_treatment == "YES" & days_to_death > 0))
+progressed.df$days_for_censoring <- 0
+progressed.df[!is.na(progressed.df$days_to_death),"days_for_censoring"] <- progressed.df[!is.na(progressed.df$days_to_death),"days_to_death"]
+progressed.df[!is.na(progressed.df$days_to_new_tumor_event_after_initial_treatment),"days_for_censoring"] <- progressed.df[!is.na(progressed.df$days_to_new_tumor_event_after_initial_treatment),"days_to_new_tumor_event_after_initial_treatment"]
+nonProgressed.df <- subset(clinical.df, is.na(days_to_new_tumor_event_after_initial_treatment) & days_to_last_followup > 0 & (is.na(new_tumor_event_after_initial_treatment) | new_tumor_event_after_initial_treatment == "NO"))
+```
+
+
+Inspect the days and select a suitable censoring time, and extract the patient IDs for both groups:
+```{r}
+candidate_days <- 1473
+list(progressed = nrow(subset(progressed.df, days_for_censoring <= candidate_days)), nonProgressed = nrow(subset(nonProgressed.df, days_to_last_followup > candidate_days)))
+```
+
+Save the selected day censoring candidates
+```{r}
+candidate_days_BRCA <- 2165
+progressed_BRCA <- paste(subset(progressed.df, days_for_censoring <= candidate_days_BRCA)$patient_barcodes, "-01", sep="")
+nonProgressed_BRCA <- paste(subset(nonProgressed.df, days_to_last_followup > candidate_days_BRCA)$patient_barcodes, "-01", sep="")
+
+candidate_days_PRAD <- 1473
+progressed_PRAD <- paste(subset(progressed.df, days_for_censoring <= candidate_days_PRAD)$patient_barcodes, "-01", sep="")
+nonProgressed_PRAD <- paste(subset(nonProgressed.df, days_to_last_followup > candidate_days_PRAD)$patient_barcodes, "-01", sep="")
+
+candidate_days_KIRC <- 1530
+progressed_KIRC <- paste(subset(progressed.df, days_for_censoring <= candidate_days_KIRC)$patient_barcodes, "-01", sep="")
+nonProgressed_KIRC <- paste(subset(nonProgressed.df, days_to_last_followup > candidate_days_KIRC)$patient_barcodes, "-01", sep="")
+
+candidate_days_LUSC <- 791
+progressed_LUSC <- paste(subset(progressed.df, days_for_censoring <= candidate_days_LUSC)$patient_barcodes, "-01", sep="")
+nonProgressed_LUSC <- paste(subset(nonProgressed.df, days_to_last_followup > candidate_days_LUSC)$patient_barcodes, "-01", sep="")
+
+save(progressed_BRCA, nonProgressed_BRCA, file="progressionIDs052017_BRCA.RData")
+save(progressed_PRAD, nonProgressed_PRAD, file="progressionIDs052017_PRAD.RData")
+save(progressed_KIRC, nonProgressed_KIRC, file="progressionIDs052017_KIRC.RData")
+save(progressed_LUSC, nonProgressed_LUSC, file="progressionIDs052017_LUSC.RData")
+```
+Export selected clinical data for the publication with Tobias
+```{r}
+clinical_out <- list(BRCA = datasets[["BRCA"]], PRAD = datasets[["PRAD"]], KIRC = datasets[["KIRC"]], LUSC = datasets[["LUSC"]])
+for (i in 1:length(clinical_out)) {
+  rownames(clinical_out[[i]]@Clinical) <- paste(gsub(".", "-", toupper(rownames(clinical_out[[i]]@Clinical)), fixed=TRUE), "-01", sep="")
+}
+save(clinical_out, file="clinical_data.RData")
+```
+
+Matching the latest clinical follow-up with the pre-parsed by RTCGAToolbox clinical data
+```{r}
+rownames(BRCA_latestFollowUp) <- paste(BRCA_latestFollowUp$patient_barcodes, "-01", sep="")
+rownames(PRAD_latestFollowUp) <- paste(PRAD_latestFollowUp$patient_barcodes, "-01", sep="")
+rownames(KIRC_latestFollowUp) <- paste(KIRC_latestFollowUp$patient_barcodes, "-01", sep="")
+rownames(LUSC_latestFollowUp) <- paste(LUSC_latestFollowUp$patient_barcodes, "-01", sep="")
+
+load("D:/Git/cancer-classification-sparse-model-pub/data/T and AN IDs across 4 cohorts.RData")
+
+clinical_data_all_BRCA <- clinical_out[["BRCA"]]@Clinical[Ts_BRCA,-1]
+clinical_data_all_BRCA$vital_status <- BRCA_latestFollowUp[Ts_BRCA, "alive"]
+clinical_data_all_BRCA$days_to_last_followup <- BRCA_latestFollowUp[Ts_BRCA, "days_to_last_followup"]
+clinical_data_all_BRCA$days_to_death <- BRCA_latestFollowUp[Ts_BRCA, "days_to_death"]
+clinical_data_all_BRCA$new_tumor_event_after_initial_treatment <- BRCA_latestFollowUp[Ts_BRCA, "new_tumor_event_after_initial_treatment"]
+clinical_data_all_BRCA$days_to_new_tumor_event_after_initial_treatment <- BRCA_latestFollowUp[Ts_BRCA, "days_to_new_tumor_event_after_initial_treatment"]
+clinical_data_all_BRCA$progression_status <- mutate(clinical_data_all_BRCA, progression_status=ifelse(days_to_last_followup > 0 | days_to_new_tumor_event_after_initial_treatment > 0, "censored", "NA"))$progression_status
+clinical_data_all_BRCA[rownames(subset(clinical_data_BRCA, progressed==TRUE)) ,"progression_status"] <- "progressed"
+clinical_data_all_BRCA[rownames(subset(clinical_data_BRCA, progressed==FALSE)) ,"progression_status"] <- "non-progressed"
+write.table(clinical_data_all_BRCA, file="clinical_data_BRCA.txt", sep="\t", quote=FALSE)
+
+clinical_data_all_PRAD <- clinical_out[["PRAD"]]@Clinical[Ts_PRAD,-1]
+clinical_data_all_PRAD$vital_status <- PRAD_latestFollowUp[Ts_PRAD, "alive"]
+clinical_data_all_PRAD$days_to_last_followup <- PRAD_latestFollowUp[Ts_PRAD, "days_to_last_followup"]
+clinical_data_all_PRAD$days_to_death <- PRAD_latestFollowUp[Ts_PRAD, "days_to_death"]
+clinical_data_all_PRAD$new_tumor_event_after_initial_treatment <- PRAD_latestFollowUp[Ts_PRAD, "new_tumor_event_after_initial_treatment"]
+clinical_data_all_PRAD$days_to_new_tumor_event_after_initial_treatment <- PRAD_latestFollowUp[Ts_PRAD, "days_to_new_tumor_event_after_initial_treatment"]
+clinical_data_all_PRAD$progression_status <- mutate(clinical_data_all_PRAD, progression_status=ifelse(days_to_last_followup > 0 | days_to_new_tumor_event_after_initial_treatment > 0, "censored", "NA"))$progression_status
+clinical_data_all_PRAD[rownames(subset(clinical_data_PRAD, progressed==TRUE)) ,"progression_status"] <- "progressed"
+clinical_data_all_PRAD[rownames(subset(clinical_data_PRAD, progressed==FALSE)) ,"progression_status"] <- "non-progressed"
+write.table(clinical_data_all_PRAD, file="clinical_data_PRAD.txt", sep="\t", quote=FALSE)
+
+clinical_data_all_LUSC <- clinical_out[["LUSC"]]@Clinical[Ts_LUSC,-1]
+clinical_data_all_LUSC$vital_status <- LUSC_latestFollowUp[Ts_LUSC, "alive"]
+clinical_data_all_LUSC$days_to_last_followup <- LUSC_latestFollowUp[Ts_LUSC, "days_to_last_followup"]
+clinical_data_all_LUSC$days_to_death <- LUSC_latestFollowUp[Ts_LUSC, "days_to_death"]
+clinical_data_all_LUSC$new_tumor_event_after_initial_treatment <- LUSC_latestFollowUp[Ts_LUSC, "new_tumor_event_after_initial_treatment"]
+clinical_data_all_LUSC$days_to_new_tumor_event_after_initial_treatment <- LUSC_latestFollowUp[Ts_LUSC, "days_to_new_tumor_event_after_initial_treatment"]
+clinical_data_all_LUSC$progression_status <- mutate(clinical_data_all_LUSC, progression_status=ifelse(days_to_last_followup > 0 | days_to_new_tumor_event_after_initial_treatment > 0, "censored", "NA"))$progression_status
+clinical_data_all_LUSC[rownames(subset(clinical_data_LUSC, progressed==TRUE)) ,"progression_status"] <- "progressed"
+clinical_data_all_LUSC[rownames(subset(clinical_data_LUSC, progressed==FALSE)) ,"progression_status"] <- "non-progressed"
+write.table(clinical_data_all_LUSC, file="clinical_data_LUSC.txt", sep="\t", quote=FALSE)
+
+clinical_data_all_KIRC <- clinical_out[["KIRC"]]@Clinical[Ts_KIRC,-1]
+clinical_data_all_KIRC$vital_status <- KIRC_latestFollowUp[Ts_KIRC, "alive"]
+clinical_data_all_KIRC$days_to_last_followup <- KIRC_latestFollowUp[Ts_KIRC, "days_to_last_followup"]
+clinical_data_all_KIRC$days_to_death <- KIRC_latestFollowUp[Ts_KIRC, "days_to_death"]
+clinical_data_all_KIRC$new_tumor_event_after_initial_treatment <- KIRC_latestFollowUp[Ts_KIRC, "new_tumor_event_after_initial_treatment"]
+clinical_data_all_KIRC$days_to_new_tumor_event_after_initial_treatment <- KIRC_latestFollowUp[Ts_KIRC, "days_to_new_tumor_event_after_initial_treatment"]
+clinical_data_all_KIRC$progression_status <- mutate(clinical_data_all_KIRC, progression_status=ifelse(days_to_last_followup > 0 | days_to_new_tumor_event_after_initial_treatment > 0, "censored", "NA"))$progression_status
+clinical_data_all_KIRC[rownames(subset(clinical_data_KIRC, progressed==TRUE)) ,"progression_status"] <- "progressed"
+clinical_data_all_KIRC[rownames(subset(clinical_data_KIRC, progressed==FALSE)) ,"progression_status"] <- "non-progressed"
+write.table(clinical_data_all_KIRC, file="clinical_data_KIRC.txt", sep="\t", quote=FALSE)
+```
+

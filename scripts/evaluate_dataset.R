@@ -129,7 +129,7 @@ if (!is.na(opt$fraction)) { # if we set aside a fraction of the dataset for vali
 	auc_cv[,i] <- unlist(auc_fold)
 	log_pvals_meth[,i] <- unlist(log_pvals_meth_fold)
 	# Combine evidence using Fisher's method
-	log_pvals_fishers[[i]] <- apply(cbind(log_pvals_expr_scale[[i]], log_pvals_expr_welch[[i]], log_pvals_expr[[i]], log_pvals_meth[,i]), 1, FUN = function(x) if (x[1] <= log(0.05)) fishersMethod(x[c(2,4)], log.p = TRUE, logs = TRUE) else fishersMethod(x[c(3,4)], log.p = TRUE, logs = TRUE))
+	log_pvals_fishers[[i]] <- apply(cbind(log_pvals_expr_scale[[i]], log_pvals_expr_welch[[i]], log_pvals_expr[[i]], log_pvals_meth[,i]), 1, FUN = function(x) if (x[1] <= log(0.05)) fishersMethod(x[c(2,4)], log.p = TRUE, logs = TRUE) else fishersMethod(x[c(3,4)], log.p = TRUE, logs = TRUE)) # variance logic
 	pvals_folds[[i]] <- data.frame(genename = rownames(expr_logUQ), log_pvals_expr = log_pvals_expr[[i]], log_pvals_expr_welch = log_pvals_expr_welch[[i]], log_pvals_expr_scale = log_pvals_expr_scale[[i]], log_pvals_meth=log_pvals_meth[,i], log_pvals_fishers = log_pvals_fishers[[i]])
   }
 }
@@ -158,7 +158,7 @@ for (i in 1:100) {
 	} else predictor <- unlist(lapply(1:opt$folds, FUN=function(x) joint_logliks_test_list[[x]][[which(ranks[,x]==i)]]))
   
   predictor_top_combined <- predictor_top_combined + predictor
-  response <-  unlist(lapply(1:opt$folds, FUN=function(x) c(rep(1, length(g1_cv_sets[[x]])), rep(0, length(g2_cv_sets[[x]])))))
+  response <- unlist(lapply(1:opt$folds, FUN=function(x) c(rep(1, length(g1_cv_sets[[x]])), rep(0, length(g2_cv_sets[[x]])))))
   auc_top[[i]] <- tryCatch(auc(response = response, predictor = predictor)[1], error = function(e) return(NA))
   auc_top_combined[[i]] <- tryCatch(auc(response = response, predictor = predictor_top_combined)[1], error = function(e) return(NA))
 }

@@ -1,0 +1,371 @@
+years_to_birth	vital_status	days_to_death	days_to_last_followup	tumor_tissue_site	pathologic_stage	pathology_T_stage	pathology_N_stage	pathology_M_stage	gender	date_of_initial_pathologic_diagnosis	days_to_last_known_alive	radiation_therapy	karnofsky_performance_score	histological_type	number_pack_years_smoked	year_of_tobacco_smoking_onset	residual_tumor	race	ethnicity	new_tumor_event_after_initial_treatment	days_to_new_tumor_event_after_initial_treatment	progression_status
+TCGA-77-8008-01	68	Dead	2639	NA	lung	stage ib	t2	n0	m0	male	2001	NA	no	NA	lung squamous cell carcinoma- not otherwise specified (nos)	61.5	1945	r0	NA	NA	NA	NA	NA
+TCGA-NC-A5HM-01	76	Alive	NA	29	lung	stage ib	t2a	n0	m0	male	2010	NA	no	NA	lung squamous cell carcinoma- not otherwise specified (nos)	50	NA	r0	white	NA	NO	NA	censored
+TCGA-22-5474-01	74	Dead	445	445	lung	stage ib	t2a	n0	m0	male	2005	445	no	0	lung squamous cell carcinoma- not otherwise specified (nos)	50	1944	r0	white	NA	NO	NA	censored
+TCGA-56-8624-01	84	Alive	NA	36	lung	stage iib	t3	n0	mx	male	2012	NA	no	NA	lung squamous cell carcinoma- not otherwise specified (nos)	20	NA	r0	white	not hispanic or latino	NO	NA	censored
+TCGA-77-7463-01	75	Dead	1423	NA	lung	stage ib	t2	n0	m0	male	2001	NA	no	NA	lung squamous cell carcinoma- not otherwise specified (nos)	42	1954	r0	white	NA	NA	NA	NA
+TCGA-77-7338-01	64	Dead	5	NA	lung	stage ib	t2	n0	m0	male	1995	NA	no	NA	lung squamous cell carcinoma- not otherwise specified (nos)	41.25	1952	r1	white	NA	NO	NA	NA
+TCGA-85-A4JC-01	84	Alive	NA	-10	lung	stage iia	t2b	n0	m0	male	2012	NA	no	50	lung squamous cell carcinoma- not otherwise specified (nos)	25	NA	r0	white	not hispanic or latino	NA	NA	NA
+TCGA-68-A59I-01	73	Alive	NA	121	lung	stage iiia	t3	n1	m0	female	2012	NA	yes	70	lung squamous cell carcinoma- not otherwise specified (nos)	50	1962	NA	black or african american	not hispanic or latino	YES	159	progressed
+TCGA-39-5011-01	70	Alive	NA	1454	lung	stage ia	t1b	n0	m0	female	2002	NA	no	NA	lung squamous cell carcinoma- not otherwise specified (nos)	45	NA	r0	white	not hispanic or latino	YES	565	progressed
+TCGA-39-5021-01	70	Dead	2086	2086	lung	stage ib	t2a	n0	m0	male	2004	2057	no	NA	lung squamous cell carcinoma- not otherwise specified (nos)	114	1947	r0	white	not hispanic or latino	YES	1875	censored
+TCGA-56-8083-01	56	Alive	NA	2	lung	stage ib	t2a	n0	mx	male	2011	NA	NA	NA	lung squamous cell carcinoma- not otherwise specified (nos)	30	NA	r0	white	not hispanic or latino	NA	NA	censored
+TCGA-43-6143-01	70	Alive	NA	214	lung	stage ib	t2	n0	m0	male	2010	NA	no	80	lung basaloid squamous cell carcinoma	114	1953	rx	white	not hispanic or latino	NO	NA	censored
+TCGA-56-8305-01	72	Alive	NA	105	lung	stage ib	t2a	n0	m0	male	2011	NA	NA	NA	lung squamous cell carcinoma- not otherwise specified (nos)	100	1946	r0	white	not hispanic or latino	NA	NA	censored
+TCGA-92-8064-01	58	Alive	NA	160	lung	stage ib	t2b	n0	mx	male	2011	NA	no	NA	lung squamous cell carcinoma- not otherwise specified (nos)	30	1974	rx	white	not hispanic or latino	NO	NA	censored
+TCGA-85-7698-01	48	Alive	NA	49	lung	stage ia	t1b	n0	m0	male	2011	NA	no	100	lung squamous cell carcinoma- not otherwise specified (nos)	44	1967	r0	white	not hispanic or latino	YES	650	progressed
+TCGA-77-8009-01	68	Alive	NA	1641	lung	stage iib	t2	n1	m0	male	2007	NA	no	NA	lung squamous cell carcinoma- not otherwise specified (nos)	97.5	1967	r0	NA	NA	YES	607	progressed
+TCGA-63-A5MR-01	70	Alive	NA	2367	lung	stage ib	t2	n0	m0	female	NA	NA	no	NA	lung squamous cell carcinoma- not otherwise specified (nos)	120	1957	r0	NA	NA	NO	NA	non-progressed
+TCGA-90-7766-01	66	Alive	NA	47	lung	stage ia	t1b	n0	mx	female	2011	NA	no	NA	lung squamous cell carcinoma- not otherwise specified (nos)	30	1981	r0	white	not hispanic or latino	YES	289	progressed
+TCGA-22-5485-01	58	Dead	916	916	lung	stage ia	t1a	n0	m0	female	2001	916	no	0	lung squamous cell carcinoma- not otherwise specified (nos)	60	NA	r0	white	NA	YES	840	censored
+TCGA-98-7454-01	73	Alive	NA	115	lung	stage ib	t2a	n0	m0	male	2011	NA	no	100	lung squamous cell carcinoma- not otherwise specified (nos)	60	1943	r0	white	not hispanic or latino	NO	NA	censored
+TCGA-NC-A5HK-01	58	Alive	NA	128	lung	stage iib	t3	n0	m0	female	2010	NA	no	NA	lung squamous cell carcinoma- not otherwise specified (nos)	40	NA	r0	white	NA	NA	NA	censored
+TCGA-85-6561-01	66	Alive	NA	24	lung	stage ib	t2a	nx	m0	male	2011	NA	yes	100	lung squamous cell carcinoma- not otherwise specified (nos)	35	1975	r0	white	not hispanic or latino	NO	NA	censored
+TCGA-85-8582-01	49	Alive	NA	4	lung	stage ia	t1a	n0	m0	male	2012	NA	no	100	lung squamous cell carcinoma- not otherwise specified (nos)	40	NA	r0	white	not hispanic or latino	NO	NA	censored
+TCGA-96-7545-01	73	Alive	NA	1324	lung	stage ia	t1	n0	mx	male	2008	NA	no	NA	lung squamous cell carcinoma- not otherwise specified (nos)	116	NA	NA	white	not hispanic or latino	NO	NA	non-progressed
+TCGA-NC-A5HG-01	59	Alive	NA	1548	lung	stage iiia	t2	n2	m0	male	2009	NA	yes	NA	lung basaloid squamous cell carcinoma	80	1968	r0	white	NA	NO	NA	non-progressed
+TCGA-96-8169-01	67	Alive	NA	189	lung	stage ia	t1a	n0	m0	female	2011	NA	no	NA	lung squamous cell carcinoma- not otherwise specified (nos)	35	1970	NA	white	not hispanic or latino	NO	NA	censored
+TCGA-85-8070-01	71	Alive	NA	43	lung	stage ib	t2	n0	m0	male	2011	NA	no	80	lung squamous cell carcinoma- not otherwise specified (nos)	50	1960	r0	white	not hispanic or latino	NO	NA	censored
+TCGA-56-7222-01	60	Alive	NA	13	lung	stage ib	t2a	n0	m0	male	2011	NA	no	70	lung squamous cell carcinoma- not otherwise specified (nos)	23	1963	NA	white	not hispanic or latino	YES	427	progressed
+TCGA-58-A46N-01	52	Alive	NA	540	lung	stage ib	t2a	n0	m0	male	2011	NA	no	90	lung basaloid squamous cell carcinoma	50	NA	r0	white	not hispanic or latino	YES	630	progressed
+TCGA-22-5489-01	64	Dead	1912	1912	lung	stage ia	t1b	n0	m0	male	2003	1665	no	0	lung squamous cell carcinoma- not otherwise specified (nos)	70	NA	r0	white	NA	YES	730	progressed
+TCGA-NC-A5HR-01	75	Alive	NA	623	lung	stage iia	t2a	n1	m0	female	2011	NA	no	NA	lung basaloid squamous cell carcinoma	35	NA	r0	white	NA	NO	NA	censored
+TCGA-92-8063-01	52	Alive	NA	122	lung	stage iiia	t2b	n2	mx	male	2011	NA	yes	90	lung squamous cell carcinoma- not otherwise specified (nos)	74	1975	rx	white	not hispanic or latino	NO	NA	censored
+TCGA-85-7950-01	46	Alive	NA	60	lung	stage ib	t2a	n0	m0	male	2011	NA	no	100	lung squamous cell carcinoma- not otherwise specified (nos)	27	1984	rx	white	not hispanic or latino	NO	NA	censored
+TCGA-77-A5GB-01	90	Dead	937	NA	lung	stage ib	t2a	nx	m0	male	2010	NA	no	NA	lung squamous cell carcinoma- not otherwise specified (nos)	52	1939	r0	NA	NA	NA	NA	NA
+TCGA-56-A5DS-01	72	Alive	NA	8	lung	stage ib	t2a	n0	mx	female	2012	NA	NA	NA	lung squamous cell carcinoma- not otherwise specified (nos)	50	1962	r0	white	not hispanic or latino	NO	NA	censored
+TCGA-43-A56V-01	61	Alive	NA	154	lung	stage iiia	t2a	n2	m0	male	2012	NA	no	70	lung squamous cell carcinoma- not otherwise specified (nos)	48	1967	NA	black or african american	not hispanic or latino	YES	355	progressed
+TCGA-85-8288-01	70	Alive	NA	54	lung	stage iia	t1b	n1	m0	male	2011	NA	no	70	lung squamous cell carcinoma- not otherwise specified (nos)	50	1962	r0	white	not hispanic or latino	NO	NA	censored
+TCGA-94-7943-01	80	Alive	NA	143	lung	stage ia	t1b	nx	mx	male	2011	NA	no	NA	lung squamous cell carcinoma- not otherwise specified (nos)	30	1961	r0	white	not hispanic or latino	NO	NA	censored
+TCGA-22-5472-01	67	Dead	1975	NA	lung	stage ib	t2a	n0	m0	male	2005	1944	no	0	lung squamous cell carcinoma- not otherwise specified (nos)	35	1964	r0	white	not hispanic or latino	YES	746	progressed
+TCGA-63-7021-01	NA	Alive	NA	NA	lung	stage ia	t1	n0	m0	male	NA	NA	no	NA	lung squamous cell carcinoma- not otherwise specified (nos)	21	1955	r0	NA	NA	NO	NA	NA
+TCGA-NK-A5CX-01	73	Alive	NA	111	lung	stage iia	t2b	n0	mx	male	2011	NA	no	NA	lung squamous cell carcinoma- not otherwise specified (nos)	40	NA	NA	white	not hispanic or latino	NO	NA	censored
+TCGA-85-A5B5-01	58	Alive	NA	111	lung	stage ia	t1b	n0	m0	male	2012	NA	no	NA	lung squamous cell carcinoma- not otherwise specified (nos)	15	1982	r0	white	not hispanic or latino	NA	NA	censored
+TCGA-85-A4QR-01	67	Alive	NA	25	lung	stage ib	t2a	n0	m0	male	2012	NA	no	100	lung squamous cell carcinoma- not otherwise specified (nos)	50	1961	r0	white	not hispanic or latino	NO	NA	censored
+TCGA-85-A513-01	60	Alive	NA	24	lung	stage ia	t1a	nx	m0	female	2012	NA	no	80	lung squamous cell carcinoma- not otherwise specified (nos)	NA	NA	r0	asian	not hispanic or latino	NO	NA	censored
+TCGA-90-A59Q-01	61	Alive	NA	269	lung	stage iia	t2a	n1	mx	female	2012	NA	yes	NA	lung squamous cell carcinoma- not otherwise specified (nos)	80	1972	r0	white	not hispanic or latino	YES	274	progressed
+TCGA-NC-A5HT-01	69	Alive	NA	419	lung	stage iiia	t3	n1	m0	male	2012	NA	no	NA	lung squamous cell carcinoma- not otherwise specified (nos)	50	NA	r0	white	NA	YES	568	progressed
+TCGA-34-A5IX-01	80	Alive	NA	636	lung	stage iib	t3	n0	m0	male	2012	NA	no	NA	lung squamous cell carcinoma- not otherwise specified (nos)	NA	NA	NA	white	not hispanic or latino	NO	NA	censored
+TCGA-85-8584-01	71	Alive	NA	0	lung	stage iia	t2a	n1	m0	male	2012	NA	NA	0	lung papillary squamous cell caricnoma	50	NA	r0	white	not hispanic or latino	NA	NA	NA
+TCGA-85-7710-01	59	Alive	NA	0	lung	stage ia	t1b	n0	m0	female	2011	NA	no	100	lung squamous cell carcinoma- not otherwise specified (nos)	45	1965	NA	white	not hispanic or latino	NO	NA	NA
+TCGA-63-A5MG-01	68	Alive	NA	1769	lung	stage ib	t2	n0	m0	male	NA	NA	no	NA	lung squamous cell carcinoma- not otherwise specified (nos)	NA	NA	r0	NA	NA	NO	NA	non-progressed
+TCGA-77-A5G7-01	63	Dead	180	NA	lung	stage ia	t1	n0	m0	male	2009	NA	no	NA	lung squamous cell carcinoma- not otherwise specified (nos)	69	1963	r0	NA	NA	NA	NA	NA
+TCGA-98-8021-01	75	Alive	NA	413	lung	stage ia	t1a	n0	m0	female	2011	NA	no	NA	lung squamous cell carcinoma- not otherwise specified (nos)	60	1950	r0	white	not hispanic or latino	YES	918	censored
+TCGA-77-6842-01	79	Dead	899	NA	lung	stage iib	t2	n1	m0	male	2000	NA	no	NA	lung squamous cell carcinoma- not otherwise specified (nos)	22.5	1950	r0	white	NA	YES	201	progressed
+TCGA-37-5819-01	64	Alive	NA	103	lung	stage iiia	t2	n2	m0	male	2010	NA	NA	90	lung squamous cell carcinoma- not otherwise specified (nos)	45	1965	r0	white	not hispanic or latino	NA	NA	censored
+TCGA-34-8455-01	67	Dead	123	NA	lung	stage iv	t4	n0	m1a	male	2011	NA	no	NA	lung squamous cell carcinoma- not otherwise specified (nos)	50	NA	r0	white	not hispanic or latino	YES	NA	progressed
+TCGA-85-7844-01	71	Alive	NA	38	lung	stage ib	t2a	n0	m0	male	2011	NA	no	100	lung squamous cell carcinoma- not otherwise specified (nos)	40	1970	r0	white	not hispanic or latino	NO	NA	censored
+TCGA-56-8201-01	74	Alive	NA	28	lung	stage iib	t3	n0	mx	male	2011	NA	no	NA	lung squamous cell carcinoma- not otherwise specified (nos)	NA	NA	r0	white	not hispanic or latino	YES	NA	censored
+TCGA-43-6773-01	76	Dead	116	NA	lung	stage iib	t2	n1	mx	male	2008	NA	no	NA	lung squamous cell carcinoma- not otherwise specified (nos)	NA	NA	NA	white	NA	NA	NA	NA
+TCGA-56-5898-01	69	Alive	NA	0	lung	stage ia	t1b	n0	m0	male	2010	NA	no	NA	lung squamous cell carcinoma- not otherwise specified (nos)	NA	1955	r0	white	not hispanic or latino	NO	NA	NA
+TCGA-56-8623-01	71	Alive	NA	6	lung	stage ib	t2a	n0	mx	male	2012	NA	no	90	lung squamous cell carcinoma- not otherwise specified (nos)	45	NA	r0	white	not hispanic or latino	YES	645	progressed
+TCGA-77-8156-01	60	Alive	NA	10	lung	stage ib	t2a	n0	m0	male	2010	NA	no	NA	lung squamous cell carcinoma- not otherwise specified (nos)	57.5	1963	r0	NA	NA	NA	NA	censored
+TCGA-94-A5I6-01	62	Alive	NA	185	lung	stage iib	t3	n0	m0	male	2012	NA	no	NA	lung squamous cell carcinoma- not otherwise specified (nos)	80	1972	rx	white	not hispanic or latino	YES	481	progressed
+TCGA-90-7964-01	70	Alive	NA	100	lung	stage ib	t2a	n0	mx	male	2011	NA	no	NA	lung squamous cell carcinoma- not otherwise specified (nos)	180	1951	r0	white	not hispanic or latino	NO	NA	censored
+TCGA-98-8023-01	70	Alive	NA	308	lung	stage iiia	t3	n1	m0	male	2011	NA	no	NA	lung squamous cell carcinoma- not otherwise specified (nos)	75	1961	r0	white	not hispanic or latino	NO	NA	censored
+TCGA-85-8664-01	73	Alive	NA	3	lung	stage iib	t2b	n1	m0	male	2011	NA	no	NA	lung squamous cell carcinoma- not otherwise specified (nos)	60	1961	r0	white	not hispanic or latino	YES	434	progressed
+TCGA-52-7812-01	68	Dead	835	NA	lung	stage iia	t2	n2	m0	male	2009	NA	yes	0	lung squamous cell carcinoma- not otherwise specified (nos)	30	1967	r0	white	hispanic or latino	YES	791	progressed
+TCGA-68-8250-01	66	Alive	NA	244	lung	stage ia	t1a	n0	mx	male	2011	NA	no	NA	lung squamous cell carcinoma- not otherwise specified (nos)	50	NA	NA	black or african american	not hispanic or latino	NO	NA	censored
+TCGA-22-5480-01	66	Dead	2170	2170	lung	stage ia	t1b	n0	m0	female	2002	2170	no	0	lung squamous cell carcinoma- not otherwise specified (nos)	50	1952	r0	white	not hispanic or latino	YES	1779	censored
+TCGA-56-6545-01	77	Alive	NA	62	lung	stage ib	t2a	n0	m0	female	2010	NA	no	NA	lung squamous cell carcinoma- not otherwise specified (nos)	NA	1952	r0	white	NA	NO	NA	censored
+TCGA-90-7767-01	56	Alive	NA	89	lung	stage iib	t2b	n1	mx	male	2011	NA	NA	NA	lung squamous cell carcinoma- not otherwise specified (nos)	25	1981	r0	white	not hispanic or latino	NA	NA	censored
+TCGA-39-5035-01	72	Alive	NA	474	lung	stage ia	t1b	n0	m0	female	2007	NA	no	NA	lung squamous cell carcinoma- not otherwise specified (nos)	47	1950	r0	white	not hispanic or latino	NO	NA	censored
+TCGA-56-5897-01	74	Alive	NA	3	lung	stage ia	t1b	n0	mx	male	2010	NA	no	NA	lung squamous cell carcinoma- not otherwise specified (nos)	NA	NA	NA	white	not hispanic or latino	NO	NA	censored
+TCGA-94-7557-01	73	Dead	5	NA	lung	stage ib	t2	n0	m0	male	2011	NA	no	NA	lung squamous cell carcinoma- not otherwise specified (nos)	NA	NA	NA	black or african american	not hispanic or latino	NO	NA	NA
+TCGA-77-8136-01	74	Dead	1189	NA	lung	stage iib	t2	n1	m0	female	2002	NA	no	NA	lung squamous cell carcinoma- not otherwise specified (nos)	135	1947	r0	NA	NA	NO	NA	NA
+TCGA-98-A53D-01	68	Alive	NA	22	lung	stage iib	t3	n0	m0	male	2012	NA	no	NA	lung squamous cell carcinoma- not otherwise specified (nos)	90	1960	r0	white	not hispanic or latino	YES	413	progressed
+TCGA-77-A5G6-01	66	Dead	678	NA	lung	stage iiia	t2	n2	m0	male	2009	NA	no	NA	lung squamous cell carcinoma- not otherwise specified (nos)	74	1955	r0	NA	NA	NA	NA	NA
+TCGA-85-8052-01	53	Alive	NA	16	lung	stage iib	t3	n0	m0	male	2011	NA	no	100	lung squamous cell carcinoma- not otherwise specified (nos)	40	1970	r0	white	not hispanic or latino	NO	NA	censored
+TCGA-46-6026-01	81	Alive	NA	18	lung	stage iib	t2a	n1	m0	male	2010	471	yes	NA	lung squamous cell carcinoma- not otherwise specified (nos)	NA	NA	r2	white	not hispanic or latino	NO	NA	censored
+TCGA-39-5016-01	44	Alive	NA	2253	lung	stage iia	t2a	n1	m0	male	2003	NA	no	NA	lung basaloid squamous cell carcinoma	40	NA	r0	white	NA	NO	NA	non-progressed
+TCGA-63-A5MV-01	69	Alive	NA	787	lung	stage iia	t2b	n0	m0	male	NA	NA	no	NA	lung squamous cell carcinoma- not otherwise specified (nos)	50	1961	r0	NA	NA	NA	NA	censored
+TCGA-56-A4BX-01	70	Alive	NA	46	lung	stage iia	t2b	n0	mx	male	2012	NA	no	70	lung squamous cell carcinoma- not otherwise specified (nos)	83	1957	r0	white	not hispanic or latino	NO	NA	censored
+TCGA-85-8580-01	52	Alive	NA	28	lung	stage ib	t2a	n0	m0	female	2012	NA	no	100	lung squamous cell carcinoma- not otherwise specified (nos)	38	1973	r0	white	not hispanic or latino	NO	NA	censored
+TCGA-33-6737-01	71	Dead	601	NA	lung	stage iiia	t2	n2	m0	male	2008	NA	no	NA	lung squamous cell carcinoma- not otherwise specified (nos)	20	NA	NA	white	NA	NO	NA	NA
+TCGA-77-8146-01	72	Alive	NA	2183	lung	stage ia	t1	n0	m0	male	2005	NA	no	NA	lung squamous cell carcinoma- not otherwise specified (nos)	75	1954	r0	NA	NA	NA	NA	non-progressed
+TCGA-21-A5DI-01	77	Alive	NA	979	lung	stage ia	t1b	n0	m0	male	2006	NA	no	NA	lung squamous cell carcinoma- not otherwise specified (nos)	NA	NA	r0	white	not hispanic or latino	NA	NA	non-progressed
+TCGA-39-5031-01	76	Alive	NA	833	lung	stage ia	t1a	n0	m0	female	2007	NA	no	NA	lung squamous cell carcinoma- not otherwise specified (nos)	60	1946	r0	NA	NA	NO	NA	non-progressed
+TCGA-58-A46K-01	59	Dead	1045	NA	lung	stage iiia	t2	n2	m0	male	2008	NA	yes	100	lung basaloid squamous cell carcinoma	10	NA	r0	white	not hispanic or latino	NA	NA	NA
+TCGA-43-5668-01	78	Alive	NA	258	lung	stage iia	t1b	n1	m0	male	2010	NA	no	NA	lung squamous cell carcinoma- not otherwise specified (nos)	20	NA	NA	white	not hispanic or latino	NA	NA	censored
+TCGA-85-A512-01	46	Alive	NA	0	lung	stage iia	t1b	n1	m0	male	2012	NA	no	100	lung squamous cell carcinoma- not otherwise specified (nos)	25	1987	r0	white	not hispanic or latino	NO	NA	NA
+TCGA-43-8115-01	72	Alive	NA	202	lung	stage iia	t2a	n1	mx	female	2011	NA	no	NA	lung squamous cell carcinoma- not otherwise specified (nos)	55.83	1955	r0	white	not hispanic or latino	NO	NA	censored
+TCGA-56-8504-01	74	Alive	NA	178	lung	stage ib	t2a	n0	mx	male	2012	NA	no	90	lung squamous cell carcinoma- not otherwise specified (nos)	NA	NA	r0	white	not hispanic or latino	NO	NA	censored
+TCGA-56-A4BY-01	66	Alive	NA	31	lung	stage ib	t2a	n0	mx	male	2012	NA	yes	80	lung squamous cell carcinoma- not otherwise specified (nos)	65	1961	rx	white	not hispanic or latino	NO	NA	censored
+TCGA-52-7811-01	67	Dead	266	NA	lung	stage ib	t2	n0	m0	male	2009	NA	no	0	lung squamous cell carcinoma- not otherwise specified (nos)	50	1958	r0	white	hispanic or latino	YES	153	progressed
+TCGA-56-7731-01	66	Alive	NA	0	lung	stage ib	t2a	n0	mx	female	2011	NA	no	NA	lung squamous cell carcinoma- not otherwise specified (nos)	100	1961	NA	white	not hispanic or latino	NO	NA	NA
+TCGA-77-6843-01	74	Dead	2224	NA	lung	stage iia	t1	n1	m0	male	2002	NA	no	NA	lung squamous cell carcinoma- not otherwise specified (nos)	30	1941	r0	white	NA	NA	NA	NA
+TCGA-58-8387-01	60	Dead	403	NA	lung	stage iia	t2b	n0	m0	male	2010	NA	no	90	lung squamous cell carcinoma- not otherwise specified (nos)	40	NA	r0	white	not hispanic or latino	NA	NA	NA
+TCGA-21-5783-01	76	Dead	2680	NA	lung	stage ib	t2	n0	m0	male	2004	NA	no	0	lung squamous cell carcinoma- not otherwise specified (nos)	NA	NA	r0	white	not hispanic or latino	NA	NA	NA
+TCGA-60-2703-01	73	Dead	2945	NA	lung	stage iib	t2	n1	m0	male	2002	NA	no	NA	lung squamous cell carcinoma- not otherwise specified (nos)	50	1950	r0	white	not hispanic or latino	YES	1757	censored
+TCGA-33-A5GW-01	67	Alive	NA	9	lung	stage iia	t1a	n1	mx	male	2012	NA	no	20	lung squamous cell carcinoma- not otherwise specified (nos)	50	NA	r0	white	not hispanic or latino	NO	NA	censored
+TCGA-MF-A522-01	54	Alive	NA	83	lung	stage ib	t2a	n0	mx	male	2012	NA	no	10	lung squamous cell carcinoma- not otherwise specified (nos)	45	1967	NA	white	NA	YES	173	progressed
+TCGA-77-7465-01	58	Alive	NA	479	lung	stage iia	t2a	n1	m0	male	2010	NA	NA	NA	lung squamous cell carcinoma- not otherwise specified (nos)	120	1963	r0	white	NA	NA	NA	censored
+TCGA-22-A5C4-01	70	Alive	NA	29	lung	stage iia	t2b	n0	m0	male	2012	NA	no	NA	lung squamous cell carcinoma- not otherwise specified (nos)	80	1960	r0	white	not hispanic or latino	NO	NA	censored
+TCGA-63-5128-01	NA	Dead	NA	NA	lung	stage ib	t2	n0	m0	male	NA	NA	no	NA	lung squamous cell carcinoma- not otherwise specified (nos)	NA	NA	r0	NA	NA	YES	NA	NA
+TCGA-34-5929-01	78	Dead	151	NA	lung	stage ib	t2	n0	m0	female	2010	NA	no	NA	lung squamous cell carcinoma- not otherwise specified (nos)	40	NA	NA	white	not hispanic or latino	NO	NA	NA
+TCGA-33-4583-01	73	Alive	NA	4299	lung	stage ia	t1	n0	m0	male	1999	NA	no	90	lung squamous cell carcinoma- not otherwise specified (nos)	46	1941	r0	white	not hispanic or latino	NO	NA	non-progressed
+TCGA-39-5040-01	59	Dead	519	NA	lung	stage iiia	t2a	n2	m0	male	2008	NA	yes	80	lung squamous cell carcinoma- not otherwise specified (nos)	60	1964	r0	white	not hispanic or latino	YES	442	progressed
+TCGA-NK-A5CT-01	70	Alive	NA	1761	lung	stage ia	t1	n0	m0	male	2008	NA	no	NA	lung squamous cell carcinoma- not otherwise specified (nos)	80	NA	NA	white	not hispanic or latino	YES	1990	censored
+TCGA-58-8392-01	70	Dead	501	NA	lung	stage ib	t2a	n0	m0	male	2010	NA	no	70	lung squamous cell carcinoma- not otherwise specified (nos)	80	NA	r0	white	not hispanic or latino	NA	NA	NA
+TCGA-NC-A5HP-01	69	Alive	NA	730	lung	stage iv	t2a	n0	m1b	male	2011	NA	no	NA	lung squamous cell carcinoma- not otherwise specified (nos)	50	NA	r0	white	NA	YES	423	progressed
+TCGA-77-8145-01	73	Dead	212	NA	lung	stage iiib	t4	n1	m0	male	2000	NA	yes	NA	lung squamous cell carcinoma- not otherwise specified (nos)	57	1943	r1	NA	NA	YES	NA	progressed
+TCGA-63-A5MW-01	76	Alive	NA	140	lung	stage ib	t2	n0	m0	male	NA	NA	no	NA	lung squamous cell carcinoma- not otherwise specified (nos)	60	NA	r0	NA	NA	NO	NA	censored
+TCGA-56-8082-01	80	Alive	NA	26	lung	stage iia	t2b	n0	mx	female	2011	NA	no	NA	lung squamous cell carcinoma- not otherwise specified (nos)	NA	NA	r0	white	not hispanic or latino	NO	NA	censored
+TCGA-6A-AB49-01	NA	Dead	NA	NA	lung	stage ib	t2	n0	mx	female	2009	NA	no	0	lung squamous cell carcinoma- not otherwise specified (nos)	50	1969	rx	black or african american	not hispanic or latino	NO	NA	NA
+TCGA-98-A53I-01	64	Alive	NA	99	lung	stage iia	t2a	n1	m0	male	2012	NA	no	NA	lung squamous cell carcinoma- not otherwise specified (nos)	70	1969	r0	white	not hispanic or latino	NO	NA	censored
+TCGA-92-7341-01	71	Alive	NA	106	lung	stage ib	t2a	n0	mx	male	2011	NA	no	100	lung squamous cell carcinoma- not otherwise specified (nos)	50	1961	r0	white	not hispanic or latino	NO	NA	censored
+TCGA-77-8007-01	68	Dead	198	NA	lung	stage iib	t2	n1	m0	male	2001	NA	NA	NA	lung squamous cell carcinoma- not otherwise specified (nos)	100	1960	r0	NA	NA	YES	139	progressed
+TCGA-63-A5MJ-01	54	Alive	NA	1524	lung	stage iib	t2	n1	m0	male	NA	NA	no	NA	lung squamous cell carcinoma- not otherwise specified (nos)	NA	1989	r0	NA	NA	NO	NA	non-progressed
+TCGA-34-5234-01	71	Alive	NA	994	lung	stage ia	t1	n0	m0	female	2007	NA	no	90	lung squamous cell carcinoma- not otherwise specified (nos)	40	1960	r0	white	not hispanic or latino	NO	NA	non-progressed
+TCGA-77-8130-01	69	Alive	NA	2522	lung	stage iib	t2	n1	m0	male	2000	NA	no	NA	lung squamous cell carcinoma- not otherwise specified (nos)	32.25	1945	r0	NA	NA	NA	NA	non-progressed
+TCGA-58-A46J-01	64	Alive	NA	1973	lung	stage iib	t2	n1	m0	male	2006	NA	no	80	lung squamous cell carcinoma- not otherwise specified (nos)	NA	NA	r0	white	not hispanic or latino	NO	NA	non-progressed
+TCGA-85-8048-01	62	Alive	NA	26	lung	stage ia	t1	n0	m0	male	2011	NA	no	100	lung squamous cell carcinoma- not otherwise specified (nos)	50	1960	r0	white	not hispanic or latino	NO	NA	censored
+TCGA-NK-A7XE-01	66	Alive	NA	13	lung	stage iiib	t4	n2	m0	male	2013	NA	no	NA	lung squamous cell carcinoma- not otherwise specified (nos)	80	NA	NA	black or african american	not hispanic or latino	NO	NA	censored
+TCGA-56-8629-01	63	Alive	NA	34	lung	stage iia	t2b	n0	mx	male	2012	NA	no	80	lung squamous cell carcinoma- not otherwise specified (nos)	66	1968	r0	white	not hispanic or latino	NO	NA	censored
+TCGA-NC-A5HN-01	77	Alive	NA	894	lung	stage iia	t2a	n1	m0	male	2010	NA	no	NA	lung squamous cell carcinoma- not otherwise specified (nos)	100	1953	r0	white	NA	NO	NA	non-progressed
+TCGA-63-A5MI-01	65	Alive	NA	1399	lung	stage iiia	t2	n2	m0	male	NA	NA	no	NA	lung squamous cell carcinoma- not otherwise specified (nos)	50	NA	r0	NA	NA	NO	NA	non-progressed
+TCGA-43-7657-01	68	Alive	NA	48	lung	stage ia	t1	n0	mx	female	2011	NA	no	NA	lung squamous cell carcinoma- not otherwise specified (nos)	45	1957	NA	white	not hispanic or latino	NO	NA	censored
+TCGA-33-4587-01	63	Dead	1656	NA	lung	stage ib	t2	n0	mx	female	2003	NA	no	NA	lung small cell squamous cell carcinoma	NA	1970	r0	white	not hispanic or latino	NO	NA	NA
+TCGA-43-8116-01	73	Alive	NA	193	lung	stage ia	t1b	n0	m0	male	2011	NA	no	NA	lung squamous cell carcinoma- not otherwise specified (nos)	35	1959	NA	white	not hispanic or latino	NO	NA	censored
+TCGA-33-AASJ-01	60	Dead	3600	NA	lung	stage ib	t2	n0	mx	male	1999	NA	no	90	lung squamous cell carcinoma- not otherwise specified (nos)	NA	1983	r0	black or african american	not hispanic or latino	NA	NA	NA
+TCGA-33-4589-01	62	Dead	47	NA	lung	stage iib	t2	n1	m0	female	1992	NA	no	80	lung squamous cell carcinoma- not otherwise specified (nos)	45	1948	NA	white	hispanic or latino	NO	NA	NA
+TCGA-NK-A5D1-01	57	Alive	NA	511	lung	stage iia	t2a	n1	m0	male	2011	NA	NA	NA	lung basaloid squamous cell carcinoma	90	NA	NA	white	not hispanic or latino	YES	151	progressed
+TCGA-22-5473-01	78	Dead	1933	NA	lung	NA	t3	n0	m0	male	2005	NA	no	0	lung squamous cell carcinoma- not otherwise specified (nos)	45	1942	r0	white	not hispanic or latino	YES	1655	censored
+TCGA-O2-A5IB-01	71	Dead	340	NA	lung	stage iii	t3	n1	mx	female	2005	NA	no	NA	lung squamous cell carcinoma- not otherwise specified (nos)	2.5	1954	NA	white	not hispanic or latino	NA	NA	NA
+TCGA-85-8276-01	62	Alive	NA	13	lung	stage iia	t1b	n1	m0	male	2011	NA	no	NA	lung squamous cell carcinoma- not otherwise specified (nos)	20	1971	r0	white	not hispanic or latino	YES	1048	censored
+TCGA-XC-AA0X-01	77	Dead	6	NA	lung	stage ia	t1a	n0	m0	female	2013	NA	no	NA	lung squamous cell carcinoma- not otherwise specified (nos)	30	1953	r0	black or african american	not hispanic or latino	NA	NA	NA
+TCGA-77-A5G8-01	70	Alive	NA	1290	lung	stage iib	t3	n0	m0	male	2009	NA	NA	NA	lung squamous cell carcinoma- not otherwise specified (nos)	90	1949	r0	NA	NA	NA	NA	non-progressed
+TCGA-O2-A52N-01	78	Dead	1006	NA	lung	stage i	t2	n0	mx	male	2005	NA	no	NA	lung squamous cell carcinoma- not otherwise specified (nos)	4.125	1942	NA	white	not hispanic or latino	NA	NA	NA
+TCGA-79-5596-01	NA	Alive	NA	NA	lung	stage iiia	t3	n1	m0	male	NA	NA	no	NA	lung squamous cell carcinoma- not otherwise specified (nos)	40	NA	r0	NA	NA	YES	NA	NA
+TCGA-63-7020-01	NA	Alive	NA	NA	lung	stage ia	t1	n0	m0	male	NA	NA	no	NA	lung squamous cell carcinoma- not otherwise specified (nos)	50	1957	r0	NA	NA	NO	NA	NA
+TCGA-85-8666-01	65	Alive	NA	14	lung	stage ib	t2a	n0	m0	male	2011	NA	no	0	lung squamous cell carcinoma- not otherwise specified (nos)	55	1967	r0	white	not hispanic or latino	NO	NA	censored
+TCGA-18-3417-01	65	Alive	NA	758	lung	stage iv	t2	n1	m1	male	2006	NA	no	NA	lung squamous cell carcinoma- not otherwise specified (nos)	25	1963	r0	NA	NA	NA	NA	censored
+TCGA-94-8035-01	64	Alive	NA	111	lung	stage iib	t3	n0	mx	male	2011	NA	no	NA	lung squamous cell carcinoma- not otherwise specified (nos)	50	1961	r0	white	not hispanic or latino	NO	NA	censored
+TCGA-63-A5MY-01	63	Alive	NA	6	lung	stage ia	t1b	n0	m0	male	NA	NA	no	NA	lung squamous cell carcinoma- not otherwise specified (nos)	40	1966	r0	NA	NA	NO	NA	censored
+TCGA-98-A539-01	63	Alive	NA	118	lung	stage iib	t3	n0	m0	male	2011	NA	no	NA	lung squamous cell carcinoma- not otherwise specified (nos)	75	1962	r0	white	not hispanic or latino	YES	173	progressed
+TCGA-63-A5MT-01	74	Alive	NA	498	lung	stage iib	t3	n0	m0	male	NA	NA	no	NA	lung squamous cell carcinoma- not otherwise specified (nos)	100	1961	r0	NA	NA	NA	NA	censored
+TCGA-43-6770-01	59	Alive	NA	85	lung	stage ib	t2a	n0	mx	female	2011	NA	no	90	lung squamous cell carcinoma- not otherwise specified (nos)	34	1977	rx	black or african american	not hispanic or latino	NO	NA	censored
+TCGA-77-A5GA-01	76	Alive	NA	36	lung	stage ib	t2a	n0	m0	male	2010	NA	no	NA	lung squamous cell carcinoma- not otherwise specified (nos)	99	1949	r0	NA	NA	NA	NA	censored
+TCGA-85-6798-01	57	Alive	NA	34	lung	stage iiia	t3	n1	m0	male	2011	NA	no	NA	lung squamous cell carcinoma- not otherwise specified (nos)	35	1976	r0	white	not hispanic or latino	YES	180	progressed
+TCGA-77-7141-01	64	Alive	NA	15	lung	stage ib	t2	n0	m0	male	2003	NA	no	NA	lung squamous cell carcinoma- not otherwise specified (nos)	70	1953	r0	white	NA	NA	NA	censored
+TCGA-77-6844-01	74	Dead	2284	NA	lung	stage iiia	t3	n1	m0	male	2002	NA	yes	NA	lung squamous cell carcinoma- not otherwise specified (nos)	45	1942	r0	white	NA	YES	1788	censored
+TCGA-J1-A4AH-01	70	Alive	NA	222	lung	stage iia	t2b	n0	mx	male	2012	NA	no	NA	lung squamous cell carcinoma- not otherwise specified (nos)	100	NA	r0	white	not hispanic or latino	NO	NA	censored
+TCGA-56-7223-01	66	Alive	NA	30	lung	stage iiia	t3	n1	mx	male	2011	NA	no	NA	lung squamous cell carcinoma- not otherwise specified (nos)	NA	NA	r0	white	not hispanic or latino	YES	132	progressed
+TCGA-77-8143-01	76	Dead	803	NA	lung	stage iiia	t2	n2	m0	male	2004	NA	yes	NA	lung squamous cell carcinoma- not otherwise specified (nos)	30	NA	r0	NA	NA	NA	NA	NA
+TCGA-51-6867-01	72	Dead	1856	NA	lung	stage i	t1	n0	m0	female	2003	NA	no	NA	lung squamous cell carcinoma- not otherwise specified (nos)	40	NA	r0	white	not hispanic or latino	YES	788	progressed
+TCGA-58-8388-01	60	Alive	NA	378	lung	stage ib	t2a	n0	m0	male	2010	NA	no	90	lung basaloid squamous cell carcinoma	80	NA	r0	white	not hispanic or latino	NO	NA	censored
+TCGA-63-A5MN-01	78	Dead	345	NA	lung	stage iib	t3	n0	m0	female	NA	NA	yes	NA	lung squamous cell carcinoma- not otherwise specified (nos)	NA	NA	r1	NA	NA	YES	320	progressed
+TCGA-21-5782-01	68	Dead	962	962	lung	stage ib	t2	n0	m0	female	2004	NA	no	0	lung squamous cell carcinoma- not otherwise specified (nos)	48	1953	r0	white	not hispanic or latino	NO	NA	non-progressed
+TCGA-85-8350-01	61	Alive	NA	60	lung	stage ia	t1b	n0	m0	male	2011	NA	no	100	lung squamous cell carcinoma- not otherwise specified (nos)	40	1971	r0	white	not hispanic or latino	NO	NA	censored
+TCGA-56-7221-01	79	Alive	NA	30	lung	stage ib	t2	n0	m0	male	2011	NA	no	NA	lung squamous cell carcinoma- not otherwise specified (nos)	25	NA	r0	white	NA	NO	NA	censored
+TCGA-58-8386-01	75	Dead	1	NA	lung	stage iv	t3	nx	m1	male	2008	NA	no	90	lung squamous cell carcinoma- not otherwise specified (nos)	65	NA	r0	NA	NA	NA	NA	NA
+TCGA-22-5482-01	81	Dead	357	357	lung	stage ib	t2a	n0	m0	male	2005	274	no	0	lung squamous cell carcinoma- not otherwise specified (nos)	60	1944	r0	white	NA	NO	NA	censored
+TCGA-34-8454-01	62	Alive	NA	166	lung	stage iiia	t3	n1	m0	female	2011	NA	no	NA	lung squamous cell carcinoma- not otherwise specified (nos)	90	NA	r0	white	not hispanic or latino	NO	NA	censored
+TCGA-43-A475-01	67	Alive	NA	206	lung	stage iib	t3	n0	m0	female	2012	NA	yes	80	lung squamous cell carcinoma- not otherwise specified (nos)	100	1958	r1	white	not hispanic or latino	NO	NA	censored
+TCGA-37-A5EN-01	59	Alive	NA	356	lung	stage iiib	t4	n2	m0	male	2011	NA	no	NA	lung squamous cell carcinoma- not otherwise specified (nos)	NA	NA	NA	white	not hispanic or latino	NO	NA	censored
+TCGA-85-A510-01	74	Alive	NA	0	lung	stage iib	t2b	n1	m0	female	2012	NA	no	100	lung squamous cell carcinoma- not otherwise specified (nos)	45	1967	r0	white	not hispanic or latino	YES	363	progressed
+TCGA-94-A4VJ-01	71	Alive	NA	43	lung	stage ia	t1b	n0	m0	female	2012	NA	no	NA	lung squamous cell carcinoma- not otherwise specified (nos)	37.5	1962	NA	white	not hispanic or latino	NO	NA	censored
+TCGA-43-A474-01	66	Alive	NA	262	lung	stage iia	t2b	n0	m0	male	2012	NA	no	90	lung squamous cell carcinoma- not otherwise specified (nos)	47	1965	r0	white	not hispanic or latino	NO	NA	censored
+TCGA-56-7822-01	75	Alive	NA	1	lung	stage iib	t2b	n1	m0	male	2011	NA	NA	80	lung squamous cell carcinoma- not otherwise specified (nos)	60	NA	r0	black or african american	not hispanic or latino	YES	301	progressed
+TCGA-63-A5MH-01	68	Alive	NA	1772	lung	stage ia	t1	n0	m0	male	NA	NA	no	NA	lung squamous cell carcinoma- not otherwise specified (nos)	35	NA	r0	NA	NA	NO	NA	non-progressed
+TCGA-O2-A52Q-01	44	Dead	113	NA	lung	stage iii	t3	n1	mx	female	2005	NA	no	NA	lung squamous cell carcinoma- not otherwise specified (nos)	1	1985	NA	white	not hispanic or latino	NA	NA	NA
+TCGA-92-7340-01	45	Alive	NA	82	lung	stage iia	t2a	n1	mx	female	2011	NA	no	90	lung squamous cell carcinoma- not otherwise specified (nos)	15	1985	r1	white	not hispanic or latino	NO	NA	censored
+TCGA-56-A62T-01	78	Alive	NA	5	lung	stage iia	t2b	n0	mx	male	2013	NA	yes	80	lung squamous cell carcinoma- not otherwise specified (nos)	102	1962	r1	black or african american	not hispanic or latino	NO	NA	censored
+TCGA-56-7582-01	83	Alive	NA	26	lung	stage ib	t2a	n0	m0	male	2011	NA	no	100	lung squamous cell carcinoma- not otherwise specified (nos)	NA	NA	r0	white	not hispanic or latino	NO	NA	censored
+TCGA-60-2704-01	73	Dead	1154	NA	lung	stage iib	t2	n1	m0	male	2003	NA	no	NA	lung squamous cell carcinoma- not otherwise specified (nos)	60	1943	r0	white	not hispanic or latino	YES	532	progressed
+TCGA-63-A5MB-01	62	Alive	NA	2758	lung	stage ib	t2	n0	m0	male	NA	NA	no	NA	lung squamous cell carcinoma- not otherwise specified (nos)	25	NA	r0	NA	NA	NO	NA	non-progressed
+TCGA-85-8351-01	72	Alive	NA	55	lung	stage iia	t2a	n1	m0	male	2011	NA	no	100	lung squamous cell carcinoma- not otherwise specified (nos)	60	1951	r0	white	not hispanic or latino	NO	NA	censored
+TCGA-18-4721-01	74	Alive	NA	2754	lung	stage ia	t1	n0	m0	male	2002	NA	no	NA	lung squamous cell carcinoma- not otherwise specified (nos)	NA	NA	r0	white	not hispanic or latino	NA	NA	non-progressed
+TCGA-34-7107-01	70	Dead	34	NA	lung	stage ii	t2a	n0	m0	male	2011	NA	NA	NA	lung squamous cell carcinoma- not otherwise specified (nos)	NA	NA	NA	white	not hispanic or latino	NA	NA	NA
+TCGA-33-AASI-01	65	Dead	1344	NA	lung	stage iib	t2	n1	mx	female	2008	NA	yes	90	lung squamous cell carcinoma- not otherwise specified (nos)	60	NA	rx	black or african american	not hispanic or latino	NA	NA	NA
+TCGA-77-7138-01	67	Dead	340	NA	lung	stage ib	t2	n0	m0	male	1999	NA	no	NA	lung squamous cell carcinoma- not otherwise specified (nos)	20	1959	r0	NA	NA	NA	NA	NA
+TCGA-33-4586-01	57	Dead	428	NA	lung	stage iiia	t2	n2	m0	male	2007	NA	yes	80	lung squamous cell carcinoma- not otherwise specified (nos)	108	1961	NA	white	not hispanic or latino	YES	169	progressed
+TCGA-33-AASB-01	66	Dead	211	NA	lung	stage ib	t2	n0	mx	male	2002	NA	no	90	lung squamous cell carcinoma- not otherwise specified (nos)	40	1962	r0	black or african american	not hispanic or latino	NA	NA	NA
+TCGA-22-4613-01	73	Dead	358	358	lung	stage ia	t1b	n0	m0	female	2004	131	no	0	lung squamous cell carcinoma- not otherwise specified (nos)	30	1958	r0	white	NA	NA	NA	censored
+TCGA-63-7023-01	NA	Alive	NA	NA	lung	stage iia	t1	n1	m0	male	NA	NA	yes	NA	lung squamous cell carcinoma- not otherwise specified (nos)	55	1952	r0	NA	NA	NO	NA	NA
+TCGA-77-8138-01	74	Dead	539	NA	lung	stage ib	t2	n0	m0	male	2003	NA	no	NA	lung squamous cell carcinoma- not otherwise specified (nos)	54	1946	r0	NA	NA	NO	NA	NA
+TCGA-77-8131-01	72	Dead	383	NA	lung	stage ib	t2	nx	m0	male	2000	NA	NA	NA	lung squamous cell carcinoma- not otherwise specified (nos)	69	1941	r0	NA	NA	NA	NA	NA
+TCGA-56-6546-01	67	Alive	NA	NA	lung	stage iia	t2b	n0	mx	male	2011	NA	no	NA	lung squamous cell carcinoma- not otherwise specified (nos)	NA	1954	NA	white	not hispanic or latino	NO	NA	NA
+TCGA-77-A5GH-01	81	Alive	NA	713	lung	stage ib	t2a	n0	m0	male	2011	NA	no	NA	lung squamous cell carcinoma- not otherwise specified (nos)	11	1949	r0	NA	NA	NA	NA	censored
+TCGA-77-7337-01	65	Dead	3253	NA	lung	stage iib	t2	n1	m0	male	2000	NA	no	NA	lung squamous cell carcinoma- not otherwise specified (nos)	79.5	1942	r0	white	NA	NA	NA	NA
+TCGA-39-5030-01	81	Dead	59	59	lung	stage iiia	t2a	n2	m0	female	2006	4	no	NA	lung squamous cell carcinoma- not otherwise specified (nos)	8	1960	r0	asian	NA	NO	NA	censored
+TCGA-NC-A5HL-01	73	Dead	88	NA	lung	stage iia	t2b	n0	m0	male	2010	NA	no	NA	lung squamous cell carcinoma- not otherwise specified (nos)	40	NA	r0	white	NA	NA	NA	NA
+TCGA-63-A5MM-01	69	Dead	456	NA	lung	stage iib	t2	n1	m0	female	NA	NA	no	NA	lung squamous cell carcinoma- not otherwise specified (nos)	30	NA	r0	NA	NA	YES	218	progressed
+TCGA-60-2709-01	69	Alive	NA	1505	lung	stage ib	t2	n0	mx	male	2004	NA	no	NA	lung squamous cell carcinoma- not otherwise specified (nos)	157.5	1959	r0	black or african american	not hispanic or latino	NO	NA	non-progressed
+TCGA-NC-A5HO-01	70	Alive	NA	789	lung	stage iiia	t3	n1	m0	female	2011	NA	no	NA	lung squamous cell carcinoma- not otherwise specified (nos)	30	NA	NA	white	NA	NO	NA	censored
+TCGA-22-4593-01	77	Dead	1067	1067	lung	stage iia	t2b	n0	m0	male	2002	NA	no	0	lung squamous cell carcinoma- not otherwise specified (nos)	30	1942	r0	white	NA	NO	NA	non-progressed
+TCGA-70-6723-01	65	Alive	NA	0	lung	stage iia	t3	n0	m0	male	2010	NA	yes	40	lung papillary squamous cell caricnoma	NA	NA	rx	asian	not hispanic or latino	YES	312	progressed
+TCGA-85-8354-01	53	Alive	NA	61	lung	stage ib	t2a	n0	m0	male	2011	NA	no	70	lung squamous cell carcinoma- not otherwise specified (nos)	30	1972	r0	white	not hispanic or latino	NO	NA	censored
+TCGA-85-A50Z-01	57	Alive	NA	0	lung	stage iia	t2b	n0	m0	male	2012	NA	no	100	lung squamous cell carcinoma- not otherwise specified (nos)	45	1973	r0	white	not hispanic or latino	YES	462	progressed
+TCGA-77-6845-01	69	Dead	708	NA	lung	stage iib	t3	n0	m0	male	2003	NA	no	NA	lung squamous cell carcinoma- not otherwise specified (nos)	51	1952	r0	white	NA	NO	NA	NA
+TCGA-43-8118-01	55	Dead	89	NA	lung	stage ia	t1b	n0	m0	female	2011	NA	no	NA	lung squamous cell carcinoma- not otherwise specified (nos)	20	1971	NA	white	not hispanic or latino	NO	NA	NA
+TCGA-22-5492-01	73	Dead	506	506	lung	stage iiia	t2a	n2	m0	female	2003	56	NA	0	lung squamous cell carcinoma- not otherwise specified (nos)	50	1953	r0	NA	NA	NA	NA	censored
+TCGA-43-5670-01	70	Alive	NA	549	lung	stage iia	t2b	n0	m0	male	2010	NA	no	NA	lung squamous cell carcinoma- not otherwise specified (nos)	30	1970	NA	white	not hispanic or latino	NO	NA	censored
+TCGA-22-5491-01	74	Dead	1713	1713	lung	stage ia	t1a	n0	m0	male	2003	7	NA	0	lung squamous cell carcinoma- not otherwise specified (nos)	57	NA	r0	white	NA	NA	NA	non-progressed
+TCGA-90-6837-01	64	Alive	NA	42	lung	stage iib	t3	n0	mx	male	2011	NA	no	NA	lung squamous cell carcinoma- not otherwise specified (nos)	40	NA	r0	white	not hispanic or latino	NO	NA	censored
+TCGA-63-A5MS-01	78	Alive	NA	2025	lung	stage ib	t2	n0	m0	male	NA	NA	no	NA	lung squamous cell carcinoma- not otherwise specified (nos)	6	NA	r0	NA	NA	NO	NA	non-progressed
+TCGA-22-5481-01	72	Dead	2409	NA	lung	stage iib	t2	n1	m0	female	2002	NA	no	NA	lung squamous cell carcinoma- not otherwise specified (nos)	75	1952	r0	white	NA	YES	346	progressed
+TCGA-85-7696-01	64	Alive	NA	18	lung	stage ia	t1	n0	m0	male	2011	NA	no	100	lung squamous cell carcinoma- not otherwise specified (nos)	30	1970	r0	white	not hispanic or latino	NO	NA	censored
+TCGA-98-A53J-01	77	Alive	NA	159	lung	stage ib	t2a	n0	m0	male	2012	NA	no	NA	lung squamous cell carcinoma- not otherwise specified (nos)	100	1957	r0	white	not hispanic or latino	NO	NA	censored
+TCGA-52-7809-01	74	Dead	166	NA	lung	stage ib	t2	n0	m0	male	2009	NA	NA	0	lung basaloid squamous cell carcinoma	60	1948	r0	white	not hispanic or latino	NA	NA	NA
+TCGA-39-5027-01	73	Alive	NA	1849	lung	stage ib	t2a	n0	m0	male	2006	NA	no	NA	lung squamous cell carcinoma- not otherwise specified (nos)	40	1946	r0	white	not hispanic or latino	NO	NA	non-progressed
+TCGA-33-AASD-01	83	Dead	3376	NA	lung	stage ia	t1	n0	mx	male	2001	NA	no	80	lung squamous cell carcinoma- not otherwise specified (nos)	84	1950	r0	black or african american	not hispanic or latino	NA	NA	NA
+TCGA-68-7755-01	60	Alive	NA	83	lung	stage iia	t1b	n1	m0	female	2011	NA	no	NA	lung squamous cell carcinoma- not otherwise specified (nos)	78	1973	NA	white	not hispanic or latino	NO	NA	censored
+TCGA-96-7544-01	83	Alive	NA	1213	lung	stage iib	t2	n1	mx	male	2008	NA	no	NA	lung squamous cell carcinoma- not otherwise specified (nos)	65	1943	NA	white	not hispanic or latino	NO	NA	non-progressed
+TCGA-77-8154-01	67	Alive	NA	1092	lung	stage ia	t1	n0	m0	male	2008	NA	no	NA	lung squamous cell carcinoma- not otherwise specified (nos)	40	1966	r0	NA	NA	NO	NA	non-progressed
+TCGA-58-A46L-01	73	Alive	NA	1113	lung	stage iiia	t2	n2	m0	male	2008	NA	no	100	lung basaloid squamous cell carcinoma	NA	NA	r0	white	not hispanic or latino	NO	NA	non-progressed
+TCGA-NC-A5HF-01	74	Dead	138	NA	lung	stage iiib	t4	n0	mx	male	2008	NA	no	NA	lung squamous cell carcinoma- not otherwise specified (nos)	NA	NA	r0	white	NA	NA	NA	NA
+TCGA-58-8391-01	57	Alive	NA	1342	lung	stage iiia	t2	n2	m0	female	2006	NA	yes	100	lung squamous cell carcinoma- not otherwise specified (nos)	30	NA	r0	white	not hispanic or latino	YES	2033	censored
+TCGA-33-4566-01	40	Dead	5287	NA	lung	stage ib	t2	n0	m0	male	1996	NA	NA	NA	lung squamous cell carcinoma- not otherwise specified (nos)	20	NA	r0	white	not hispanic or latino	NA	NA	NA
+TCGA-NC-A5HD-01	79	Dead	2	NA	lung	stage iib	t3	n0	m0	male	2008	NA	no	NA	lung squamous cell carcinoma- not otherwise specified (nos)	50	NA	r0	white	NA	NA	NA	NA
+TCGA-68-8251-01	78	Alive	NA	96	lung	stage ib	t2a	n0	m0	male	2012	NA	no	NA	lung squamous cell carcinoma- not otherwise specified (nos)	52	1944	NA	white	hispanic or latino	NO	NA	censored
+TCGA-56-A4ZK-01	76	Alive	NA	4	lung	stage ib	t2	n0	m0	female	2012	NA	no	90	lung squamous cell carcinoma- not otherwise specified (nos)	NA	1955	r1	white	not hispanic or latino	NO	NA	censored
+TCGA-63-A5M9-01	NA	Alive	NA	0	lung	stage iib	t2	n1	m0	female	NA	NA	NA	NA	lung squamous cell carcinoma- not otherwise specified (nos)	25	NA	rx	NA	NA	NA	NA	NA
+TCGA-LA-A7SW-01	71	Alive	NA	146	lung	stage iiia	t3	n1	mx	male	2013	NA	yes	NA	lung squamous cell carcinoma- not otherwise specified (nos)	37	1962	r0	black or african american	not hispanic or latino	YES	235	progressed
+TCGA-94-8491-01	73	Alive	NA	31	lung	stage iia	t2a	n1	m0	male	2012	NA	no	NA	lung squamous cell carcinoma- not otherwise specified (nos)	56	1956	NA	white	NA	YES	641	progressed
+TCGA-77-A5G3-01	63	Alive	NA	3576	lung	stage iib	t2	n1	m0	male	2002	NA	no	NA	lung squamous cell carcinoma- not otherwise specified (nos)	40	1959	r0	NA	NA	NA	NA	non-progressed
+TCGA-39-5019-01	70	Alive	NA	1361	lung	stage ib	t2a	n0	m0	male	2004	NA	no	NA	lung squamous cell carcinoma- not otherwise specified (nos)	30	NA	r0	white	not hispanic or latino	YES	378	progressed
+TCGA-60-2697-01	41	Dead	372	NA	lung	stage iia	t2	n2	m0	male	1992	NA	no	NA	lung squamous cell carcinoma- not otherwise specified (nos)	NA	NA	rx	white	NA	YES	200	progressed
+TCGA-NC-A5HJ-01	59	Dead	418	NA	lung	stage iib	t3	n0	m0	male	2009	NA	no	NA	lung squamous cell carcinoma- not otherwise specified (nos)	78	NA	r0	white	NA	NA	NA	NA
+TCGA-56-7730-01	73	Alive	NA	6	lung	stage iia	t2b	n0	m0	male	2011	NA	yes	NA	lung squamous cell carcinoma- not otherwise specified (nos)	NA	NA	r1	white	not hispanic or latino	NO	NA	censored
+TCGA-34-5927-01	70	Alive	NA	698	lung	stage ia	t1	n0	m0	female	2009	NA	no	NA	lung squamous cell carcinoma- not otherwise specified (nos)	NA	NA	NA	white	NA	YES	245	progressed
+TCGA-85-8072-01	60	Alive	NA	36	lung	stage ia	t1a	n0	m0	male	2011	NA	no	100	lung squamous cell carcinoma- not otherwise specified (nos)	15	1991	r0	white	not hispanic or latino	NO	NA	censored
+TCGA-85-8071-01	52	Alive	NA	14	lung	stage iia	t1a	n1	m0	male	2011	NA	no	80	lung squamous cell carcinoma- not otherwise specified (nos)	30	1981	r0	white	not hispanic or latino	NO	NA	censored
+TCGA-77-8148-01	68	Alive	NA	293	lung	stage iiia	t3	n1	m0	male	2006	NA	no	NA	lung squamous cell carcinoma- not otherwise specified (nos)	60	NA	r0	NA	NA	NA	NA	censored
+TCGA-63-6202-01	NA	Alive	NA	NA	lung	stage iia	t2	n0	m0	male	NA	NA	no	NA	lung squamous cell carcinoma- not otherwise specified (nos)	35	1973	r0	NA	NA	NA	NA	NA
+TCGA-56-A4BW-01	55	Alive	NA	2	lung	stage iia	t2a	n1	m0	male	2012	NA	no	90	lung squamous cell carcinoma- not otherwise specified (nos)	120	1969	r0	white	not hispanic or latino	NO	NA	censored
+TCGA-77-7139-01	56	Alive	NA	2737	lung	stage iib	t2	n1	m0	male	2002	NA	yes	NA	lung squamous cell carcinoma- not otherwise specified (nos)	2	1968	r0	white	NA	NA	NA	non-progressed
+TCGA-18-5595-01	50	Dead	827	NA	lung	stage ib	t2	n0	m0	male	2008	NA	NA	NA	lung squamous cell carcinoma- not otherwise specified (nos)	NA	NA	r0	NA	NA	NA	NA	NA
+TCGA-33-A4WN-01	60	Dead	143	NA	lung	stage ib	t2a	n0	mx	male	2011	NA	NA	20	lung squamous cell carcinoma- not otherwise specified (nos)	60	1970	r0	white	not hispanic or latino	NO	NA	NA
+TCGA-56-8628-01	78	Alive	NA	16	lung	stage ia	t1b	n0	mx	male	2012	NA	no	70	lung squamous cell carcinoma- not otherwise specified (nos)	NA	NA	r0	white	not hispanic or latino	NO	NA	censored
+TCGA-77-8153-01	77	Alive	NA	1684	lung	stage ib	t2	n0	m0	female	2008	NA	no	NA	lung squamous cell carcinoma- not otherwise specified (nos)	25	1950	r0	NA	NA	NO	NA	non-progressed
+TCGA-39-5039-01	76	Dead	544	544	lung	stage iia	t2b	n0	m0	male	2008	544	no	NA	lung squamous cell carcinoma- not otherwise specified (nos)	64	1949	r0	white	NA	NO	NA	censored
+TCGA-98-A53C-01	77	Alive	NA	311	lung	stage ia	t1a	n0	m0	female	2012	NA	no	NA	lung squamous cell carcinoma- not otherwise specified (nos)	112.5	1955	r0	white	not hispanic or latino	NO	NA	censored
+TCGA-18-5592-01	57	Alive	NA	92	lung	stage iib	t3	n0	m0	male	2010	NA	yes	NA	lung squamous cell carcinoma- not otherwise specified (nos)	40	NA	r0	NA	NA	NA	NA	censored
+TCGA-98-A53H-01	76	Alive	NA	169	lung	stage ia	t1a	n0	m0	female	2012	NA	no	NA	lung squamous cell carcinoma- not otherwise specified (nos)	40	1973	r0	white	not hispanic or latino	YES	427	progressed
+TCGA-77-8150-01	64	Dead	1655	NA	lung	stage iiia	t3	n1	m0	male	2007	NA	no	NA	lung squamous cell carcinoma- not otherwise specified (nos)	46	1961	r0	NA	NA	YES	1456	censored
+TCGA-85-7697-01	49	Alive	NA	10	lung	stage iib	t3	n0	m0	male	2011	NA	no	100	lung squamous cell carcinoma- not otherwise specified (nos)	30	1981	r0	white	not hispanic or latino	NO	NA	censored
+TCGA-21-5787-01	65	Dead	329	329	lung	stage iiia	t2	n2	m0	male	2009	307	yes	0	lung squamous cell carcinoma- not otherwise specified (nos)	100	1956	r0	black or african american	not hispanic or latino	YES	103	progressed
+TCGA-85-6560-01	59	Alive	NA	11	lung	stage iia	t1b	n1	m0	male	2011	NA	no	90	lung squamous cell carcinoma- not otherwise specified (nos)	40	1970	r0	white	not hispanic or latino	NO	NA	censored
+TCGA-22-5477-01	65	Dead	1346	1346	lung	stage ia	t1	n0	m0	male	2004	518	no	0	lung squamous cell carcinoma- not otherwise specified (nos)	100	NA	r0	white	NA	YES	511	progressed
+TCGA-98-A53A-01	70	Alive	NA	274	lung	stage ib	t2a	n0	m0	male	2012	NA	no	NA	lung squamous cell carcinoma- not otherwise specified (nos)	80	1972	r0	black or african american	not hispanic or latino	NA	NA	censored
+TCGA-77-7142-01	59	Alive	NA	1286	lung	stage ib	t2	n0	m0	female	2007	NA	no	NA	lung squamous cell carcinoma- not otherwise specified (nos)	52.5	1959	r0	white	NA	NO	NA	non-progressed
+TCGA-21-5786-01	64	Alive	NA	661	lung	stage ib	t2	n0	m0	male	2009	661	no	NA	lung squamous cell carcinoma- not otherwise specified (nos)	75	1959	r0	white	not hispanic or latino	NO	NA	censored
+TCGA-43-6771-01	85	Dead	166	NA	lung	stage ib	t2	n0	mx	male	2006	NA	no	NA	lung squamous cell carcinoma- not otherwise specified (nos)	40	1936	rx	white	NA	YES	154	progressed
+TCGA-43-A56U-01	76	Alive	NA	55	lung	stage ia	t1b	n0	mx	female	2012	NA	no	NA	lung squamous cell carcinoma- not otherwise specified (nos)	20.5	1971	r0	white	not hispanic or latino	NO	NA	censored
+TCGA-33-AASL-01	57	Dead	826	NA	lung	stage ia	t1	n0	mx	female	2000	NA	no	90	lung squamous cell carcinoma- not otherwise specified (nos)	60	NA	r0	black or african american	not hispanic or latino	NA	NA	NA
+TCGA-34-5928-01	83	Alive	NA	169	lung	stage iib	t2	n1	m0	female	2010	NA	no	NA	lung squamous cell carcinoma- not otherwise specified (nos)	40	NA	NA	white	not hispanic or latino	NO	NA	censored
+TCGA-68-A59J-01	74	Alive	NA	104	lung	stage ib	t2a	n0	mx	female	2012	NA	no	NA	lung squamous cell carcinoma- not otherwise specified (nos)	45	1962	r0	white	not hispanic or latino	NO	NA	censored
+TCGA-46-6025-01	71	Alive	NA	206	lung	stage iib	t2b	n1	m0	male	2010	NA	no	NA	lung squamous cell carcinoma- not otherwise specified (nos)	NA	NA	r0	white	not hispanic or latino	NO	NA	censored
+TCGA-56-8503-01	76	Alive	NA	41	lung	stage iib	t3	n0	m0	female	2012	NA	NA	NA	lung squamous cell carcinoma- not otherwise specified (nos)	91	1951	r0	white	not hispanic or latino	NA	NA	censored
+TCGA-58-8393-01	68	Alive	NA	20	lung	stage ib	t2a	n0	m0	female	2010	NA	no	100	lung squamous cell carcinoma- not otherwise specified (nos)	7	NA	r0	white	not hispanic or latino	NO	NA	censored
+TCGA-43-6647-01	69	Alive	NA	183	lung	stage iib	t2b	n1	mx	female	2010	NA	no	100	lung squamous cell carcinoma- not otherwise specified (nos)	36	1959	rx	white	not hispanic or latino	NO	NA	censored
+TCGA-85-A511-01	62	Alive	NA	0	lung	stage iib	t2b	n1	m0	male	2012	NA	no	90	lung squamous cell carcinoma- not otherwise specified (nos)	40	1972	r0	white	not hispanic or latino	YES	390	progressed
+TCGA-68-7757-01	74	Alive	NA	211	lung	stage ia	t1b	n0	mx	male	2011	NA	no	NA	lung squamous cell carcinoma- not otherwise specified (nos)	25	1960	NA	white	not hispanic or latino	NA	NA	censored
+TCGA-22-5483-01	74	Dead	573	573	lung	stage iia	t1a	n1	m0	male	2005	573	no	0	lung squamous cell carcinoma- not otherwise specified (nos)	50	NA	r0	white	NA	YES	568	progressed
+TCGA-85-8355-01	63	Alive	NA	20	lung	stage ia	t1a	n0	m0	male	2011	NA	no	NA	lung squamous cell carcinoma- not otherwise specified (nos)	NA	NA	r0	white	not hispanic or latino	NO	NA	censored
+TCGA-33-4582-01	55	Dead	3149	NA	lung	stage ia	t1	n0	m0	male	2000	NA	yes	60	lung squamous cell carcinoma- not otherwise specified (nos)	86	1966	r0	white	not hispanic or latino	YES	2923	censored
+TCGA-90-7769-01	55	Alive	NA	18	lung	stage iib	t2b	n1	mx	male	2011	NA	no	NA	lung squamous cell carcinoma- not otherwise specified (nos)	36	1971	r0	white	not hispanic or latino	NO	NA	censored
+TCGA-77-7335-01	62	Dead	2133	NA	lung	stage iiib	t4	n2	m0	female	1996	NA	no	NA	lung squamous cell carcinoma- not otherwise specified (nos)	52	1954	r0	white	NA	NA	NA	NA
+TCGA-98-A53B-01	69	Dead	61	NA	lung	stage ib	t2a	n0	m0	male	2012	NA	no	NA	lung squamous cell carcinoma- not otherwise specified (nos)	40	1972	r0	white	not hispanic or latino	NA	NA	NA
+TCGA-34-8456-01	71	Alive	NA	203	lung	stage iia	t2a	n1	m0	female	2011	NA	no	NA	lung squamous cell carcinoma- not otherwise specified (nos)	20	NA	r0	white	not hispanic or latino	NO	NA	censored
+TCGA-77-8140-01	66	Dead	351	NA	lung	stage iib	t2	n1	m0	female	2003	NA	no	NA	lung squamous cell carcinoma- not otherwise specified (nos)	78	1962	r0	NA	NA	NA	NA	NA
+TCGA-70-6722-01	47	Alive	NA	0	lung	stage iiia	t3	n1	m0	male	2010	NA	yes	20	lung squamous cell carcinoma- not otherwise specified (nos)	NA	NA	rx	asian	not hispanic or latino	YES	293	progressed
+TCGA-21-5784-01	80	Alive	NA	908	lung	stage ib	t2	n0	m0	female	2008	908	no	NA	lung squamous cell carcinoma- not otherwise specified (nos)	14	NA	r0	white	not hispanic or latino	NO	NA	non-progressed
+TCGA-77-A5FZ-01	64	Dead	3838	NA	lung	stage iiib	t4	n0	m0	male	2001	NA	no	NA	lung papillary squamous cell caricnoma	141	1953	r0	NA	NA	NA	NA	NA
+TCGA-96-A4JK-01	65	Alive	NA	273	lung	stage iia	t2a	n1	m0	male	2012	NA	no	NA	lung squamous cell carcinoma- not otherwise specified (nos)	110	1957	r0	white	not hispanic or latino	NO	NA	censored
+TCGA-98-8022-01	61	Alive	NA	224	lung	stage ia	t1a	n0	m0	male	2011	NA	no	NA	lung squamous cell carcinoma- not otherwise specified (nos)	117	1961	r0	white	not hispanic or latino	NO	NA	censored
+TCGA-22-5478-01	79	Dead	24	24	lung	stage ib	t2a	n0	m0	male	2004	24	no	0	lung squamous cell carcinoma- not otherwise specified (nos)	NA	NA	r0	NA	NA	NO	NA	censored
+TCGA-22-5471-01	75	Alive	NA	964	lung	stage ib	t2	n0	m0	male	2005	NA	yes	NA	lung squamous cell carcinoma- not otherwise specified (nos)	50	NA	r2	white	NA	YES	229	progressed
+TCGA-90-A4ED-01	69	Alive	NA	244	lung	stage ib	t2a	n0	mx	male	2012	NA	no	NA	lung squamous cell carcinoma- not otherwise specified (nos)	30	1972	NA	white	not hispanic or latino	NO	NA	censored
+TCGA-43-7658-01	75	Alive	NA	2023	lung	stage ia	t1	n0	m0	female	2006	NA	no	50	lung squamous cell carcinoma- not otherwise specified (nos)	12	1970	NA	white	NA	NO	NA	non-progressed
+TCGA-33-AAS8-01	59	Dead	1114	NA	lung	stage ia	t1	n0	mx	female	1998	NA	no	90	lung squamous cell carcinoma- not otherwise specified (nos)	60	1971	r0	black or african american	not hispanic or latino	NA	NA	NA
+TCGA-85-7699-01	73	Alive	NA	1	lung	stage iiia	t4	n0	m0	male	2011	NA	no	NA	lung squamous cell carcinoma- not otherwise specified (nos)	74	1953	r0	white	not hispanic or latino	YES	760	progressed
+TCGA-77-A5G1-01	75	Alive	NA	3714	lung	stage iiia	t3	n1	m0	male	2002	NA	no	NA	lung squamous cell carcinoma- not otherwise specified (nos)	53	1942	r0	NA	NA	NA	NA	non-progressed
+TCGA-56-A49D-01	67	Alive	NA	38	lung	stage iiia	t2a	n2	mx	male	2012	NA	no	NA	lung squamous cell carcinoma- not otherwise specified (nos)	53	1953	r0	white	NA	NO	NA	censored
+TCGA-34-5239-01	75	Alive	NA	329	lung	stage iiia	t4	n0	m0	male	2010	NA	no	NA	lung squamous cell carcinoma- not otherwise specified (nos)	NA	NA	NA	white	not hispanic or latino	NO	NA	censored
+TCGA-85-7843-01	50	Alive	NA	35	lung	stage iia	t2a	n1	m0	male	2011	NA	NA	80	lung squamous cell carcinoma- not otherwise specified (nos)	35	1980	r0	white	not hispanic or latino	NA	NA	censored
+TCGA-37-A5EM-01	49	Alive	NA	112	lung	stage ii	t2	n0	m0	male	2011	NA	no	NA	lung squamous cell carcinoma- not otherwise specified (nos)	NA	NA	NA	white	not hispanic or latino	NO	NA	censored
+TCGA-39-5036-01	73	Alive	NA	1084	lung	stage ib	t2	n0	m0	male	2007	NA	no	NA	lung squamous cell carcinoma- not otherwise specified (nos)	63	1957	r0	white	NA	NO	NA	non-progressed
+TCGA-56-7580-01	84	Alive	NA	40	lung	stage ib	t2a	n0	m0	male	2011	NA	no	NA	lung squamous cell carcinoma- not otherwise specified (nos)	NA	1947	r0	white	not hispanic or latino	NO	NA	censored
+TCGA-34-5231-01	72	Alive	NA	1528	lung	stage ia	t1	n0	m0	male	2006	NA	no	NA	lung squamous cell carcinoma- not otherwise specified (nos)	50	NA	NA	white	not hispanic or latino	NO	NA	non-progressed
+TCGA-90-A4EE-01	53	Alive	NA	331	lung	stage iia	t2a	n1	mx	male	2012	NA	no	NA	lung squamous cell carcinoma- not otherwise specified (nos)	68	1978	NA	white	not hispanic or latino	NO	NA	censored
+TCGA-56-8309-01	66	Alive	NA	18	lung	stage ia	t1b	n0	mx	male	2012	NA	no	NA	lung squamous cell carcinoma- not otherwise specified (nos)	50	NA	r0	white	not hispanic or latino	NO	NA	censored
+TCGA-85-8353-01	72	Alive	NA	54	lung	stage iiia	t3	n1	m0	male	2011	NA	no	70	lung squamous cell carcinoma- not otherwise specified (nos)	50	1960	r0	white	not hispanic or latino	NO	NA	censored
+TCGA-37-A5EL-01	53	Alive	NA	454	lung	stage iib	t3	n0	m0	male	2011	NA	yes	NA	lung squamous cell carcinoma- not otherwise specified (nos)	NA	NA	NA	white	not hispanic or latino	YES	946	censored
+TCGA-77-8144-01	70	Alive	NA	833	lung	stage ib	t2	n0	m0	male	2004	NA	no	NA	lung squamous cell carcinoma- not otherwise specified (nos)	59	1944	r0	NA	NA	NA	NA	non-progressed
+TCGA-77-A5GF-01	70	Alive	NA	722	lung	stage iia	t2a	n1	m0	male	2011	NA	no	NA	lung squamous cell carcinoma- not otherwise specified (nos)	60	1956	r0	NA	NA	NA	NA	censored
+TCGA-NC-A5HI-01	68	Alive	NA	1135	lung	stage ib	t2	n0	m0	female	2009	NA	no	NA	lung squamous cell carcinoma- not otherwise specified (nos)	60	1959	r0	white	NA	NO	NA	non-progressed
+TCGA-85-A4CN-01	56	Alive	NA	6	lung	stage iib	t2b	n1	m0	female	2012	NA	yes	100	lung squamous cell carcinoma- not otherwise specified (nos)	NA	NA	r0	white	not hispanic or latino	NO	NA	censored
+TCGA-85-8479-01	66	Alive	NA	22	lung	stage ia	t1a	n0	m0	male	2012	NA	NA	90	lung papillary squamous cell caricnoma	90	NA	r0	white	not hispanic or latino	NO	NA	censored
+TCGA-77-8139-01	72	Alive	NA	3166	lung	stage iib	t3	n0	m0	male	2003	NA	no	NA	lung squamous cell carcinoma- not otherwise specified (nos)	52	1951	r0	NA	NA	NO	NA	non-progressed
+TCGA-O2-A52V-01	75	Dead	1335	NA	lung	stage ii	t3	n0	mx	female	2006	NA	yes	NA	lung squamous cell carcinoma- not otherwise specified (nos)	1	1976	NA	black or african american	not hispanic or latino	NA	NA	NA
+TCGA-34-5240-01	73	Alive	NA	235	lung	stage iib	t2	n1	m0	female	2009	NA	no	NA	lung basaloid squamous cell carcinoma	56	1953	NA	white	not hispanic or latino	NO	NA	censored
+TCGA-L3-A524-01	45	Alive	NA	449	lung	stage iib	t3	n0	m0	female	2011	NA	no	NA	lung squamous cell carcinoma- not otherwise specified (nos)	25.6	1979	r0	white	not hispanic or latino	NO	NA	censored
+TCGA-39-5029-01	67	Dead	740	NA	lung	stage iiia	t1b	n2	m0	male	2006	NA	no	NA	lung squamous cell carcinoma- not otherwise specified (nos)	192	1958	r0	white	hispanic or latino	YES	491	progressed
+TCGA-NK-A5CR-01	77	Alive	NA	2178	lung	stage ib	t2	n0	mx	male	2007	NA	no	NA	lung squamous cell carcinoma- not otherwise specified (nos)	40	NA	NA	NA	not hispanic or latino	NO	NA	non-progressed
+TCGA-92-8065-01	74	Alive	NA	70	lung	stage iib	t3	n0	mx	female	2012	NA	no	NA	lung squamous cell carcinoma- not otherwise specified (nos)	14	1968	rx	white	not hispanic or latino	NO	NA	censored
+TCGA-56-A4ZJ-01	75	Alive	NA	25	lung	stage ia	t1a	n0	m0	female	2012	NA	no	NA	lung squamous cell carcinoma- not otherwise specified (nos)	100	NA	r0	white	not hispanic or latino	NO	NA	censored
+TCGA-56-8304-01	73	Alive	NA	106	lung	stage ia	t1b	n0	mx	female	2011	NA	NA	NA	lung squamous cell carcinoma- not otherwise specified (nos)	58	1953	r0	white	NA	NA	NA	censored
+TCGA-22-5479-01	64	Alive	NA	1651	lung	stage ib	t2	n0	m0	male	2004	NA	no	NA	lung squamous cell carcinoma- not otherwise specified (nos)	35	1966	r0	white	NA	NA	NA	non-progressed
+TCGA-63-5131-01	NA	Dead	NA	NA	lung	stage iib	t2	n1	m0	male	NA	NA	no	0	lung squamous cell carcinoma- not otherwise specified (nos)	50	NA	r0	NA	NA	NO	NA	NA
+TCGA-NC-A5HE-01	60	Alive	NA	1722	lung	stage iib	t2	n1	m0	male	2008	NA	yes	NA	lung squamous cell carcinoma- not otherwise specified (nos)	30	1973	r0	white	NA	NO	NA	non-progressed
+TCGA-39-5022-01	76	Dead	1679	NA	lung	stage ib	t2a	n0	m0	male	2005	NA	no	NA	lung squamous cell carcinoma- not otherwise specified (nos)	35	1996	r0	white	not hispanic or latino	YES	1448	censored
+TCGA-52-7622-01	62	Alive	NA	541	lung	stage ia	t1a	n0	m0	female	2010	NA	no	90	lung squamous cell carcinoma- not otherwise specified (nos)	22	1965	r0	white	hispanic or latino	NO	NA	censored
+TCGA-63-7022-01	NA	Alive	NA	NA	lung	stage ia	t1	n0	m0	female	NA	NA	no	NA	lung squamous cell carcinoma- not otherwise specified (nos)	30	1947	r0	NA	NA	NO	NA	NA
+TCGA-85-A4JB-01	74	Alive	NA	-10	lung	stage iib	t3	n0	m0	male	2012	NA	no	100	lung squamous cell carcinoma- not otherwise specified (nos)	25	NA	r0	white	not hispanic or latino	NO	NA	NA
+TCGA-94-8490-01	70	Alive	NA	153	lung	stage iib	t3	n0	m0	male	2011	NA	no	NA	lung squamous cell carcinoma- not otherwise specified (nos)	NA	NA	r0	white	not hispanic or latino	NA	NA	censored
+TCGA-LA-A446-01	68	Alive	NA	36	lung	stage ia	t1b	n0	mx	male	2012	NA	no	NA	lung squamous cell carcinoma- not otherwise specified (nos)	26	1961	r0	white	not hispanic or latino	NO	NA	censored
+TCGA-56-7579-01	61	Alive	NA	44	lung	stage iiia	t3	n1	m0	male	2011	NA	yes	NA	lung squamous cell carcinoma- not otherwise specified (nos)	2	1986	r0	white	not hispanic or latino	YES	149	progressed
+TCGA-85-8481-01	70	Alive	NA	21	lung	stage iib	t3	n0	m0	male	2012	NA	no	0	lung papillary squamous cell caricnoma	80	NA	r0	white	not hispanic or latino	NA	NA	censored
+TCGA-O2-A52S-01	57	Dead	387	NA	lung	stage iii	t4	n2	mx	female	2006	NA	yes	NA	lung squamous cell carcinoma- not otherwise specified (nos)	3	1976	NA	white	not hispanic or latino	NA	NA	NA
+TCGA-63-A5MP-01	56	Alive	NA	769	lung	stage iib	t2	n1	m0	male	NA	NA	yes	NA	lung squamous cell carcinoma- not otherwise specified (nos)	41	1956	r0	NA	NA	NA	NA	censored
+TCGA-39-5024-01	65	Alive	NA	2130	lung	stage iiia	t2a	n2	m0	female	2005	NA	no	NA	lung squamous cell carcinoma- not otherwise specified (nos)	40	1964	r0	white	not hispanic or latino	NO	NA	non-progressed
+TCGA-22-4601-01	73	Dead	1057	1057	lung	stage iiia	t4	n0	m0	female	2003	1050	NA	0	lung squamous cell carcinoma- not otherwise specified (nos)	60	NA	r0	white	NA	YES	525	progressed
+TCGA-85-8049-01	57	Alive	NA	60	lung	stage ib	t2a	n0	m0	male	2011	NA	no	100	lung squamous cell carcinoma- not otherwise specified (nos)	NA	NA	r0	white	not hispanic or latino	NO	NA	censored
+TCGA-56-8308-01	79	Alive	NA	217	lung	stage iib	t3	n0	mx	male	2012	NA	yes	80	lung squamous cell carcinoma- not otherwise specified (nos)	63	1967	r1	white	not hispanic or latino	NO	NA	censored
+TCGA-85-A53L-01	63	Alive	NA	13	lung	stage iia	t2b	n0	m0	male	2012	NA	no	90	lung squamous cell carcinoma- not otherwise specified (nos)	30	1970	r0	asian	not hispanic or latino	NO	NA	censored
+TCGA-34-5236-01	60	Dead	276	NA	lung	stage iib	t3	n0	m0	male	2007	NA	no	NA	lung squamous cell carcinoma- not otherwise specified (nos)	NA	NA	NA	white	not hispanic or latino	YES	113	progressed
+TCGA-98-8020-01	56	Dead	84	NA	lung	stage iiia	t2	n2	m0	female	2011	NA	no	NA	lung squamous cell carcinoma- not otherwise specified (nos)	NA	NA	r0	black or african american	not hispanic or latino	NA	NA	NA
+TCGA-85-8277-01	70	Alive	NA	11	lung	stage iiia	t3	n1	m0	male	2011	NA	no	80	lung squamous cell carcinoma- not otherwise specified (nos)	NA	NA	r0	white	not hispanic or latino	NO	NA	censored
+TCGA-85-8352-01	67	Alive	NA	67	lung	stage iiia	t3	n1	m0	male	2011	NA	no	80	lung squamous cell carcinoma- not otherwise specified (nos)	50	1962	r0	white	not hispanic or latino	YES	128	progressed
+TCGA-34-5241-01	79	Alive	NA	428	lung	stage ib	t2	n0	m0	male	2009	428	no	NA	lung squamous cell carcinoma- not otherwise specified (nos)	25	1954	NA	white	not hispanic or latino	NO	NA	censored
+TCGA-L3-A4E7-01	71	Alive	NA	35	lung	stage ib	t2a	n0	m0	male	2012	NA	no	NA	lung squamous cell carcinoma- not otherwise specified (nos)	25	1962	r0	white	not hispanic or latino	NO	NA	censored
+TCGA-O2-A52W-01	63	Dead	261	NA	lung	stage i	t2	n0	mx	male	2006	NA	no	NA	lung squamous cell carcinoma- not otherwise specified (nos)	2.5	1956	NA	black or african american	not hispanic or latino	NA	NA	NA
+TCGA-39-5034-01	73	Dead	1107	1107	lung	stage iib	t3	n0	m0	female	2007	1102	no	NA	lung squamous cell carcinoma- not otherwise specified (nos)	84	1950	r0	white	not hispanic or latino	YES	352	progressed
+TCGA-56-A5DR-01	81	Alive	NA	4	lung	stage ia	t1a	n0	mx	male	2012	NA	no	NA	lung squamous cell carcinoma- not otherwise specified (nos)	NA	NA	r0	white	not hispanic or latino	NA	NA	censored
+TCGA-NC-A5HH-01	53	Alive	NA	37	lung	stage ia	t1	n0	m0	male	2009	NA	no	NA	lung basaloid squamous cell carcinoma	60	NA	r0	white	NA	NA	NA	censored
+TCGA-77-8128-01	60	Dead	1150	NA	lung	stage iiia	t2	n2	m0	male	1999	NA	no	NA	lung squamous cell carcinoma- not otherwise specified (nos)	113	1953	r0	NA	NA	NA	NA	NA
+TCGA-96-8170-01	75	Alive	NA	211	lung	stage iia	t1a	n1	m0	female	2011	NA	no	NA	lung squamous cell carcinoma- not otherwise specified (nos)	50	1961	NA	white	not hispanic or latino	NO	NA	censored
+TCGA-94-A5I4-01	61	Alive	NA	155	lung	stage iia	t2a	n1	mx	male	2012	NA	no	NA	lung squamous cell carcinoma- not otherwise specified (nos)	80	NA	rx	white	not hispanic or latino	YES	314	progressed
+TCGA-77-8133-01	74	Dead	1640	NA	lung	stage iia	t1	n1	m0	male	2001	NA	no	NA	lung squamous cell carcinoma- not otherwise specified (nos)	22	1941	r0	NA	NA	NA	NA	NA
+TCGA-52-7810-01	60	Alive	NA	923	lung	stage iib	t3	n0	m0	female	2008	NA	yes	90	lung squamous cell carcinoma- not otherwise specified (nos)	20	1970	NA	white	not hispanic or latino	NO	NA	non-progressed
+TCGA-96-A4JL-01	78	Alive	NA	183	lung	stage iia	t2a	n1	m0	female	2012	NA	no	NA	lung squamous cell carcinoma- not otherwise specified (nos)	NA	NA	r0	asian	not hispanic or latino	NO	NA	censored
+TCGA-34-5232-01	75	Alive	NA	1575	lung	stage iia	t1	n1	m0	female	2006	NA	no	NA	lung squamous cell carcinoma- not otherwise specified (nos)	NA	NA	NA	black or african american	not hispanic or latino	NO	NA	non-progressed
+TCGA-56-7823-01	58	Alive	NA	77	lung	stage iia	t1b	n1	m0	female	2011	NA	no	90	lung squamous cell carcinoma- not otherwise specified (nos)	80	1968	NA	white	not hispanic or latino	NO	NA	censored
+TCGA-56-8307-01	55	Alive	NA	27	lung	stage iib	t3	n0	m0	female	2012	NA	no	NA	lung squamous cell carcinoma- not otherwise specified (nos)	35	1977	r0	white	not hispanic or latino	NO	NA	censored
+TCGA-56-8622-01	68	Alive	NA	55	lung	stage ib	t2a	n0	m0	male	2012	NA	NA	NA	lung squamous cell carcinoma- not otherwise specified (nos)	40	1984	r0	white	not hispanic or latino	NA	NA	censored
+TCGA-22-4605-01	78	Dead	974	NA	lung	stage ib	t2	n0	m0	female	2003	NA	yes	NA	lung squamous cell carcinoma- not otherwise specified (nos)	75	1946	r0	NA	NA	NO	NA	NA
+TCGA-58-A46M-01	61	Alive	NA	707	lung	stage iib	t2b	n1	m0	male	2010	NA	no	100	lung squamous cell carcinoma- not otherwise specified (nos)	NA	NA	r0	white	not hispanic or latino	NO	NA	censored
+TCGA-39-5037-01	65	Alive	NA	24	lung	stage iia	t1b	n1	m0	male	2007	NA	no	NA	lung squamous cell carcinoma- not otherwise specified (nos)	26	1969	r0	white	not hispanic or latino	NO	NA	censored
+TCGA-85-6175-01	63	Alive	NA	0	lung	stage iib	t3	n0	m0	female	2010	NA	no	NA	lung squamous cell carcinoma- not otherwise specified (nos)	NA	NA	r0	white	not hispanic or latino	NO	NA	NA
+TCGA-33-6738-01	80	Alive	NA	822	lung	stage iiia	t1	n2	mx	male	2009	NA	no	100	lung squamous cell carcinoma- not otherwise specified (nos)	50	NA	NA	white	NA	NO	NA	non-progressed
+TCGA-85-A50M-01	47	Alive	NA	19	lung	stage iia	t2b	n0	m0	male	2012	NA	no	60	lung squamous cell carcinoma- not otherwise specified (nos)	15	1997	r0	asian	not hispanic or latino	NO	NA	censored
+TCGA-85-8287-01	72	Alive	NA	13	lung	stage ia	t1b	n0	m0	male	2011	NA	no	90	lung squamous cell carcinoma- not otherwise specified (nos)	50	1965	r0	white	not hispanic or latino	NO	NA	censored
+TCGA-98-A538-01	67	Alive	NA	120	lung	stage iib	t3	n0	m0	male	2012	NA	no	NA	lung squamous cell carcinoma- not otherwise specified (nos)	35	1973	r0	white	not hispanic or latino	NO	NA	censored
+TCGA-22-4609-01	81	Dead	291	NA	lung	stage ia	t1	n0	m0	male	2003	NA	no	NA	lung squamous cell carcinoma- not otherwise specified (nos)	77	NA	r0	white	NA	NO	NA	NA
+TCGA-43-7656-01	71	Alive	NA	212	lung	stage ia	t1b	n0	mx	male	2011	NA	no	NA	lung squamous cell carcinoma- not otherwise specified (nos)	45	1956	NA	white	not hispanic or latino	NO	NA	censored
+TCGA-68-7756-01	84	Alive	NA	202	lung	stage iiia	t4	n1	mx	male	2011	NA	yes	NA	lung squamous cell carcinoma- not otherwise specified (nos)	20	NA	NA	white	not hispanic or latino	NO	NA	censored
+TCGA-58-8390-01	70	Alive	NA	272	lung	stage iia	t2b	n0	m0	male	2010	NA	no	90	lung squamous cell carcinoma- not otherwise specified (nos)	120	NA	r0	white	not hispanic or latino	NO	NA	censored
+TCGA-63-A5ML-01	68	Alive	NA	1163	lung	stage ib	t2	n0	m0	male	NA	NA	no	NA	lung squamous cell carcinoma- not otherwise specified (nos)	60	NA	r0	NA	NA	NO	NA	non-progressed
+TCGA-56-8626-01	59	Alive	NA	17	lung	stage ia	t1a	n0	mx	male	2012	NA	no	NA	lung squamous cell carcinoma- not otherwise specified (nos)	50	1962	r0	white	not hispanic or latino	NO	NA	censored
+TCGA-94-7033-01	73	Alive	NA	87	lung	stage ib	t2	n0	mx	male	2011	NA	no	100	lung squamous cell carcinoma- not otherwise specified (nos)	30	NA	r0	white	not hispanic or latino	NO	NA	censored
+TCGA-85-A4CL-01	65	Alive	NA	15	lung	stage ia	t1b	n0	m0	male	2012	NA	no	100	lung squamous cell carcinoma- not otherwise specified (nos)	40	1970	r0	white	not hispanic or latino	NO	NA	censored
+TCGA-22-4599-01	73	Dead	1161	1161	lung	stage ib	t2a	n0	m0	female	2002	760	NA	0	lung squamous cell carcinoma- not otherwise specified (nos)	25	NA	r0	white	NA	NA	NA	non-progressed
+TCGA-85-A4QQ-01	68	Alive	NA	-2	lung	stage ib	t2a	n0	m0	male	2012	NA	no	NA	lung squamous cell carcinoma- not otherwise specified (nos)	50	1960	r0	white	not hispanic or latino	NO	NA	NA
+TCGA-85-A4PA-01	61	Alive	NA	-6	lung	stage ib	t2a	n0	m0	male	2012	NA	no	NA	lung squamous cell carcinoma- not otherwise specified (nos)	40	1972	r0	white	not hispanic or latino	NO	NA	NA
+TCGA-63-A5MU-01	48	Dead	NA	NA	lung	stage iib	t2b	n1	m0	male	NA	NA	no	0	lung squamous cell carcinoma- not otherwise specified (nos)	15	1981	r0	NA	NA	NO	NA	NA
+TCGA-NC-A5HQ-01	70	Dead	448	NA	lung	stage iiia	t3	n2	m0	male	2011	NA	yes	NA	lung squamous cell carcinoma- not otherwise specified (nos)	NA	NA	r0	white	NA	NA	NA	NA
+TCGA-39-5028-01	75	Dead	52	52	lung	stage iiia	t4	n1	m0	male	2006	42	no	NA	lung squamous cell carcinoma- not otherwise specified (nos)	30	1946	r0	white	not hispanic or latino	NO	NA	censored
+TCGA-56-8625-01	66	Alive	NA	63	lung	stage iiia	t3	n1	mx	female	2012	NA	no	NA	lung squamous cell carcinoma- not otherwise specified (nos)	NA	NA	rx	white	not hispanic or latino	YES	272	progressed
+TCGA-77-7140-01	69	Dead	632	NA	lung	stage iib	t2	n1	m0	female	2002	NA	no	NA	lung squamous cell carcinoma- not otherwise specified (nos)	NA	NA	r0	white	NA	YES	250	progressed
